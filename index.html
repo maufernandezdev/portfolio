@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
     <!-- Cuando le demos estilos css los voy a posicionar a un costado de la pantalla
          para que siempre esten visibles
     <div id="social-media">
@@ -30,7 +29,7 @@
         <div id="email">fernandeznm24@gmail.com</div>
     </div>
     -->
-    <!-- header opciones -->
+    <!-- header options -->
     <header class="header">
         <div class="container logo-nav-container">
             <a href="index.html" class="logo logo-main responsive-logo" style="display: none;">MF</a>
@@ -38,17 +37,17 @@
             <nav class="navigation">
                 <ul class="links">
                     <li>
-                        <a href="#"> <span class="item-green">01.</span> About</a>
+                        <a href="#about"> <span class="item-green">01.</span> About</a>
                     </li>
                     <li>
-                        <a href="#"> <span class="item-green">02.</span> Experience</a>
+                        <a href="#experience"> <span class="item-green">02.</span> Experience</a>
                     </li>
                     <li><a href="index.html" class="logo logo-main">MF</a></li>
                     <li>
-                        <a href="#"> <span class="item-green">03.</span> Work</a>
+                        <a href="#work"> <span class="item-green">03.</span> Work</a>
                     </li>
                     <li>
-                        <a href="#"> <span class="item-green">04.</span> Contact</a>
+                        <a href="#contact"> <span class="item-green">04.</span> Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -69,7 +68,7 @@
     </section>
     <hr>
     <!-- About -->
-    <section>
+    <section id="about">
         <h2> <span>01.</span> ABOUT ME </h2>
         <div>
             <p class="paragraph">Hello! I'm Mauricio, a software developer based in Buenos Aires, Argentina. <br> I enjoy creating things that live on the internet, be it websites, apps, or anything else. <br> My goal is always to create products that provide seamless performance
@@ -93,7 +92,7 @@
     </section>
     <hr>
     <!-- Experience -->
-    <section>
+    <section id="experience">
         <h2> <span>02.</span> what am i working on </h2>
         <p class="paragraph">I am currently part of a team of developers (called puma) at Request S.A <br> within which we customize a system called esker for LATAM clients.<br> In my day to day I am in charge of:</p>
         <ul>
@@ -106,7 +105,7 @@
     <hr>
     <!-- Work -->
     <h2> <span>03.</span> Some Things I’ve Built </h2>
-    <section>
+    <section id="work">
         <div>
             <div>
                 <h3>Web platform for bank users</h3>
@@ -126,13 +125,47 @@
     </section>
     <hr>
     <!-- Contact -->
-    <section>
+    <section id="contact">
         <h2> <span>04.</span> What’s Next? </h2>
         <h3>Get In Touch</h3>
         <p>My inbox is always open. <br> Whether you have a question or just want to say hi,<br> I'll try my best to get back to you!</p>
-        <button>Say Hello</button>
-    </section>
+        <div>
 
+            <form action="">
+                <div>
+                    <input type="text" name="name" placeholder="Name" required>
+                </div>
+                <div>
+                    <input type="text" name="surname" placeholder="Surname">
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Mail" required>
+                </div>
+                <div>
+
+                    <select name="cars" id="cars">
+                        <option value="issue">Issue</option>
+                        <option value="hi">Say hi</option>
+                        <option value="Interview">Interview</option>
+                        <option value="jobOffer">job offer</option>
+                        <option value="other">Others</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="checkbox">Do you want to be notified when I update my site?</label>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <textarea name="message" cols="30" rows="10" placeholder="Message" required minlength="4"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Send">
+                    <button>Clean form</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
     <footer>
         <p class="paragraph">Designed & Built by Mauricio Fernandez</p>
     </footer>
