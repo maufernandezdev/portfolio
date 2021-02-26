@@ -93,8 +93,10 @@
         <h2>More obout me...</h2>
         <!-- Se agrega una tabla para el desafio n2-->
         <table style="background-color: azure;">
-            <th style="background-color: rgb(15, 177, 88);">Fact</th>
-            <th style="background-color: rgb(15, 177, 88);">List</th>
+            <tr>
+                <th style="background-color: rgb(15, 177, 88);">Fact</th>
+                <th style="background-color: rgb(15, 177, 88);">List</th>
+            </tr>
             <!-- Fila 1 paises-->
             <tr>
                 <td style="background-color:darkseagreen">Countries visited</td>
@@ -203,14 +205,14 @@
                 </div>
                 <div>
                     <label for="checkbox">Do you want to be notified when I update my site?</label>
-                    <input type="checkbox">
+                    <input type="checkbox" id="checkbox">
                 </div>
                 <div>
                     <textarea name="message" cols="30" rows="10" placeholder="Message" required minlength="4"></textarea>
                 </div>
                 <div>
                     <input type="submit" value="Send">
-                    <button>Clean form</button>
+                    <input type="reset" value="Clear form">
                 </div>
             </form>
         </div>
