@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Proyecto web Coder House</title>
 </head>
 
@@ -32,22 +32,24 @@
     <!-- header options -->
     <header class="header">
         <div class="container logo-nav-container">
-            <a href="index.html" class="logo logo-main responsive-logo" style="display: none;">MF</a>
-            <span><i class="menu-icon fas fa-bars mresp"></i></span>
+            <div class="honeycomb-cell">
+                <a href="index.html" class="logo-main">M</a>
+            </div>
+            <a href="index.html" class="logo logo-main responsive-logo" style="display: none;">M</a>
+            <span style="display: none;"><i class="menu-icon fas fa-bars mresp"></i></span>
             <nav class="navigation">
                 <ul class="links">
                     <li>
-                        <a href="#about"> <span class="item-green">01.</span> About</a>
+                        <a href="#about"> <span class="itemGreen">01.</span> About</a>
                     </li>
                     <li>
-                        <a href="#experience"> <span class="item-green">02.</span> Experience</a>
-                    </li>
-                    <li><a href="index.html" class="logo logo-main">MF</a></li>
-                    <li>
-                        <a href="#work"> <span class="item-green">03.</span> Work</a>
+                        <a href="#experience"> <span class="itemGreen">02.</span> Experience</a>
                     </li>
                     <li>
-                        <a href="#contact"> <span class="item-green">04.</span> Contact</a>
+                        <a href="#work"> <span class="itemGreen">03.</span> Work</a>
+                    </li>
+                    <li>
+                        <a href="#contact"> <span class="itemGreen">04.</span> Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -55,54 +57,64 @@
     </header>
     <!-- Presentation -->
     <section class="Presentation">
-        <span class="item-green name">Hi, my name is</span>
-        <h1 class="big-heading"> Mauricio Fernandez
+        <span class="itemGreen name">Hi, my name is</span>
+        <h1 class="bigHeading"> Mauricio Fernandez.
         </h1>
-        <h2 class="big-heading">
+        <h2 class="bigHeading">
             I build solutions for the web.
         </h2>
         <p class="paragraph">
-            I'm a software developer based in Buenos Aires, specializing in <br> building and designing exceptional websites, <br> things for the web, and everything in between.
+            I'm a software developer based in Buenos Aires, specializing in building and designing exceptional websites, <br> things for the web, and everything in between.
         </p>
-        <button>Get in touch</button>
+        <button class="button">Get in touch</button>
     </section>
     <hr>
     <!-- About -->
+    <!-- In each section an id is added to reference the links in the header -->
     <section id="about">
         <h2> <span>01.</span> About me </h2>
-        <div>
-            <p class="paragraph">Hello! I'm Mauricio, a software developer based in Buenos Aires, Argentina. <br> I enjoy creating things that live on the internet, be it websites, apps, or anything else. <br> My goal is always to create products that provide seamless performance
-                experiences along with engaging user interfaces.<br> Shortly after graduating from National Technological University(U.T.N), <br> I joined the developers team at Request S.A where I work on a wide variety of interesting and meaningful
-                projects on a daily basis. <br> Here are a few technologies I've been working with recently:
-
-                <ul>
-                    <li>JavaScript(ES5)</li>
-                    <li>C++</li>
-                    <li>Microsoft SQL Server</li>
-                    <li>Java</li>
-                    <li>C#</li>
-                    <li>HTML & (S)CSS</li>
-                </ul>
-
+        <div id="aboutMeDescription">
+            <p class="paragraph">Hello! I'm Mauricio, a software developer based in Buenos Aires, Argentina.I enjoy creating things that live on the internet, be it websites, apps, or anything else. <br><br> My goal is always to create products that provide seamless performance
+                experiences along with engaging user interfaces.<br> Shortly after graduating from National Technological University(U.T.N),I joined the developers team at Request S.A where I work on a wide variety of interesting and meaningful projects
+                on a daily basis. <br><br> Here are a few technologies I've been working with recently:
             </p>
+            <div>
+                <ul>
+                    <li class="listItem"><i class="fas fa-check"></i> JavaScript(ES5)</li>
+                    <li class="listItem"><i class="fas fa-check"></i> C++</li>
+                    <li class="listItem"><i class="fas fa-check"></i> Microsoft SQL Server</li>
+
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="listItem"><i class="fas fa-check"></i> Java</li>
+                    <li class="listItem"><i class="fas fa-check"></i> C#</li>
+                    <li class="listItem"><i class="fas fa-check"></i> HTML & (S)CSS</li>
+
+                </ul>
+            </div>
+
+
+
         </div>
-        <div>
-            <img src="img/profile.jpg" class="img-profile">
+        <div id="imgContainer">
+            <img src="img/profile.jpg" class="imgProfile">
         </div>
-        <!-- Aqui podria agregar una pequeña galeria de imagenes con 3 de mis pasatiempos preferidos-->
         <h2>More obout me...</h2>
         <!-- Se agrega una tabla para el desafio n2-->
-        <table style="background-color: azure;">
+        <!-- La tabla será reemplazada más adelante por una pequeña galeria de imagenes con mis pasatiempos/hobbies-->
+        <table style="background-color: azure;width: 50%;margin: 0px auto;">
             <tr>
                 <th style="background-color: rgb(15, 177, 88);">Fact</th>
                 <th style="background-color: rgb(15, 177, 88);">List</th>
             </tr>
             <!-- Fila 1 paises-->
             <tr>
-                <td style="background-color:darkseagreen">Countries visited</td>
+                <td style="background-color:darkseagreen;text-align: center;">Countries visited</td>
                 <td style="padding-left: 25px;background-color:darkseagreen">
                     <ol>
-                        <li>Argentina</li>
+                        <li ">Argentina</li>
                         <li>Brasil</li>
                         <li>Bolivia</li>
                         <li>Chile</li>
@@ -112,9 +124,9 @@
             </tr>
             <!-- Fila 2 estudios-->
             <tr>
-                <td style="background-color: darkseagreen;">Studies</td>
-                <td style="background-color: darkseagreen;padding-left: 25px;">
-                    <ol type="a">
+                <td style="background-color: darkseagreen;text-align: center; ">Studies</td>
+                <td style="background-color: darkseagreen;padding-left: 25px; ">
+                    <ol type="a ">
                         <li>Programming technician - UTN FRGP</li>
                         <li>Digital marketing - UTN BA</li>
                         <li>Full stack developer - Coder House</li>
@@ -124,14 +136,14 @@
             </tr>
             <!-- Fila 3 hobbies-->
             <tr>
-                <td style="background-color: darkseagreen; ">Hobbies</td>
+                <td style="background-color: darkseagreen;text-align: center; ">Hobbies</td>
                 <td style="background-color: darkseagreen;padding-left: 25px; ">
-                    <ol type="i">
+                    <ol type="i ">
                         <li>Gym and running</li>
                         <li>Get together with friends and family</li>
                         <li>Tennis</li>
                         <li>Porgramming</li>
-                        <li>Dance and sing , Music <span style="color:red">&#x2764;</span></li>
+                        <li>Dance and sing , Music <span style="color:red ">&#x2764;</span></li>
                     </ol>
                 </td>
             </tr>
@@ -139,87 +151,88 @@
 
 
         </table>
-
-
     </section>
     <hr>
     <!-- Experience -->
-    <section id="experience">
+    <!-- In each section an id is added to reference the links in the header -->
+    <section id="experience ">
         <h2> <span>02.</span> what am i working on </h2>
-        <p class="paragraph">I am currently part of a team of developers (called puma) at Request S.A <br> within which we customize a system called esker for LATAM clients.<br> In my day to day I am in charge of:</p>
+        <p class="paragraph ">I am currently part of a team of developers (called puma) at Request S.A <br> within which we customize a system called esker for LATAM clients.<br> In my day to day I am in charge of:</p>
         <ul>
-            <li>Keep applications productive, fix bugs, and implement new functionality.</li>
-            <li>Comply with deliveries according to the time estimates made.</li>
-            <li>Work closely with other developers.</li>
+            <li class="listItem "><i class="fas fa-check "></i> Keep applications productive, fix bugs, and implement new functionality.</li>
+            <li class="listItem "><i class="fas fa-check "></i> Comply with deliveries according to the time estimates made.</li>
+            <li class="listItem "><i class="fas fa-check "></i> Work closely with other developers.</li>
         </ul>
 
     </section>
     <hr>
     <!-- Work -->
-    <h2> <span>03.</span> Some Things I’ve Built </h2>
-    <section id="work">
+    <!-- In each section an id is added to reference the links in the header -->
+    <section id="work ">
+        <h2> <span>03.</span> Some Things I’ve Built </h2>
         <div>
             <div>
                 <h3>Web platform for bank users</h3>
-                <p>A web platform so that users of a certain bank can see their account,<br> transfer money to their own or others, request and also pay loans.</p>
+                <p class="paragraph ">A web platform so that users of a certain bank can see their account,<br> transfer money to their own or others, request and also pay loans.</p>
             </div>
-            <img src="img/cuentasusuario.PNG">
+            <img src="img/cuentasusuario.png " class="ProyectsImgs ">
         </div>
         <div>
-            <img src="img/abm_peliculas.png">
+            <img src="img/abm_peliculas.png " class="ProyectsImgs ">
             <div>
                 <h3>Web app to manage a cinema</h3>
 
-                <p>A web application to manage a cinema. It has the following modules: <br> Sales report, movie CRUD, article CRUD, profile of the logged in administrator.</p>
+                <p class="paragraph ">A web application to manage a cinema. It has the following modules: <br> Sales report, movie CRUD, article CRUD, profile of the logged in administrator.</p>
             </div>
         </div>
 
     </section>
     <hr>
     <!-- Contact -->
-    <section id="contact">
+    <!-- In each section an id is added to reference the links in the header -->
+    <section id="contact ">
         <h2> <span>04.</span> What’s Next? </h2>
         <h3>Get In Touch</h3>
-        <p>My inbox is always open. <br> Whether you have a question or just want to say hi,<br> I'll try my best to get back to you!</p>
+        <p class="paragraph ">My inbox is always open. <br> Whether you have a question or just want to say hi,<br> I'll try my best to get back to you!</p>
         <div>
 
-            <form action="">
+            <form action=" ">
                 <div>
-                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="text " name="name " placeholder="Name " required>
                 </div>
                 <div>
-                    <input type="text" name="surname" placeholder="Surname">
+                    <input type="text " name="surname " placeholder="Surname ">
                 </div>
                 <div>
-                    <input type="email" name="email" placeholder="Mail" required>
+                    <input type="email " name="email " placeholder="Mail " required>
                 </div>
                 <div>
 
-                    <select name="cars" id="cars">
-                        <option value="issue">Issue</option>
-                        <option value="hi">Say hi</option>
-                        <option value="Interview">Interview</option>
-                        <option value="jobOffer">job offer</option>
-                        <option value="other">Others</option>
+                    <select name="cars " id="cars ">
+                        <option value="issue ">Issue</option>
+                        <option value="hi ">Say hi</option>
+                        <option value="Interview ">Interview</option>
+                        <option value="jobOffer ">job offer</option>
+                        <option value="other ">Others</option>
                     </select>
                 </div>
                 <div>
-                    <label for="checkbox">Do you want to be notified when I update my site?</label>
-                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox ">Do you want to be notified when I update my site?</label>
+                    <input type="checkbox " id="checkbox ">
                 </div>
                 <div>
-                    <textarea name="message" cols="30" rows="10" placeholder="Message" required minlength="4"></textarea>
+                    <textarea name="message " cols="30 " rows="10 " placeholder="Message " required minlength="4 "></textarea>
                 </div>
                 <div>
-                    <input type="submit" value="Send">
-                    <input type="reset" value="Clear form">
+                    <input type="submit " value="Send ">
+                    <input type="reset " value="Clear form ">
                 </div>
             </form>
         </div>
     </section>
     <!-- Footer -->
     <footer>
-        <p class="paragraph">Designed & Built by Mauricio Fernandez</p>
+        <p class="paragraph ">Designed & Built by Mauricio Fernandez</p>
     </footer>
 
 </body>
