@@ -40,8 +40,20 @@
             padding: 10px;
         }
         
+        a {
+            text-decoration-skip-ink: auto;
+            text-decoration: none;
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.5rem;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
         .bigHeading {
             font-size: clamp(40px, 8vw, 70px);
+            text-align: center;
         }
         /* ANIMACIONES */
         
@@ -200,7 +212,9 @@
         }
         
         .Presentation {
-            padding: 3rem 10rem;
+            padding: 10rem;
+            display: flex;
+            justify-content: center;
         }
         /* Start - characteristics of the sections in general*/
         /* Start about me */
@@ -267,8 +281,18 @@
         /*start Button*/
         
         .button {
-            padding: 10px;
+            padding: 20px;
             margin: 10px;
+            border: solid 1px var(--specialGreen);
+            border-radius: 5px;
+            background-color: transparent;
+            color: var(--specialGreen) !important;
+            transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+            margin-top: 3rem;
+        }
+        
+        .button:hover {
+            background-color: rgba(100, 255, 218, 0.1);
         }
         /*End Button*/
         /*Start Footer*/
