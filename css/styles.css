@@ -18,7 +18,7 @@
         h2 {
             width: 100%;
             font-family: 'Nunito Sans', sans-serif;
-            font-weight: 600;
+            font-weight: 700;
         }
         
         h1 {
@@ -52,7 +52,7 @@
         }
         
         .bigHeading {
-            font-size: clamp(40px, 8vw, 70px);
+            font-size: clamp(40px, 8vw, 80px);
             text-align: center;
         }
         /* ANIMACIONES */
@@ -212,7 +212,7 @@
         }
         
         .Presentation {
-            padding: 10rem;
+            padding: 8rem;
             display: flex;
             justify-content: center;
         }
@@ -224,6 +224,14 @@
             flex-wrap: wrap;
             justify-content: space-between;
             width: 50%;
+            border: 1px solid #ccc;
+        }
+        
+        .cajaImagen {
+            border: 3px solid var(--specialGreen);
+            position: absolute;
+            width: 200px;
+            height: 300px;
         }
         /* End about me */
         /* Start list styles */
@@ -269,7 +277,9 @@
             width: 50%;
             display: flex;
             justify-content: center;
+            align-items: center;
             padding: 10px;
+            border: 1px solid #ccc
         }
         /*Start proyects img*/
         
