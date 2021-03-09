@@ -160,6 +160,7 @@
             font-size: 1.2rem;
             width: 100%;
             padding: 10px;
+            background-color: red;
         }
         /* Start M icon */
         
@@ -209,6 +210,8 @@
             display: flex;
             flex-wrap: wrap;
             padding: 3rem 12rem;
+            justify-content: center;
+            flex: 1;
         }
         
         .Presentation {
@@ -219,19 +222,15 @@
         /* Start - characteristics of the sections in general*/
         /* Start about me */
         
+        #about h2 {
+            text-align: center;
+        }
+        
         #aboutMeDescription {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             width: 50%;
-            border: 1px solid #ccc;
-        }
-        
-        .cajaImagen {
-            border: 3px solid var(--specialGreen);
-            position: absolute;
-            width: 200px;
-            height: 300px;
         }
         /* End about me */
         /* Start list styles */
@@ -279,13 +278,13 @@
             justify-content: center;
             align-items: center;
             padding: 10px;
-            border: 1px solid #ccc
         }
         /*Start proyects img*/
         
         .ProyectsImgs {
             max-width: 750px;
             max-height: 500px;
+            flex: 1;
         }
         /*End proyects img*/
         /*start Button*/
@@ -328,3 +327,24 @@
             margin-top: 10px;
         }
         /* End   [2021-03-03] - Se agregan estilos para el submenu pedido en el desafio complementario Box Model - extra */
+        /* Start [2021-03-05] - Experience */
+        
+        #experience h2,
+        h3 {
+            text-align: center;
+        }
+        /* End   [2021-03-05] - Experience */
+        /* Start [2021-03-05] - work */
+        
+        #work h2,
+        h3 {
+            text-align: center;
+        }
+        /* End   [2021-03-05] - work */
+        /* Start [2021-03-05] - Contact */
+        
+        #contact h2,
+        h3 {
+            text-align: center;
+        }
+        /* End   [2021-03-05] - Contact */
