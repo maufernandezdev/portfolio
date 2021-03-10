@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>Proyecto web Coder House</title>
 </head>
 
@@ -56,6 +57,7 @@
                     </li>
                 </ul>
             </nav>
+
         </div>
     </header>
     <!-- Presentation -->
@@ -66,92 +68,64 @@
             I build solutions for the web.
         </h2>
         <p class="paragraph">
-            I'm a software developer based in Buenos Aires, specializing in building and designing exceptional websites, <br> things for the web, and everything in between.
+            I'm a software developer based in Buenos Aires,<br> specializing in building and designing <span class="typed"></span></h2>
         </p>
         <a class="button" href="#contact">Get in touch</a>
     </section>
-    <hr>
     <!-- About -->
     <!-- In each section an id is added to reference the links in the header -->
     <section id="about">
         <h2> <span>01.</span> About me </h2>
-        <div id="aboutMeDescription">
-            <p class="paragraph">Hello! I'm Mauricio, a software developer based in Buenos Aires, Argentina.I enjoy creating things that live on the internet, be it websites, apps, or anything else. <br><br> My goal is always to create products that provide seamless performance
-                experiences along with engaging user interfaces.<br> Shortly after graduating from National Technological University(U.T.N),I joined the developers team at Request S.A where I work on a wide variety of interesting and meaningful projects
-                on a daily basis. <br><br> Here are a few technologies I've been working with recently:
-            </p>
-            <div>
-                <ul>
-                    <li class="listItem"><i class="fas fa-check"></i> JavaScript(ES5)</li>
-                    <li class="listItem"><i class="fas fa-check"></i> C++</li>
-                    <li class="listItem"><i class="fas fa-check"></i> Microsoft SQL Server</li>
+        <section id="aboutMePartOne">
 
-                </ul>
+            <div id="aboutMeDescription">
+                <p class="paragraph">Hello! I'm Mauricio, a software developer based in Buenos Aires, Argentina.I enjoy creating things that live on the internet, be it websites, apps, or anything else. <br><br> My goal is always to create products that provide seamless performance
+                    experiences along with engaging user interfaces.<br> Shortly after graduating from National Technological University(U.T.N),I joined the developers team at Request S.A where I work on a wide variety of interesting and meaningful projects
+                    on a daily basis. <br><br> Here are a few technologies I've been working with recently:
+                </p>
             </div>
-            <div>
-                <ul>
-                    <li class="listItem"><i class="fas fa-check"></i> Java</li>
-                    <li class="listItem"><i class="fas fa-check"></i> C#</li>
-                    <li class="listItem"><i class="fas fa-check"></i> HTML & (S)CSS</li>
+            <div id="skills">
+                <div>
+                    <ul>
+                        <li class="listItem"><i class="fas fa-check"></i> JavaScript(ES5)</li>
+                        <li class="listItem"><i class="fas fa-check"></i> HTML & (S)CSS</li>
+                        <li class="listItem"><i class="fas fa-check"></i> C++</li>
+                        <li class="listItem"><i class="fas fa-check"></i> Microsoft SQL Server</li>
+                        <li class="listItem"><i class="fas fa-check"></i> Java</li>
+                        <li class="listItem"><i class="fas fa-check"></i> C#</li>
+                        <li class="listItem"><i class="fas fa-check"></i> .NET</li>
+                        <li class="listItem"><i class="fas fa-check"></i> MySQL</li>
 
-                </ul>
+                    </ul>
+                </div>
             </div>
-
-
-
+        </section>
         </div>
-        <div id="imgContainer">
-            <img src="img/profile.jpg" class="imgProfile">
-        </div>
-        <h2>More obout me...</h2>
+        <h2>More obout me</h2>
         <!-- Se agrega una tabla para el desafio n2-->
-        <!-- La tabla será reemplazada más adelante por una pequeña galeria de imagenes con mis pasatiempos/hobbies-->
-        <table style="background-color: azure;width: 50%;margin: 0px auto;">
-            <tr>
-                <th style="background-color: rgb(15, 177, 88);">Fact</th>
-                <th style="background-color: rgb(15, 177, 88);">List</th>
-            </tr>
-            <!-- Fila 1 paises-->
-            <tr>
-                <td style="background-color:darkseagreen;text-align: center;">Countries visited</td>
-                <td style="padding-left: 25px;background-color:darkseagreen">
-                    <ol>
-                        <li>Argentina</li>
-                        <li>Brasil</li>
-                        <li>Bolivia</li>
-                        <li>Chile</li>
-                        <li>Uruguay</li>
-                    </ol>
-                </td>
-            </tr>
-            <!-- Fila 2 estudios-->
-            <tr>
-                <td style="background-color: darkseagreen;text-align: center;">Studies</td>
-                <td style="background-color: darkseagreen;padding-left: 25px;">
-                    <ol type="a">
-                        <li>Programming technician - UTN FRGP</li>
-                        <li>Digital marketing - UTN BA</li>
-                        <li>Full stack developer - Coder House</li>
-                        <li>Others - Udemy</li>
-                    </ol>
-                </td>
-            </tr>
-            <!-- Fila 3 hobbies-->
-            <tr>
-                <td style="background-color: darkseagreen;text-align: center;">Hobbies</td>
-                <td style="background-color: darkseagreen;padding-left: 25px;">
-                    <ol type="i">
-                        <li>Gym and running</li>
-                        <li>Get together with friends and family</li>
-                        <li>Tennis</li>
-                        <li>Porgramming</li>
-                        <li>Dance and sing , Music <span style="color:red">&#x2764;</span></li>
-                    </ol>
-                </td>
-            </tr>
-        </table>
+        <div class="galery">
+            <div class="itemGalery">
+                <img src="img/friends.jpg">
+                <p>Get together</p>
+            </div>
+            <div class="itemGalery"><img src="img/series.jpg">
+                <p>Watch series and movies</p>
+            </div>
+            <div class="itemGalery"><img src="img/programming.jpg">
+                <p>Programming</p>
+            </div>
+            <div class="itemGalery"><img src="img/run.jpg">
+                <p>To Run</p>
+            </div>
+            <div class="itemGalery"><img src="img/tennis.jpg">
+                <p>Teach and play tennis</p>
+            </div>
+            <div class="itemGalery"><img src="img/travel.jpg">
+                <p>To Travel</p>
+            </div>
+        </div>
+
     </section>
-    <hr>
     <!-- Experience -->
     <!-- In each section an id is added to reference the links in the header -->
     <section id="experience">
@@ -164,29 +138,22 @@
         </ul>
 
     </section>
-    <hr>
     <!-- Work -->
     <!-- In each section an id is added to reference the links in the header -->
     <section id="work">
         <h2> <span>03.</span> Some Things I’ve Built </h2>
         <div>
-            <div>
-                <h3>Web platform for bank users</h3>
-                <p class="paragraph">A web platform so that users of a certain bank can see their account,<br> transfer money to their own or others, request and also pay loans.</p>
-            </div>
+            <h3>Web platform for bank users</h3>
+            <p class="paragraph">A web platform so that users of a certain bank can see their account,<br> transfer money to their own or others, request and also pay loans.</p>
             <img src="img/cuentasusuario.png" class="ProyectsImgs">
         </div>
         <div>
             <img src="img/abm_peliculas.png" class="ProyectsImgs">
-            <div>
-                <h3>Web app to manage a cinema</h3>
-
-                <p class="paragraph">A web application to manage a cinema. It has the following modules: <br> Sales report, movie CRUD, article CRUD, profile of the logged in administrator.</p>
-            </div>
+            <h3>Web app to manage a cinema</h3>
+            <p class="paragraph">A web application to manage a cinema. It has the following modules: <br> Sales report, movie CRUD, article CRUD, profile of the logged in administrator.</p>
         </div>
 
     </section>
-    <hr>
     <!-- Contact -->
     <!-- In each section an id is added to reference the links in the header -->
     <section id="contact">
@@ -232,7 +199,11 @@
     <footer>
         <p class="paragraph">Designed & Built by Mauricio Fernandez</p>
     </footer>
-
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <!--typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </body>
 
 </html>
