@@ -1,418 +1,552 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            background-color: var(--fondo-oscuro);
-        }
-        
-         :root {
-            --fondo-oscuro: #142032;
-            --h2color: #8892b0;
-            --specialGreen: #64ffda;
-        }
-        
-        h1,
-        h2 {
-            width: 100%;
-            font-family: 'Nunito Sans', sans-serif;
-            font-weight: 700;
-        }
-        
-        h1 {
-            color: #fff;
-        }
-        
-        h2 {
-            color: var(--h2color);
-            width: 100%;
-            margin-bottom: 1.5rem;
-        }
-        
-        h3 {
-            color: var(--specialGreen);
-        }
-        
-        h1,
-        h2,
-        h3 {
-            padding: 10px;
-        }
-        
-        a {
-            text-decoration-skip-ink: auto;
-            text-decoration: none;
-            font-family: 'Raleway', sans-serif;
-            font-size: 1.5rem;
-        }
-        
-        p {
-            text-align: center;
-        }
-        
-        .bigHeading {
-            font-size: clamp(40px, 8vw, 80px);
-            text-align: center;
-        }
-        /* ANIMACIONES */
-        
-        @keyframes glow-title {
-            from {
-                text-shadow: 0 0 10px var(--specialGreen), 0 0 20px var(--specialGreen);
-            }
-            to {
-                text-shadow: 0 0 20px var(--specialGreen);
-            }
-        }
-        
-        @keyframes anim-shadow-reg {
-            100% {
-                box-shadow: 0px 0px 1px 1px var(--specialGreen);
-            }
-        }
-        
-        @keyframes hard-anim-shadow-reg {
-            100% {
-                box-shadow: 0px 0px 10px 1px var(--specialGreen);
-            }
-        }
-        /* Start Header */
-        
-        .container {
-            width: 90%;
-            margin: 0 auto;
-        }
-        
-        .header {
-            position: relative;
-            background: transparent;
-            padding: 2rem 0rem;
-            left: 0;
-            top: 0;
-            right: 0;
-            z-index: 10;
-        }
-        /*
-        .header span {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fondo-oscuro);
+}
+
+:root {
+    --fondo-oscuro: #142032;
+    --h2color: #8892b0;
+    --specialGreen: #64ffda;
+}
+
+h1,
+h2 {
+    width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    color: #fff;
+}
+
+h2 {
+    color: var(--h2color);
+    width: 100%;
+    margin-bottom: 1.3rem;
+}
+
+h3 {
+    color: var(--specialGreen);
+}
+
+h1,
+h2,
+h3 {
+    padding: 10px;
+}
+
+a {
+    text-decoration-skip-ink: auto;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+p {
+    text-align: center;
+}
+
+.bigHeading {
+    font-size: clamp(40px, 8vw, 80px);
+    text-align: center;
+}
+
+
+/* ANIMACIONES */
+
+@keyframes glow-title {
+    from {
+        text-shadow: 0 0 10px var(--specialGreen), 0 0 20px var(--specialGreen);
+    }
+    to {
+        text-shadow: 0 0 20px var(--specialGreen);
+    }
+}
+
+@keyframes anim-shadow-reg {
+    100% {
+        box-shadow: 0px 0px 1px 1px var(--specialGreen);
+    }
+}
+
+@keyframes hard-anim-shadow-reg {
+    100% {
+        box-shadow: 0px 0px 10px 1px var(--specialGreen);
+    }
+}
+
+
+/* Start Header */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    background: transparent;
+    padding: 2rem 0rem;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.header span i {
+    display: none;
+}
+
+.header div nav a {
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    padding: 10px;
+}
+
+.navigation ul li a:hover {
+    opacity: 0.75;
+}
+
+.logo-main {
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: normal;
+    -webkit-text-stroke: 1px var(--specialGreen);
+    -webkit-text-fill-color: transparent;
+    animation: glow-title 2s ease-in-out infinite alternate;
+    font-family: 'Raleway', sans-serif;
+}
+
+.responsive-logo {
+    display: none;
+}
+
+
+/*End Header*/
+
+
+/*Presentation Section*/
+
+.itemGreen {
+    font-family: 'Raleway', sans-serif;
+    color: var(--specialGreen);
+}
+
+.name {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.paragraph {
+    color: var(--h2color);
+    line-height: 1.2;
+    font-family: sans-serif;
+    padding: 1rem 0rem;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 10px;
+}
+
+
+/* Start M icon */
+
+.honeycomb-cell {
+    margin-top: -10px;
+    height: 10px;
+    position: relative;
+    padding: .7em;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.honeycomb-cell::before,
+.honeycomb-cell::after {
+    content: '';
+}
+
+.honeycomb-cell::before,
+.honeycomb-cell::after {
+    top: -10%;
+    left: 0%;
+    width: 100%;
+    height: 200%;
+    display: block;
+    position: absolute;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    z-index: -1;
+}
+
+.honeycomb-cell::before {
+    background: #fff;
+    background: var(--specialGreen);
+    transform: scale(1.1);
+}
+
+.honeycomb-cell::after {
+    background: var(--fondo-oscuro);
+    transition: opacity 350ms;
+    -webkit-transition: opacity 350ms;
+}
+
+
+/* End M icon */
+
+
+/* Start - characteristics of the sections in general*/
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 12rem;
+    justify-content: center;
+    flex: 1;
+}
+
+.Presentation {
+    padding: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Start - characteristics of the sections in general*/
+
+
+/* Start about me */
+
+#about h2 {
+    text-align: center;
+}
+
+#aboutMePartOne {
+    display: flex;
+    padding: 2rem;
+}
+
+#aboutMeDescription {
+    width: 50%;
+    border-radius: 5px;
+}
+
+#skills {
+    width: 20%;
+    border-radius: 5px;
+}
+
+.galery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    grid-auto-rows: 280px;
+    /*grid-column-gap: 20px;
+    grid-row-gap: 20px;*/
+    grid-gap: 75px;
+    padding: 10px;
+}
+
+.itemGalery {
+    border-radius: 5px;
+    background-color: var(--specialGreen);
+    animation: anim-shadow-reg .3s forwards;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.itemGalery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: all 0.2s ease;
+    border-radius: 5px;
+}
+
+
+/* idea 1 de parrafo
+.itemGalery p {
+    position: absolute;
+    background-color: #000;
+    width: 100px;
+    height: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 250px;
+    color: #fff;
+    z-index: 10;
+    padding: 3px;
+}*/
+
+.itemGalery p {
+    margin-top: 10px;
+    animation: glow-title 2s ease-in-out infinite alternate;
+    font-family: 'Raleway', sans-serif;
+    color: #fff
+}
+
+.itemGalery img:hover {
+    opacity: 1;
+    animation: hard-anim-shadow-reg .3s forwards;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+    transform: scale(1.02)
+}
+
+
+/* End about me */
+
+
+/* Start list styles */
+
+.listItem {
+    color: #cdcdcd;
+    list-style: none;
+    border-radius: 5px;
+    margin: 12px;
+    text-align: left;
+}
+
+.listItem i {
+    color: var(--specialGreen);
+}
+
+#aboutMeDescription div:nth-child(2) {
+    width: 50%;
+}
+
+#aboutMeDescription div:last-child {
+    width: 50%;
+}
+
+#aboutMeDescription div {
+    padding: 10px;
+}
+
+#aboutMeDescription p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+/* End list styles */
+
+.imgProfile {
+    width: 200px;
+    height: 300px;
+    align-self: center;
+}
+
+#imgContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+/*Start proyects img*/
+
+.ProyectsImgs {
+    max-width: 750px;
+    max-height: 500px;
+    flex: 1;
+}
+
+
+/*End proyects img*/
+
+
+/*start Button*/
+
+.button {
+    padding: 20px;
+    border: solid 1px var(--specialGreen);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--specialGreen) !important;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin-top: 3rem;
+}
+
+.button:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+}
+
+
+/*End Button*/
+
+
+/*Start Footer*/
+
+footer {
+    text-align: center;
+    padding: 40px;
+}
+
+
+/*End Footer*/
+
+
+/* Start [2021-03-03] - Se agregan estilos para el submenu pedido en el desafio complementario Box Model - extra */
+
+nav ul ul {
+    display: none;
+}
+
+.navigation ul li:hover>ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation ul li ul li {
+    margin-top: 10px;
+}
+
+
+/* End   [2021-03-03] - Se agregan estilos para el submenu pedido en el desafio complementario Box Model - extra */
+
+
+/* Start [2021-03-05] - Experience */
+
+#experience h2,
+h3 {
+    text-align: center;
+}
+
+
+/* End   [2021-03-05] - Experience */
+
+
+/* Start [2021-03-05] - work */
+
+#work h2,
+h3 {
+    text-align: center;
+}
+
+
+/* End   [2021-03-05] - work */
+
+
+/* Start [2021-03-05] - Contact */
+
+#contact h2,
+h3 {
+    text-align: center;
+}
+
+
+/* End   [2021-03-05] - Contact */
+
+
+/* Start [2021-03-10] - Responsive 1024px */
+
+@media only screen and (min-width: 1024px) {}
+
+
+/* End   [2021-03-10] - Responsive 1024px*/
+
+
+/* Start [2021-03-10] - Responsive 768px */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .responsive-logo {
+        padding-left: 1rem;
+    }
+    .header span i {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        background: #ddd;
+        border-radius: 5px;
+        margin-right: 1rem;
+    }
+    .navigation {
+        width: 100%;
+        margin-top: 2rem;
+        background: rgba(0, 0, 0, 0.4)
+    }
+    .navigation ul {
         display: none;
-        }*/
-        
-        .header div nav a {
-            font-size: 1.1rem;
-            color: #fff;
-            text-decoration: none;
-            font-family: 'Raleway', sans-serif;
-        }
-        
-        .logo-nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        
-        .navigation ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        
-        .navigation ul li {
-            display: inline-block;
-        }
-        
-        .navigation ul li a {
-            padding: 0.5rem 1rem;
-            transition: all 0.4s linear;
-            padding: 10px;
-        }
-        
-        .navigation ul li a:hover {
-            opacity: 0.75;
-        }
-        
-        .logo-main {
-            font-size: 15px;
-            text-decoration: none;
-            font-weight: normal;
-            -webkit-text-stroke: 1px var(--specialGreen);
-            -webkit-text-fill-color: transparent;
-            animation: glow-title 2s ease-in-out infinite alternate;
-            font-family: 'Raleway', sans-serif;
-        }
-        
-        .responsive-logo {
-            display: none;
-        }
-        /*End Header*/
-        /*Presentation Section*/
-        
-        .itemGreen {
-            font-family: 'Raleway', sans-serif;
-            color: var(--specialGreen);
-        }
-        
-        .name {
-            font-size: 1.5rem;
-            padding: 10px;
-        }
-        
-        .paragraph {
-            color: var(--h2color);
-            line-height: 1.2;
-            font-family: sans-serif;
-            padding: 1rem 0rem;
-            font-size: 1.2rem;
-            width: 100%;
-            padding: 10px;
-        }
-        /* Start M icon */
-        
-        .honeycomb-cell {
-            margin-top: -10px;
-            height: 10px;
-            position: relative;
-            padding: .7em;
-            text-align: center;
-            z-index: 1;
-            box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
-        }
-        
-        .honeycomb-cell::before,
-        .honeycomb-cell::after {
-            content: '';
-        }
-        
-        .honeycomb-cell::before,
-        .honeycomb-cell::after {
-            top: -10%;
-            left: 0%;
-            width: 100%;
-            height: 200%;
-            display: block;
-            position: absolute;
-            -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-            z-index: -1;
-        }
-        
-        .honeycomb-cell::before {
-            background: #fff;
-            background: var(--specialGreen);
-            transform: scale(1.1);
-        }
-        
-        .honeycomb-cell::after {
-            background: var(--fondo-oscuro);
-            transition: opacity 350ms;
-            -webkit-transition: opacity 350ms;
-        }
-        /* End M icon */
-        /* Start - characteristics of the sections in general*/
-        
-        section {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 3rem 12rem;
-            justify-content: center;
-            flex: 1;
-        }
-        
-        .Presentation {
-            padding: 8rem;
-            display: flex;
-            justify-content: center;
-        }
-        /* Start - characteristics of the sections in general*/
-        /* Start about me */
-        
-        #about h2 {
-            text-align: center;
-        }
-        
-        #aboutMePartOne {
-            display: flex;
-            padding: 2rem;
-        }
-        
-        #aboutMeDescription {
-            width: 50%;
-            border-radius: 5px;
-        }
-        
-        #skills {
-            width: 20%;
-            border-radius: 5px;
-        }
-        
-        .galery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
-            grid-auto-rows: 280px;
-            /*grid-column-gap: 20px;
-            grid-row-gap: 20px;*/
-            grid-gap: 75px;
-            padding: 10px;
-        }
-        
-        .itemGalery {
-            border-radius: 5px;
-            background-color: var(--specialGreen);
-            animation: anim-shadow-reg .3s forwards;
-            -webkit-transition-property: box-shadow, transform;
-            transition-property: box-shadow, transform;
-        }
-        
-        .itemGalery img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.6;
-            transition: all 0.2s ease;
-            border-radius: 5px;
-        }
-        /* idea 1 de parrafo
-        .itemGalery p {
-            position: absolute;
-            background-color: #000;
-            width: 100px;
-            height: 25px;
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
-            margin-top: 250px;
-            color: #fff;
-            z-index: 10;
-            padding: 3px;
-        }*/
-        
-        .itemGalery p {
-            margin-top: 10px;
-            animation: glow-title 2s ease-in-out infinite alternate;
-            font-family: 'Raleway', sans-serif;
-            color: #fff
-        }
-        
-        .itemGalery img:hover {
-            opacity: 1;
-            animation: hard-anim-shadow-reg .3s forwards;
-            -webkit-transition-property: box-shadow, transform;
-            transition-property: box-shadow, transform;
-            transform: scale(1.02)
-        }
-        /* End about me */
-        /* Start list styles */
-        
-        .listItem {
-            color: #cdcdcd;
-            list-style: none;
-            border-radius: 5px;
-            margin: 12px;
-            text-align: left;
-        }
-        
-        .listItem i {
-            color: var(--specialGreen);
-        }
-        
-        #aboutMeDescription div:nth-child(2) {
-            width: 50%;
-        }
-        
-        #aboutMeDescription div:last-child {
-            width: 50%;
-        }
-        
-        #aboutMeDescription div {
-            padding: 10px;
-        }
-        
-        #aboutMeDescription p {
-            text-align: justify;
-            text-justify: inter-word;
-        }
-        /* End list styles */
-        
-        .imgProfile {
-            width: 200px;
-            height: 300px;
-            align-self: center;
-        }
-        
-        #imgContainer {
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-        }
-        /*Start proyects img*/
-        
-        .ProyectsImgs {
-            max-width: 750px;
-            max-height: 500px;
-            flex: 1;
-        }
-        /*End proyects img*/
-        /*start Button*/
-        
-        .button {
-            padding: 20px;
-            margin: 10px;
-            border: solid 1px var(--specialGreen);
-            border-radius: 5px;
-            background-color: transparent;
-            color: var(--specialGreen) !important;
-            transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-            margin-top: 3rem;
-        }
-        
-        .button:hover {
-            background-color: rgba(100, 255, 218, 0.1);
-        }
-        /*End Button*/
-        /*Start Footer*/
-        
-        footer {
-            text-align: center;
-            padding: 40px;
-        }
-        /*End Footer*/
-        /* Start [2021-03-03] - Se agregan estilos para el submenu pedido en el desafio complementario Box Model - extra */
-        
-        nav ul ul {
-            display: none;
-        }
-        
-        .navigation ul li:hover>ul {
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .navigation ul li ul li {
-            margin-top: 10px;
-        }
-        /* End   [2021-03-03] - Se agregan estilos para el submenu pedido en el desafio complementario Box Model - extra */
-        /* Start [2021-03-05] - Experience */
-        
-        #experience h2,
-        h3 {
-            text-align: center;
-        }
-        /* End   [2021-03-05] - Experience */
-        /* Start [2021-03-05] - work */
-        
-        #work h2,
-        h3 {
-            text-align: center;
-        }
-        /* End   [2021-03-05] - work */
-        /* Start [2021-03-05] - Contact */
-        
-        #contact h2,
-        h3 {
-            text-align: center;
-        }
-        /* End   [2021-03-05] - Contact */
+    }
+    .navigation ul.show {
+        display: block;
+    }
+    .navigation ul li {
+        display: block;
+        text-align: center;
+    }
+    .navigation ul li a {
+        display: inline-block;
+        padding: 0.5rem 0rem;
+        transition: all 0.4s linear;
+        padding: 20px;
+        margin-bottom: 2rem;
+    }
+    .navigation ul li a:hover {
+        opacity: 0.75;
+    }
+    .honeycomb-cell {
+        margin-top: -1.1rem;
+        margin-left: 1.5rem;
+    }
+    .button {
+        padding: 20px
+    }
+    .Presentation {
+        padding: 3rem;
+    }
+}
+
+
+/* End   [2021-03-10] - Responsive 768px */
+
+
+/* Start [2021-03-10] - Responsive 480px */
+
+@media only screen and (max-width: 480px) {
+    .button {
+        padding: 10px;
+    }
+    .Presentation {
+        padding: 1rem;
+    }
+}
+
+
+/* End   [2021-03-10] - Responsive 480px */
