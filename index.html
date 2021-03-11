@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Proyecto web Coder House</title>
 </head>
 
@@ -36,8 +37,7 @@
             <div class="honeycomb-cell">
                 <a href="index.html" class="logo-main">M</a>
             </div>
-            <a href="index.html" class="logo logo-main responsive-logo" style="display: none;">M</a>
-            <span style="display: none;"><i class="menu-icon fas fa-bars mresp"></i></span>
+            <span><i class="menu-icon fas fa-bars btn-resp"></i></span>
             <nav class="navigation">
                 <ul class="links">
                     <li>
@@ -204,6 +204,12 @@
     <!--typed js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- functional scripts -->
+    <script>
+        $('.menu-icon').click(function() {
+            $('.navigation ul').toggleClass("show");
+        });
+    </script>
 </body>
 
 </html>
