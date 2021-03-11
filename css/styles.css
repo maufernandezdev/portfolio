@@ -1,3 +1,5 @@
+/* Start [2021-03-10] - Mobile version */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,11 +10,20 @@ body {
     background-color: var(--fondo-oscuro);
 }
 
+
+/* Start [2021-03-10] - ROOT */
+
 :root {
     --fondo-oscuro: #142032;
     --h2color: #8892b0;
     --specialGreen: #64ffda;
 }
+
+
+/* End   [2021-03-10] - ROOT */
+
+
+/* Start [2021-03-10] - Titles styles  */
 
 h1,
 h2 {
@@ -58,7 +69,10 @@ p {
 }
 
 
-/* ANIMACIONES */
+/* End   [2021-03-10] - Titles styles  */
+
+
+/* Start [2021-03-10] - Animations */
 
 @keyframes glow-title {
     from {
@@ -82,17 +96,17 @@ p {
 }
 
 
+/* End   [2021-03-10] - Animations */
+
+
 /* Start Header */
 
 .container {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .header {
-    position: relative;
-    background: transparent;
-    padding: 2rem 0rem;
+    padding: 2.5rem 0rem;
     left: 0;
     top: 0;
     right: 0;
@@ -100,7 +114,12 @@ p {
 }
 
 .header span i {
-    display: none;
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background: #ddd;
+    border-radius: 5px;
+    margin-right: 1rem;
 }
 
 .header div nav a {
@@ -117,24 +136,35 @@ p {
     flex-wrap: wrap;
 }
 
+.navigation {
+    width: 100%;
+    margin-top: 1.5rem;
+    background: rgba(0, 0, 0, 0.4)
+}
+
 .navigation ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    display: none;
+}
+
+.navigation ul.show {
+    display: block;
 }
 
 .navigation ul li {
-    display: inline-block;
-}
-
-.navigation ul li a {
-    padding: 0.5rem 1rem;
-    transition: all 0.4s linear;
-    padding: 10px;
+    display: block;
+    text-align: center;
 }
 
 .navigation ul li a:hover {
     opacity: 0.75;
+}
+
+.navigation ul li a {
+    display: inline-block;
+    padding: 0.5rem 0rem;
+    transition: all 0.4s linear;
+    padding: 20px;
+    margin-bottom: 2rem;
 }
 
 .logo-main {
@@ -145,10 +175,6 @@ p {
     -webkit-text-fill-color: transparent;
     animation: glow-title 2s ease-in-out infinite alternate;
     font-family: 'Raleway', sans-serif;
-}
-
-.responsive-logo {
-    display: none;
 }
 
 
@@ -163,8 +189,8 @@ p {
 }
 
 .name {
-    font-size: 2rem;
-    padding: 10px;
+    font-size: 1.5rem;
+    padding: 5px;
 }
 
 .paragraph {
@@ -188,6 +214,8 @@ p {
     text-align: center;
     z-index: 1;
     box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
+    margin-top: -1.1rem;
+    margin-left: 1.5rem;
 }
 
 .honeycomb-cell::before,
@@ -235,9 +263,13 @@ section {
 }
 
 .Presentation {
-    padding: 8rem;
+    padding: 0.5rem 2.6rem;
     display: flex;
     justify-content: center;
+}
+
+.paragraph br {
+    display: none;
 }
 
 
@@ -265,6 +297,9 @@ section {
     border-radius: 5px;
 }
 
+
+/* Start [2021-03-10] - Grid galery */
+
 .galery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
@@ -291,6 +326,9 @@ section {
     transition: all 0.2s ease;
     border-radius: 5px;
 }
+
+
+/* End   [2021-03-10] - Grid galery */
 
 
 /* idea 1 de parrafo
@@ -390,7 +428,7 @@ section {
 /*start Button*/
 
 .button {
-    padding: 20px;
+    padding: 15px;
     border: solid 1px var(--specialGreen);
     border-radius: 5px;
     background-color: transparent;
@@ -416,26 +454,6 @@ footer {
 
 
 /*End Footer*/
-
-
-/* Start [2021-03-03] - Se agregan estilos para el submenu pedido en el desafio complementario Box Model - extra */
-
-nav ul ul {
-    display: none;
-}
-
-.navigation ul li:hover>ul {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-}
-
-.navigation ul li ul li {
-    margin-top: 10px;
-}
-
-
-/* End   [2021-03-03] - Se agregan estilos para el submenu pedido en el desafio complementario Box Model - extra */
 
 
 /* Start [2021-03-05] - Experience */
@@ -471,65 +489,17 @@ h3 {
 /* End   [2021-03-05] - Contact */
 
 
-/* Start [2021-03-10] - Responsive 1024px */
-
-@media only screen and (min-width: 1024px) {}
+/* End   [2021-03-10] - Mobile version */
 
 
-/* End   [2021-03-10] - Responsive 1024px*/
+/* Start [2021-03-10] - Responsive 768px - TABLET */
 
-
-/* Start [2021-03-10] - Responsive 768px */
-
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 100%;
-    }
-    .responsive-logo {
-        padding-left: 1rem;
-    }
-    .header span i {
-        display: block;
-        cursor: pointer;
-        padding: 0.5rem 1rem;
-        background: #ddd;
-        border-radius: 5px;
-        margin-right: 1rem;
-    }
-    .navigation {
-        width: 100%;
-        margin-top: 2rem;
-        background: rgba(0, 0, 0, 0.4)
-    }
-    .navigation ul {
-        display: none;
-    }
-    .navigation ul.show {
-        display: block;
-    }
-    .navigation ul li {
-        display: block;
-        text-align: center;
-    }
-    .navigation ul li a {
-        display: inline-block;
-        padding: 0.5rem 0rem;
-        transition: all 0.4s linear;
-        padding: 20px;
-        margin-bottom: 2rem;
-    }
-    .navigation ul li a:hover {
-        opacity: 0.75;
-    }
-    .honeycomb-cell {
-        margin-top: -1.1rem;
-        margin-left: 1.5rem;
-    }
+@media only screen and (min-width: 768px) {
     .button {
-        padding: 20px
+        padding: 20px;
     }
-    .Presentation {
-        padding: 3rem;
+    .paragraph br {
+        display: block;
     }
 }
 
@@ -537,16 +507,59 @@ h3 {
 /* End   [2021-03-10] - Responsive 768px */
 
 
-/* Start [2021-03-10] - Responsive 480px */
+/* Start [2021-03-10] - Responsive 1024px - DESKTOP */
 
-@media only screen and (max-width: 480px) {
-    .button {
+@media only screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+        margin: 0px auto;
+        width: 90%;
+    }
+    .responsive-logo {
+        display: none;
+    }
+    .header {
+        padding: 0;
+    }
+    .navigation {
+        width: 90%;
+        margin-top: 0rem;
+        text-align: right;
+        background-color: transparent;
+    }
+    .header span i {
+        display: none;
+    }
+    .navigation ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .navigation ul li {
+        display: inline-block;
+    }
+    .navigation ul li a {
+        padding: 0.5rem 1rem;
+        transition: all 0.4s linear;
         padding: 10px;
     }
+    .honeycomb-cell {
+        margin-top: -10px;
+    }
+    .button {
+        padding: 20px;
+    }
     .Presentation {
-        padding: 1rem;
+        padding: 8rem;
+    }
+    .paragraph {
+        font-size: 1.4rem;
+    }
+    .bigHeading {
+        font-size: clamp(40px, 8vw, 80px);
     }
 }
 
 
-/* End   [2021-03-10] - Responsive 480px */
+/* End   [2021-03-10] - Responsive 1024px - DESKTOP */
