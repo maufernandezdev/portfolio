@@ -25,19 +25,42 @@ $(document).ready(function() {
 
     // Start Gsap //
     TweenMax.to(".loading-screen", 4, {
-        delay: 3,
+        delay: 2,
         top: "-110%",
         ease: Expo.easeInOut
 
     });
-    TweenMax.from(".navigation", 3, {
-        delay: 4,
+
+    TweenMax.from(".one", 3, {
+        delay: 2.2,
         opacity: 0,
         y: 20,
         ease: Expo.easeInOut
     });
-
-
+    TweenMax.from(".two", 3, {
+        delay: 2.4,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+    });
+    TweenMax.from(".three", 3, {
+        delay: 2.6,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+    });
+    TweenMax.from(".four", 3, {
+        delay: 2.8,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+    });
+    TweenMax.from(".btnHeader", 3, {
+        delay: 3,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+    });
 
 
     // End Gsap //
