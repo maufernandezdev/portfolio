@@ -8,6 +8,7 @@
 
 body {
     background-color: var(--fondo-oscuro);
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
 
@@ -139,7 +140,7 @@ p {
 .navigation {
     width: 100%;
     margin-top: 1.5rem;
-    background: rgba(0, 0, 0, 0.4)
+    /*background: rgba(0, 0, 0, 0.4)*/
 }
 
 .navigation ul {
@@ -539,6 +540,9 @@ h3 {
     .navigation ul li {
         display: inline-block;
     }
+    .navigation ul.show {
+        display: none;
+    }
     .navigation ul li a {
         padding: 0.5rem 1rem;
         transition: all 0.4s linear;
@@ -563,3 +567,11 @@ h3 {
 
 
 /* End   [2021-03-10] - Responsive 1024px - DESKTOP */
+
+.loading-screen {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #0a0a0a;
+    z-index: 2;
+}
