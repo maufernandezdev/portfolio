@@ -1,5 +1,6 @@
 $(document).ready(function() {
     console.log("ready!");
+    // Start typed //
     const typed = new Typed('.typed', {
 
         strings: [
@@ -20,5 +21,25 @@ $(document).ready(function() {
         contentType: 'html',
 
     });
+    // End Typed //
+
+    // Start Gsap //
+    TweenMax.to(".loading-screen", 4, {
+        delay: 3,
+        top: "-110%",
+        ease: Expo.easeInOut
+
+    });
+    TweenMax.from(".navigation", 3, {
+        delay: 4,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+    });
+
+
+
+
+    // End Gsap //
 
 });
