@@ -63,6 +63,10 @@ p {
     text-align: center;
 }
 
+textarea {
+    resize: none;
+}
+
 .bigHeading {
     font-size: clamp(40px, 8vw, 80px);
     text-align: center;
@@ -443,6 +447,21 @@ section {
 
 
 /*End Button*/
+
+
+/* Start [2021-03-16] - form */
+
+.formLabel {
+    color: var(--h2color);
+}
+
+.pad-btn {
+    padding-left: 31px;
+    padding-right: 31px;
+}
+
+
+/* End   [2021-03-16] - form */
 
 
 /*Start Footer*/
