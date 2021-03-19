@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- CSS Styles -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -75,7 +75,37 @@
         <p class="paragraph">
             I'm a software developer based in Buenos Aires,<br> specializing in building and designing <span class="typed"></span></h2>
         </p>
-        <a class="button" href="#contact">Get in touch</a>
+        <a class="button" href="#contact" data-toggle="modal" data-target="#exampleModal" data-whatever="">Get in touch</a>
+        <!--Form modal bootstrap-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+                  </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="recipient-name" placeholder="First name">
+                            </div>
+                            <div class="form-group mt-2">
+                                <input type="email" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" placeholder="Email" required>
+                            </div>
+                            <div class="form-group mt-2">
+                                <textarea class="form-control" id="message-text" placeholder="Message" rows="5"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn button mod" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn button mod" data-dismiss="modal">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
     <!-- About -->
     <!-- In each section an id is added to reference the links in the header -->
@@ -165,7 +195,7 @@
         <h2> <span>04.</span> What’s Next? </h2>
         <h3>Get In Touch</h3>
         <p class="paragraph">My inbox is always open. <br> Whether you have a question or just want to say hi,<br> I'll try my best to get back to you!</p>
-        <div class="d-flex justify-content-center w-50">
+        <div class="d-flex justify-content-center w-75">
             <form action="" class="row g-3 d-flex justify-content-center w-50">
                 <div class="col-md-4 w-100">
                     <input type="text" class="form-control" id="validationServer01" placeholder="First name" required>
@@ -177,7 +207,7 @@
                     <input type="email" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" placeholder="Email" required>
                 </div>
                 <div d-flex flex-row bd-highlight mb-3>
-                    <select name="cars" id="cars" class="btn btn-secondary w-100 p-2 bd-highlight">
+                    <select name="selectForm" id="SelectForm" class="btn btn-secondary w-100 p-2 bd-highlight">
                         <option selected >Issue</option>
                         <option value="hi">Say hi</option>
                         <option value="Interview">Interview</option>
@@ -194,31 +224,46 @@
                     </div>
                 </div>
                 <div>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="4"></textarea>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <input class="btn btn-secondary m-1 pad-btn" type="submit" value="Send">
-                    <input class="btn btn-secondary m-1" type="reset" value="Clear form">
+                    <input class=" btn button button-form m-1 w-30" type="submit" value="Send">
+                    <input class="btn button button-form m-1 w-30" type="reset" value="Clear form">
                 </div>
             </form>
         </div>
     </section>
     <!-- Footer -->
     <footer>
-        <p class="paragraph">Designed & Built by Mauricio Fernandez</p>
+        <p class="paragraph ">Designed & Built by Mauricio Fernandez</p>
     </footer>
-    <!-- Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- jQuery , Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
     <!-- Scripts -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js "></script>
     <!--typed js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11 "></script>
     <!-- functional scripts -->
     <script>
+        /* Start [MRF 2021-03-18] responsive header button */
         $('.menu-icon').click(function() {
-            $('.navigation ul').toggleClass("show");
+            $('.navigation ul').toggleClass("show ");
         });
+        /* End   [MRF 2021-03-18] responsive header button */
+
+        /* Start [MRF 2021-03-18] Modal bootstrap */
+        $('#exampleModal').on('show.bs.modal', function(event) {
+            var button = $(event.relatedTarget) // Button that triggered the modal
+            var recipient = button.data('whatever') // Extract info from data-* attributes
+                // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+                // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this)
+            modal.find('.modal-title').text('Contact Form ' + recipient)
+            modal.find('.modal-body input').val(recipient)
+        });
+        /* End   [MRF 2021-03-18] Modal bootstrap */
     </script>
 </body>
 
