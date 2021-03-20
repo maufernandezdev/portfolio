@@ -31,6 +31,7 @@ h2 {
     width: 100%;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
+    text-align: center;
 }
 
 h1 {
@@ -173,7 +174,7 @@ textarea {
 }
 
 .logo-main {
-    font-size: 15px;
+    font-size: 17px;
     text-decoration: none;
     font-weight: normal;
     -webkit-text-stroke: 1px var(--specialGreen);
@@ -200,19 +201,17 @@ textarea {
 
 .paragraph {
     color: var(--h2color);
-    line-height: 1.2;
     font-family: sans-serif;
     padding: 1rem 0rem;
     font-size: 1.2rem;
-    width: 100%;
     padding: 10px;
+    width: 100%;
 }
 
 
 /* Start M icon */
 
 .honeycomb-cell {
-    margin-top: -10px;
     height: 10px;
     position: relative;
     padding: .7em;
@@ -233,7 +232,7 @@ textarea {
     top: -10%;
     left: 0%;
     width: 100%;
-    height: 200%;
+    height: 220%;
     display: block;
     position: absolute;
     -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
@@ -262,14 +261,15 @@ textarea {
 section {
     display: flex;
     flex-wrap: wrap;
-    padding: 3rem 12rem;
+    padding: 3rem 2rem;
+    width: 100%;
     justify-content: center;
-    flex: 1;
 }
 
 .Presentation {
     padding: 0.5rem 2.6rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -283,23 +283,29 @@ section {
 
 /* Start about me */
 
-#about h2 {
-    text-align: center;
-}
-
 #aboutMePartOne {
     display: flex;
-    padding: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #aboutMeDescription {
-    width: 50%;
     border-radius: 5px;
 }
 
 #skills {
-    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
     border-radius: 5px;
+}
+
+#skills div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: -4.9rem;
 }
 
 
@@ -307,12 +313,12 @@ section {
 
 .galery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-auto-rows: 280px;
     /*grid-column-gap: 20px;
     grid-row-gap: 20px;*/
-    grid-gap: 75px;
-    padding: 10px;
+    grid-gap: 70px;
+    padding: 3.5rem;
 }
 
 .itemGalery {
@@ -403,27 +409,12 @@ section {
 
 /* End list styles */
 
-.imgProfile {
-    width: 200px;
-    height: 300px;
-    align-self: center;
-}
-
-#imgContainer {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
 
 /*Start proyects img*/
 
 .ProyectsImgs {
     max-width: 750px;
     max-height: 500px;
-    flex: 1;
 }
 
 
@@ -679,9 +670,24 @@ h3 {
 
 /* Start [2021-03-05] - work */
 
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#work div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
 #work h2,
 h3 {
     text-align: center;
+    width: 100%;
 }
 
 
@@ -700,6 +706,13 @@ h3 {
 
 
 /* End   [2021-03-10] - Mobile version */
+
+@media only screen and (max-width: 768px) {
+    .mod {
+        width: 45%;
+        padding: 5px;
+    }
+}
 
 
 /* Start [2021-03-10] - Responsive 768px - TABLET */
@@ -729,11 +742,11 @@ h3 {
         display: none;
     }
     .header {
-        padding: 0;
+        padding: 0.5rem;
     }
     .navigation {
         width: 90%;
-        margin-top: 0rem;
+        margin-top: -2.2rem;
         text-align: right;
         background-color: transparent;
     }
@@ -743,7 +756,6 @@ h3 {
     .navigation ul {
         display: block;
         margin: 0;
-        padding: 0;
         list-style: none;
     }
     .navigation ul li {
@@ -755,22 +767,21 @@ h3 {
     .navigation ul li a {
         padding: 0.5rem 1rem;
         transition: all 0.4s linear;
-        padding: 10px;
-    }
-    .honeycomb-cell {
-        margin-top: -10px;
     }
     .button {
         padding: 20px;
     }
+    .honeycomb-cell {
+        margin-top: -2.2rem;
+    }
     .Presentation {
-        padding: 8rem;
+        padding: 1rem;
     }
     .paragraph {
         font-size: 1.4rem;
     }
     .bigHeading {
-        font-size: clamp(40px, 8vw, 80px);
+        font-size: clamp(40px, 8vw, 70px);
     }
 }
 
