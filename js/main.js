@@ -31,31 +31,31 @@ $(document).ready(function() {
 
     });
 
-    TweenMax.from(".one", 3, {
+    TweenMax.from(".links__1", 3, {
         delay: 2.2,
         opacity: 0,
         y: 20,
         ease: Expo.easeInOut
     });
-    TweenMax.from(".two", 3, {
+    TweenMax.from(".links__2", 3, {
         delay: 2.4,
         opacity: 0,
         y: 20,
         ease: Expo.easeInOut
     });
-    TweenMax.from(".three", 3, {
+    TweenMax.from(".links__3", 3, {
         delay: 2.6,
         opacity: 0,
         y: 20,
         ease: Expo.easeInOut
     });
-    TweenMax.from(".four", 3, {
+    TweenMax.from(".links__4", 3, {
         delay: 2.8,
         opacity: 0,
         y: 20,
         ease: Expo.easeInOut
     });
-    TweenMax.from(".btnHeader", 3, {
+    TweenMax.from(".links__resume", 3, {
         delay: 3,
         opacity: 0,
         y: 20,

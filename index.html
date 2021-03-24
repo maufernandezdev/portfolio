@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- jQuery, fontawsome, gsap-->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
@@ -22,7 +23,8 @@
 </head>
 
 <body>
-    <div class="loading-screen"></div>
+    <div class="loading-screen">
+    </div>
     <!-- Cuando le demos estilos css los voy a posicionar a un costado de la pantalla
          para que siempre esten visibles
     <div id="social-media">
@@ -38,27 +40,27 @@
     -->
     <!-- header options -->
     <header class="header">
-        <div class="container logo-nav-container">
-            <div class="honeycomb-cell">
+        <div class="container">
+            <div class="container__logo">
                 <a href="index.html" class="logo-main">M</a>
             </div>
-            <span><i class="menu-icon fas fa-bars btn-resp"></i></span>
+            <span><i class="menu-icon fas fa-bars"></i></span>
             <nav class="navigation">
                 <ul class="links">
                     <li>
-                        <a href="#about" class="one"> <span class="itemGreen">01.</span> About</a>
+                        <a href="#about" class="links__1"> <span class="navigation__span">01.</span> About</a>
                     </li>
                     <li>
-                        <a href="#experience" class=two> <span class="itemGreen">02.</span> Experience</a>
+                        <a href="#experience" class="links__2"> <span class="navigation__span">02.</span> Experience</a>
                     </li>
                     <li>
-                        <a href="#work" class="three"> <span class="itemGreen">03.</span> Work</a>
+                        <a href="#work" class="links__3"> <span class="navigation__span">03.</span> Work</a>
                     </li>
                     <li>
-                        <a href="#contact" class="four"> <span class="itemGreen">04.</span> Contact</a>
+                        <a href="#contact" class="links__4"> <span class="navigation__span">04.</span> Contact</a>
                     </li>
                     <li>
-                        <a class="button btnHeader" href="https://drive.google.com/file/d/1zccIBzbvM3QBrDx8HqeXbmHt9cOd4nAh/view" target="_blank">Resume</a>
+                        <a class="button links__resume" href="https://drive.google.com/file/d/1zccIBzbvM3QBrDx8HqeXbmHt9cOd4nAh/view" target="_blank">Resume</a>
                     </li>
                 </ul>
             </nav>
@@ -66,22 +68,22 @@
         </div>
     </header>
     <!-- Presentation -->
-    <section class="Presentation">
-        <span class="itemGreen name">Hi, my name is</span>
-        <h1 class="bigHeading"> Mauricio Fernandez.</h1>
-        <h2 class="bigHeading">
+    <section class="presentation">
+        <span class="presentation__hi">Hi, my name is</span>
+        <h1 class="big__heading"> Mauricio Fernandez.</h1>
+        <h2 class="big__heading">
             I build solutions for the web
         </h2>
         <p class="paragraph">
             I'm a software developer based in Buenos Aires,<br> specializing in building and designing <span class="typed"></span></h2>
         </p>
-        <a class="button" href="#contact" data-toggle="modal" data-target="#exampleModal" data-whatever="">Get in touch</a>
+        <a class="button" href="#contact" data-toggle="modal" data-target="#modalGetInTouch" data-whatever="">Get in touch</a>
         <!--Form modal bootstrap-->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="modalGetInTouch" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <h5 class="modal-title" id="modalLabel"></h5>
                         <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
                   </button>
                     </div>
@@ -99,8 +101,8 @@
                         </form>
                     </div>
                     <div class="modal-footer d-flex flex-wrap">
-                        <button type="button" class="btn button mod" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn button mod" data-dismiss="modal">Send message</button>
+                        <button type="button" class="btn button--mod" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn button--mod" data-dismiss="modal">Send message</button>
                     </div>
                 </div>
             </div>
@@ -111,27 +113,27 @@
     <!-- In each section an id is added to reference the links in the header -->
     <section id="about">
         <h2> <span>01.</span> About me </h2>
-        <section id="aboutMePartOne">
+        <section class="about__first-section">
 
-            <div id="aboutMeDescription">
+            <div class="about__description">
                 <p class="paragraph">Hello! I'm Mauricio, a software developer based in Buenos Aires, Argentina.I enjoy creating things that live on the internet, be it websites, apps, or anything else. <br><br> My goal is always to create products that provide seamless performance
                     experiences along with engaging user interfaces.<br> Shortly after graduating from National Technological University(U.T.N),I joined the developers team at Request S.A where I work on a wide variety of interesting and meaningful projects
                     on a daily basis. <br><br> Here are a few technologies I've been working with recently:
                 </p>
             </div>
-            <div id="skills">
+            <div class="skills">
                 <div>
                     <ul>
-                        <li class="listItem"><i class="fas fa-check"></i> JavaScript(ES5)</li>
-                        <li class="listItem"><i class="fas fa-check"></i> HTML & (S)CSS</li>
-                        <li class="listItem"><i class="fas fa-check"></i> C++</li>
-                        <li class="listItem"><i class="fas fa-check"></i> Microsoft SQL Server</li>
+                        <li class="skills__list-item"><i class="fas fa-check"></i> JavaScript(ES5)</li>
+                        <li class="skills__list-item"><i class="fas fa-check"></i> HTML & (S)CSS</li>
+                        <li class="skills__list-item"><i class="fas fa-check"></i> Java</li>
+                        <li class="skills__list-item"><i class="fas fa-check"></i> C++</li>
                     </ul>
                     <ul>
-                        <li class="listItem"><i class="fas fa-check"></i> Java</li>
-                        <li class="listItem"><i class="fas fa-check"></i> C#</li>
-                        <li class="listItem"><i class="fas fa-check"></i> .NET</li>
-                        <li class="listItem"><i class="fas fa-check"></i> MySQL</li>
+                        <li class="skills__list-item"><i class="fas fa-check"></i> Microsoft SQL Server</li>
+                        <li class="skills__list-item"><i class="fas fa-check"></i> MySQL</li>
+                        <li class="skills__list-item"><i class="fas fa-check"></i> .NET</li>
+                        <li class="skills__list-item"><i class="fas fa-check"></i> C#</li>
                     </ul>
                 </div>
             </div>
@@ -140,23 +142,23 @@
         <h2>More obout me</h2>
         <!-- Se agrega una tabla para el desafio n2-->
         <div class="galery">
-            <div class="itemGalery">
+            <div class="galery__item">
                 <img src="img/friends.jpg">
                 <p>Get together</p>
             </div>
-            <div class="itemGalery"><img src="img/series.jpg">
+            <div class="galery__item"><img src="img/series.jpg">
                 <p>Watch series and movies</p>
             </div>
-            <div class="itemGalery"><img src="img/programming.jpg">
+            <div class="galery__item"><img src="img/programming.jpg">
                 <p>Programming</p>
             </div>
-            <div class="itemGalery"><img src="img/run.jpg">
+            <div class="galery__item"><img src="img/run.jpg">
                 <p>To Run</p>
             </div>
-            <div class="itemGalery"><img src="img/tennis.jpg">
+            <div class="galery__item"><img src="img/tennis.jpg">
                 <p>Teach and play tennis</p>
             </div>
-            <div class="itemGalery"><img src="img/travel.jpg">
+            <div class="galery__item"><img src="img/travel.jpg">
                 <p>To Travel</p>
             </div>
         </div>
@@ -168,9 +170,9 @@
         <h2> <span>02.</span> what am i working on </h2>
         <p class="paragraph">I am currently part of a team of developers (called puma) at Request S.A <br> within which we customize a system called esker for LATAM clients.<br> In my day to day I am in charge of:</p>
         <ul>
-            <li class="listItem"><i class="fas fa-check"></i> Keep applications productive, fix bugs, and implement new functionality.</li>
-            <li class="listItem"><i class="fas fa-check"></i> Comply with deliveries according to the time estimates made.</li>
-            <li class="listItem"><i class="fas fa-check"></i> Work closely with other developers.</li>
+            <li class="experience__list-item"><i class="fas fa-check"></i> Keep applications productive, fix bugs, and implement new functionality.</li>
+            <li class="experience__list-item"><i class="fas fa-check"></i> Comply with deliveries according to the time estimates made.</li>
+            <li class="experience__list-item"><i class="fas fa-check"></i> Work closely with other developers.</li>
         </ul>
 
     </section>
@@ -181,10 +183,10 @@
         <div>
             <h3>Web platform for bank users</h3>
             <p class="paragraph">A web platform so that users of a certain bank can see their account,<br> transfer money to their own or others, request and also pay loans.</p>
-            <img src="img/cuentasusuario.png" class="ProyectsImgs">
+            <img src="img/cuentasusuario.png" class="work__proyect-img">
         </div>
         <div>
-            <img src="img/abm_peliculas.png" class="ProyectsImgs">
+            <img src="img/abm_peliculas.png" class="work__proyect-img">
             <h3>Web app to manage a cinema</h3>
             <p class="paragraph">A web application to manage a cinema. It has the following modules: <br> Sales report, movie CRUD, article CRUD, profile of the logged in administrator.</p>
         </div>
@@ -196,7 +198,7 @@
         <h2> <span>04.</span> What’s Next? </h2>
         <h3>Get In Touch</h3>
         <p class="paragraph">My inbox is always open. <br> Whether you have a question or just want to say hi,<br> I'll try my best to get back to you!</p>
-        <div class="d-flex justify-content-center w-75">
+        <div class="d-flex justify-content-center w-100">
             <form action="" class="row g-3 d-flex justify-content-center w-50">
                 <div class="col-md-4 w-100">
                     <input type="text" class="form-control" id="validationServer01" placeholder="First name" required>
@@ -228,15 +230,15 @@
                     <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="4"></textarea>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <input class=" btn button button-form m-1 w-30" type="submit" value="Send">
-                    <input class="btn button button-form m-1 w-30" type="reset" value="Clear form">
+                    <input class=" btn button--form m-1 w-30" type="submit" value="Send">
+                    <input class="btn button--form m-1 w-30" type="reset" value="Clear form">
                 </div>
             </form>
         </div>
     </section>
     <!-- Footer -->
     <footer>
-        <p class="paragraph ">Designed & Built by Mauricio Fernandez</p>
+        <p class="paragraph">Designed & Built by Mauricio Fernandez</p>
     </footer>
     <!-- jQuery , Popper.js, Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
@@ -255,7 +257,7 @@
         /* End   [MRF 2021-03-18] responsive header button */
 
         /* Start [MRF 2021-03-18] Modal bootstrap */
-        $('#exampleModal').on('show.bs.modal', function(event) {
+        $('#modalGetInTouch').on('show.bs.modal', function(event) {
             var button = $(event.relatedTarget) // Button that triggered the modal
             var recipient = button.data('whatever') // Extract info from data-* attributes
                 // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
