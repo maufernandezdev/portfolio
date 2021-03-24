@@ -1,0 +1,14 @@
+{
+    "name": "sass-init",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "scss": "node-sass -watch scss -o css"
+    },
+    "author": "",
+    "license": "MRF",
+    "dependencies": {
+        "node-sass": "^4.12.0"
+    }
+}
