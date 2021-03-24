@@ -1,0 +1,782 @@
+/* Start [2021-03-10] - Mobile version */
+
+
+/* Start [2021-03-24] imports */
+
+@import "color";
+@import "mixins";
+
+/* End   [2021-03-24] imports */
+
+
+/* Start [2021-03-10] - ROOT */
+
+:root {
+    --body-background-color: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+
+/* End   [2021-03-10] - ROOT */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-background-color);
+    background-color: $dark-blue;
+    overflow-x: hidden;
+}
+
+
+/* Start [2021-03-10] - Titles styles  */
+
+h1,
+h2 {
+    width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+}
+
+h2 {
+    color: $sub-title-color;
+    width: 100%;
+    margin-bottom: 1.3rem;
+}
+
+h3 {
+    color: $aqua;
+}
+
+h1,
+h2,
+h3 {
+    padding: 10px;
+}
+
+a {
+    text-decoration-skip-ink: auto;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+p {
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+}
+
+.big__heading {
+    font-size: clamp(40px, 8vw, 80px);
+    text-align: center;
+}
+
+
+/* End   [2021-03-10] - Titles styles  */
+
+
+/* Start [2021-03-10] - Animations */
+
+@keyframes glow-title {
+    from {
+        text-shadow: 0 0 10px $aqua, 0 0 20px $aqua;
+    }
+    to {
+        text-shadow: 0 0 20px $aqua;
+    }
+}
+
+@keyframes anim-shadow-reg {
+    100% {
+        box-shadow: 0px 0px 1px 1px $aqua;
+    }
+}
+
+@keyframes hard-anim-shadow-reg {
+    100% {
+        box-shadow: 0px 0px 10px 1px $aqua;
+    }
+}
+
+
+/* End   [2021-03-10] - Animations */
+
+
+/* Start Header */
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header {
+    padding: 2.5rem 0rem;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.header span i {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background: #ddd;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.header div nav a {
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navigation ul.show {
+    display: block;
+}
+
+.navigation {
+    width: 100%;
+    margin-top: 1.5rem;
+    ul {
+        display: none;
+        li {
+            display: block;
+            text-align: center;
+            a {
+                display: inline-block;
+                padding: 0.5rem 0rem;
+                transition: all 0.4s linear;
+                padding: 20px;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+// on hover links //
+@for $i from 1 through 4 {
+    .links__#{$i}:hover {
+        color: $aqua;
+        opacity: 0.5;
+    }
+}
+
+.logo-main {
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: normal;
+    -webkit-text-stroke: 1px $aqua;
+    -webkit-text-fill-color: transparent;
+    animation: glow-title 2s ease-in-out infinite alternate;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*End Header*/
+
+
+/*Presentation Section*/
+
+.item__span {
+    font-family: 'Raleway', sans-serif;
+    color: $aqua;
+}
+
+.navigation__span {
+    @extend .item__span;
+}
+
+.presentation__hi {
+    @extend .item__span;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.paragraph {
+    color: $sub-title-color;
+    font-family: sans-serif;
+    padding: 1rem 0rem;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 100%;
+}
+
+
+/* Start M icon */
+
+.container__logo {
+    height: 10px;
+    position: relative;
+    padding: .7em;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
+    margin-top: -1.1rem;
+    margin-left: 1.5rem;
+}
+
+.container__logo::before,
+.container__logo::after {
+    content: '';
+}
+
+.container__logo::before,
+.container__logo::after {
+    top: -10%;
+    left: 0%;
+    width: 100%;
+    height: 220%;
+    display: block;
+    position: absolute;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    z-index: -1;
+}
+
+.container__logo::before {
+    background: #fff;
+    background: $aqua;
+    transform: scale(1.1);
+}
+
+.container__logo::after {
+    background-color: $dark-blue;
+    @debug $dark-blue; // Debug para ver lo que contiene la variable
+    @debug type-of($value: $dark-blue); // Debug para ver que tipo de variable es
+    transition: opacity 350ms;
+    -webkit-transition: opacity 350ms;
+}
+
+
+/* End M icon */
+
+
+/* Start - characteristics of the sections in general*/
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 2rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.presentation {
+    padding: 0.5rem 2.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.paragraph br {
+    display: none;
+}
+
+
+/* Start - characteristics of the sections in general*/
+
+
+/* Start about me */
+
+.about__first-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about__description {
+    border-radius: 5px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    border-radius: 5px;
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+/* Start [2021-03-10] - Grid galery */
+
+.galery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 280px;
+    /*grid-column-gap: 20px;
+    grid-row-gap: 20px;*/
+    grid-gap: 70px;
+    padding: 3.5rem;
+}
+
+.galery__item {
+    border-radius: 5px;
+    background-color: $aqua;
+    animation: anim-shadow-reg .3s forwards;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.galery__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: all 0.2s ease;
+    border-radius: 5px;
+}
+
+
+/* End   [2021-03-10] - Grid galery */
+
+
+/* idea 1 de parrafo
+.galery__item p {
+    position: absolute;
+    background-color: #000;
+    width: 100px;
+    height: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 250px;
+    color: #fff;
+    z-index: 10;
+    padding: 3px;
+}*/
+
+.galery__item p {
+    margin-top: 10px;
+    animation: glow-title 2s ease-in-out infinite alternate;
+    font-family: 'Raleway', sans-serif;
+    color: #fff
+}
+
+.galery__item img:hover {
+    opacity: 1;
+    @include animation-call;
+    transform: scale(1.02)
+}
+
+
+/* End about me */
+
+
+/* Start list styles */
+
+.list__item {
+    color: #cdcdcd;
+    list-style: none;
+    border-radius: 5px;
+    margin: 12px;
+    text-align: left;
+    i {
+        color: $aqua;
+    }
+}
+
+.skills__list-item {
+    @extend .list__item;
+}
+
+.experience__list-item {
+    @extend .list__item;
+}
+
+#aboutMeDescription div:nth-child(2) {
+    width: 50%;
+}
+
+#aboutMeDescription div:last-child {
+    width: 50%;
+}
+
+#aboutMeDescription div {
+    padding: 10px;
+}
+
+#aboutMeDescription p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+/* End list styles */
+
+
+/*Start proyects img*/
+
+.work__proyect-img {
+    max-width: 750px;
+    max-height: 500px;
+}
+
+
+/*End proyects img*/
+
+
+/*start Button*/
+
+.button {
+    @include button;
+}
+
+.btn-close {
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+.button--form {
+    @extend .button;
+    width: 169px;
+    margin-top: 0rem;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+.button--form:active {
+    @include animation-call;
+}
+
+.button--form:focus {
+    @include animation-call;
+}
+
+
+/*End Button*/
+
+
+/* Start [2021-03-18] - Modal Get in touch index */
+
+.modal-header {
+    background-color: #64ffda;
+    border: none
+}
+
+.button--mod {
+    @extend .button;
+    width: 48%;
+    margin: 0px auto 10px auto;
+    margin-top: 0rem;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.mod:active {
+    @include animation-call;
+}
+
+.mod:focus {
+    @include animation-call;
+}
+
+.modal-body,
+.modal-footer,
+.form-control {
+    background-color: $dark-blue;
+    border: none;
+    color: #fff
+}
+
+.form-control {
+    border: 1px solid #64ffda;
+}
+
+.form-control:focus {
+    background-color: $dark-blue;
+    @include animation-call;
+    color: #fff
+}
+
+.form-control:active {
+    background-color: $dark-blue;
+    @include animation-call;
+    color: #fff
+}
+
+
+/* [2021-03-19] - modal confirm */
+
+.modal-confirm {
+    color: #434e65;
+    width: 525px;
+}
+
+.modal-confirm .modal-content {
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.modal-confirm .modal-header {
+    background: #47c9a2;
+    border-bottom: none;
+    position: relative;
+    text-align: center;
+    margin: -20px -20px 0;
+    border-radius: 5px 5px 0 0;
+    padding: 35px;
+}
+
+.modal-confirm h4 {
+    text-align: center;
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.modal-confirm .form-control,
+.modal-confirm .btn {
+    min-height: 40px;
+    border-radius: 3px;
+}
+
+.modal-confirm .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    text-shadow: none;
+    opacity: 0.5;
+}
+
+.modal-confirm .close:hover {
+    opacity: 0.8;
+}
+
+.modal-confirm .icon-box {
+    color: #fff;
+    width: 95px;
+    height: 95px;
+    display: inline-block;
+    border-radius: 50%;
+    z-index: 9;
+    border: 5px solid #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.modal-confirm .icon-box i {
+    font-size: 64px;
+    margin: -4px 0 0 -4px;
+}
+
+.modal-confirm.modal-dialog {
+    margin-top: 80px;
+}
+
+.modal-confirm .btn,
+.modal-confirm .btn:active {
+    color: #fff;
+    border-radius: 4px;
+    background: #eeb711 !important;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    border-radius: 30px;
+    margin-top: 10px;
+    padding: 6px 20px;
+    border: none;
+}
+
+.modal-confirm .btn:hover,
+.modal-confirm .btn:focus {
+    background: #eda645 !important;
+    outline: none;
+}
+
+.modal-confirm .btn span {
+    margin: 1px 3px 0;
+    float: left;
+}
+
+.modal-confirm .btn i {
+    margin-left: 1px;
+    font-size: 20px;
+    float: right;
+}
+
+.trigger-btn {
+    display: inline-block;
+    margin: 100px auto;
+}
+
+
+/* End   [2021-03-18] - Modal Get in touch index */
+
+
+/* Start [2021-03-16] - form */
+
+.formLabel {
+    color: $sub-title-color;
+}
+
+
+/* End   [2021-03-16] - form */
+
+
+/*Start Footer*/
+
+footer {
+    text-align: center;
+    padding: 40px;
+}
+
+
+/*End Footer*/
+
+
+/* Start [2021-03-05] - Experience */
+
+#experience h2,
+h3 {
+    text-align: center;
+}
+
+
+/* End   [2021-03-05] - Experience */
+
+
+/* Start [2021-03-05] - work */
+
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    h2,
+    h3 {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+/* End   [2021-03-05] - work */
+
+
+/* Start [2021-03-05] - Contact */
+
+.contact h2,
+h3 {
+    text-align: center;
+}
+
+
+/* End   [2021-03-05] - Contact */
+
+
+/* End   [2021-03-10] - Mobile version */
+
+@media only screen and (max-width: 768px) {
+    .mod {
+        width: 45%;
+        padding: 5px;
+    }
+}
+
+
+/* Start [2021-03-10] - Responsive 768px - TABLET */
+
+@media only screen and (min-width: 768px) {
+    .paragraph br {
+        display: block;
+    }
+}
+
+
+/* End   [2021-03-10] - Responsive 768px */
+
+
+/* Start [2021-03-10] - Responsive 1024px - DESKTOP */
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+        width: 100%;
+    }
+    .responsive-logo {
+        display: none;
+    }
+    .header {
+        display: flex;
+        width: 100%;
+        padding: 0.5rem 0rem;
+    }
+    .navigation {
+        width: 90%;
+        margin-top: -1.6rem;
+        text-align: right;
+    }
+    .header span i {
+        display: none;
+    }
+    .navigation ul {
+        display: block;
+        margin: 0;
+        list-style: none;
+    }
+    .navigation ul li {
+        display: inline-block;
+    }
+    .navigation ul.show {
+        display: none;
+    }
+    .navigation ul li a {
+        padding: 0.5rem 1rem;
+        transition: all 0.4s linear;
+    }
+    .button {
+        padding: 20px;
+    }
+    .container__logo {
+        margin-top: -2.2rem;
+    }
+    .presentation {
+        padding: 1rem;
+    }
+    .paragraph {
+        font-size: 1.4rem;
+    }
+    .big__heading {
+        font-size: clamp(40px, 8vw, 70px);
+    }
+}
+
+
+/* End   [2021-03-10] - Responsive 1024px - DESKTOP */
+
+.loading-screen {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #0a0a0a;
+    z-index: 2;
+}
