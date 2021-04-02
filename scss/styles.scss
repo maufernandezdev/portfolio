@@ -339,12 +339,103 @@ section {
 }
 
 .presentation {
-    padding: 2rem 2.6rem;
+    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    .presentation__menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        min-width: 5%;
+        font-weight: bold;
+        a {
+            font-size: 1.7rem;
+            cursor: pointer;
+            transition: var(--transition);
+            &:hover {
+                -webkit-text-fill-color: $aqua;
+                animation: glow-title 1.5s ease-in-out infinite alternate;
+            }
+        }
+        .menu__branch-2 {
+            margin-left: 10px;
+            a {
+                color: $pink;
+                &:hover {
+                    -webkit-text-fill-color: $pink;
+                    animation: glow-title-pink 1.5s ease-in-out infinite alternate;
+                }
+            }
+        }
+        .menu__submenu {
+            margin-top: 12px;
+            margin-left: 10px;
+            color: $yellow;
+            font-family: 'Raleway', sans-serif;
+            p {
+                text-align: left;
+                transition: var(--transition);
+                &:hover {
+                    -webkit-text-fill-color: $yellow;
+                    animation: glow-title-yellow 1.5s ease-in-out infinite alternate;
+                    cursor: pointer;
+                    transform: translateX(5px);
+                }
+            }
+        }
+    }
+    .presentation__main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 700px;
+    }
+    .redes-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 10%;
+    }
     footer {
         margin-top: 13rem;
+    }
+}
+
+.menu__2:before {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: -0.75rem;
+    margin-left: 7px;
+    width: 2px;
+    height: 30px;
+    background-color: $aqua;
+}
+
+@for $i from 3 through 5 {
+    .menu__#{$i}:before {
+        content: '';
+        display: block;
+        position: absolute;
+        margin-top: -0.75rem;
+        margin-left: 7px;
+        width: 2px;
+        height: 30px;
+        background-color: $aqua;
+    }
+}
+
+@for $i from 7 through 10 {
+    .menu__#{$i}:before {
+        content: '';
+        display: block;
+        position: absolute;
+        margin-top: -0.75rem;
+        margin-left: 7px;
+        width: 2px;
+        height: 30px;
+        background-color: $pink;
     }
 }
 
