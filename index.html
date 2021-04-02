@@ -41,23 +41,26 @@
     <!-- header options -->
     <header class="header">
         <div class="container">
-            <div class="container__logo">
+            <!--
+                <div class="container__logo">
                 <a href="index.html" class="logo-main">M</a>
             </div>
             <span><i class="menu-icon fas fa-bars"></i></span>
+            -->
+
             <nav class="navigation">
                 <ul class="links">
                     <li>
-                        <a href="#about" class="links__1"> <span class="navigation__span">01.</span> About</a>
+                        <a href="about.html" class="links__1"> <span class="navigation__span">01.</span> About</a>
                     </li>
                     <li>
-                        <a href="#experience" class="links__2"> <span class="navigation__span">02.</span> Experience</a>
+                        <a href="experience.html" class="links__2"> <span class="navigation__span">02.</span> Experience</a>
                     </li>
                     <li>
-                        <a href="#work" class="links__3"> <span class="navigation__span">03.</span> Work</a>
+                        <a href="work.html" class="links__3"> <span class="navigation__span">03.</span> Work</a>
                     </li>
                     <li>
-                        <a href="#contact" class="links__4"> <span class="navigation__span">04.</span> Contact</a>
+                        <a href="contact.html" class="links__4"> <span class="navigation__span">04.</span> Contact</a>
                     </li>
                     <li>
                         <a class="button links__resume" href="https://drive.google.com/file/d/1zccIBzbvM3QBrDx8HqeXbmHt9cOd4nAh/view" target="_blank">Resume</a>
@@ -77,7 +80,7 @@
         <p class="paragraph">
             I'm a software developer based in Buenos Aires,<br> specializing in building and designing <span class="typed"></span></h2>
         </p>
-        <a class="button" href="#contact" data-toggle="modal" data-target="#modalGetInTouch" data-whatever="">Get in touch</a>
+        <a class="button get-in-touch" href="#contact" data-toggle="modal" data-target="#modalGetInTouch" data-whatever="">Get in touch</a>
         <!--Form modal bootstrap-->
         <div class="modal fade" id="modalGetInTouch" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -107,139 +110,11 @@
                 </div>
             </div>
         </div>
-
+        <!-- Footer -->
+        <footer>
+            <p>Designed & Built by Mauricio Fernandez</p>
+        </footer>
     </section>
-    <!-- About -->
-    <!-- In each section an id is added to reference the links in the header -->
-    <section id="about">
-        <h2> <span>01.</span> About me </h2>
-        <section class="about__first-section">
-
-            <div class="about__description">
-                <p class="paragraph">Hello! I'm Mauricio, a software developer based in Buenos Aires, Argentina.I enjoy creating things that live on the internet, be it websites, apps, or anything else. <br><br> My goal is always to create products that provide seamless performance
-                    experiences along with engaging user interfaces.<br> Shortly after graduating from National Technological University(U.T.N),I joined the developers team at Request S.A where I work on a wide variety of interesting and meaningful projects
-                    on a daily basis. <br><br> Here are a few technologies I've been working with recently:
-                </p>
-            </div>
-            <div class="skills">
-                <div>
-                    <ul>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> JavaScript(ES5)</li>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> HTML & (S)CSS</li>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> Java</li>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> C++</li>
-                    </ul>
-                    <ul>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> Microsoft SQL Server</li>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> MySQL</li>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> .NET</li>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> C#</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        </div>
-        <h2>More obout me</h2>
-        <!-- Se agrega una tabla para el desafio n2-->
-        <div class="galery">
-            <div class="galery__item">
-                <img src="img/friends.jpg">
-                <p>Get together</p>
-            </div>
-            <div class="galery__item"><img src="img/series.jpg">
-                <p>Watch series and movies</p>
-            </div>
-            <div class="galery__item"><img src="img/programming.jpg">
-                <p>Programming</p>
-            </div>
-            <div class="galery__item"><img src="img/run.jpg">
-                <p>To Run</p>
-            </div>
-            <div class="galery__item"><img src="img/tennis.jpg">
-                <p>Teach and play tennis</p>
-            </div>
-            <div class="galery__item"><img src="img/travel.jpg">
-                <p>To Travel</p>
-            </div>
-        </div>
-
-    </section>
-    <!-- Experience -->
-    <!-- In each section an id is added to reference the links in the header -->
-    <section id="experience">
-        <h2> <span>02.</span> what am i working on </h2>
-        <p class="paragraph">I am currently part of a team of developers (called puma) at Request S.A <br> within which we customize a system called esker for LATAM clients.<br> In my day to day I am in charge of:</p>
-        <ul>
-            <li class="experience__list-item"><i class="fas fa-check"></i> Keep applications productive, fix bugs, and implement new functionality.</li>
-            <li class="experience__list-item"><i class="fas fa-check"></i> Comply with deliveries according to the time estimates made.</li>
-            <li class="experience__list-item"><i class="fas fa-check"></i> Work closely with other developers.</li>
-        </ul>
-
-    </section>
-    <!-- Work -->
-    <!-- In each section an id is added to reference the links in the header -->
-    <section id="work">
-        <h2> <span>03.</span> Some Things I’ve Built </h2>
-        <div>
-            <h3>Web platform for bank users</h3>
-            <p class="paragraph">A web platform so that users of a certain bank can see their account,<br> transfer money to their own or others, request and also pay loans.</p>
-            <img src="img/cuentasusuario.png" class="work__proyect-img">
-        </div>
-        <div>
-            <img src="img/abm_peliculas.png" class="work__proyect-img">
-            <h3>Web app to manage a cinema</h3>
-            <p class="paragraph">A web application to manage a cinema. It has the following modules: <br> Sales report, movie CRUD, article CRUD, profile of the logged in administrator.</p>
-        </div>
-
-    </section>
-    <!-- Contact -->
-    <!-- In each section an id is added to reference the links in the header -->
-    <section id="contact">
-        <h2> <span>04.</span> What’s Next? </h2>
-        <h3>Get In Touch</h3>
-        <p class="paragraph">My inbox is always open. <br> Whether you have a question or just want to say hi,<br> I'll try my best to get back to you!</p>
-        <div class="d-flex justify-content-center w-100">
-            <form action="" class="row g-3 d-flex justify-content-center w-50">
-                <div class="col-md-4 w-100">
-                    <input type="text" class="form-control" id="validationServer01" placeholder="First name" required>
-                </div>
-                <div class="col-md-4 w-100">
-                    <input type="text" class="form-control" id="validationServer02" placeholder="Surname" required>
-                </div>
-                <div class="col-md-6 w-100">
-                    <input type="email" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" placeholder="Email" required>
-                </div>
-                <div d-flex flex-row bd-highlight mb-3>
-                    <select name="selectForm" id="SelectForm" class="btn btn-secondary w-100 p-2 bd-highlight">
-                        <option selected >Issue</option>
-                        <option value="hi">Say hi</option>
-                        <option value="Interview">Interview</option>
-                        <option value="jobOffer">job offer</option>
-                        <option value="other">Others</option>
-                    </select>
-                </div>
-                <div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label formLabel" for="flexCheckDefault">
-                            Notify me when this site is updated
-                        </label>
-                    </div>
-                </div>
-                <div>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="4"></textarea>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <input class=" btn button--form m-1 w-30" type="submit" value="Send">
-                    <input class="btn button--form m-1 w-30" type="reset" value="Clear form">
-                </div>
-            </form>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer>
-        <p class="paragraph">Designed & Built by Mauricio Fernandez</p>
-    </footer>
     <!-- jQuery , Popper.js, Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>

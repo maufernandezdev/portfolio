@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- jQuery, fontawsome, gsap-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <title>Menu - Proyecto web Coder House</title>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <span><i class="menu-icon fas fa-bars"></i></span>
+        </div>
+        <div>
+            <h2>Adventure menu</h2>
+        </div>
+        <div>
+            <!--
+            <div class="container__logo">
+                <a href="index.html" class="logo-main">M</a>
+            </div>
+            -->
+        </div>
+
+    </header>
+    <div class="menu">
+        <ul class="links">
+            <li class="links__li zero">
+                <span class="navigation__span smenu__0">0-5</span><a href="index.html" class="links__0"> Index</a>
+            </li>
+            <li class="links__li one">
+                <span class="navigation__span smenu__1">1-5</span><a href="about.html" class="links__1"> About</a>
+            </li>
+            <li class="links__li two">
+                <span class="navigation__span smenu__2">2-5</span><a href="experience.html" class="links__2"> Experience</a>
+            </li>
+            <li class="links__li three">
+                <span class="navigation__span smenu__3">3-5</span><a href="work.html" class="links__3"> Work</a>
+            </li>
+            <li class="links__li four">
+                <span class="navigation__span smenu__4">4-5</span><a href="contact.html" class="links__4"> Contact</a>
+            </li>
+            <li class="links__li five">
+                <span class="navigation__span smenu__5">5-5</span><a class="links__5" href="https://drive.google.com/file/d/1zccIBzbvM3QBrDx8HqeXbmHt9cOd4nAh/view" target="_blank"> Resume</a>
+            </li>
+        </ul>
+        <div class="redes-container">
+            <ul>
+                <li>
+                    <a class="github" href="https://github.com/Mauri-Fernandez" target="_blank"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="discord"><i class="fab fa-discord"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="codepen"><i class="fab fa-codepen"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Designed & Built by Mauricio Fernandez</p>
+        </footer>
+    </div>
+    <!-- jQuery , Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <!-- Scripts -->
+    <script src="js/main.js "></script>
+    <!--typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11 "></script>
+    <!-- functional scripts -->
+    <script>
+        /* Start [MRF 2021-03-18] responsive header button */
+        $('.menu-icon').click(function() {
+            $('.navigation ul').toggleClass("show ");
+        });
+        /* End   [MRF 2021-03-18] responsive header button */
+
+        /* Start [MRF 2021-03-18] Modal bootstrap */
+        $('#modalGetInTouch').on('show.bs.modal', function(event) {
+            var button = $(event.relatedTarget) // Button that triggered the modal
+            var recipient = button.data('whatever') // Extract info from data-* attributes
+                // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+                // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this)
+            modal.find('.modal-title').text('Contact Form ' + recipient)
+            modal.find('.modal-body input').val(recipient)
+        });
+        /* End   [MRF 2021-03-18] Modal bootstrap */
+
+
+        /*Hover for menu items */
+
+        $('.zero').mouseover(function() {
+            $('.smenu__0').css({
+                "opacity": "1"
+            });
+        });
+
+        $('.zero').mouseout(function() {
+            $('.smenu__0').css({
+                "opacity": "0"
+            });
+        });
+
+        $('.one').mouseover(function() {
+            $('.smenu__1').css({
+                "opacity": "1"
+            });
+        });
+
+        $('.one').mouseout(function() {
+            $('.smenu__1').css({
+                "opacity": "0"
+            });
+        });
+
+        $('.two').mouseover(function() {
+            $('.smenu__2').css({
+                "opacity": "1"
+            });
+        });
+
+        $('.two').mouseout(function() {
+            $('.smenu__2').css({
+                "opacity": "0"
+            });
+        });
+
+        $('.three').mouseover(function() {
+            $('.smenu__3').css({
+                "opacity": "1"
+            });
+        });
+
+        $('.three').mouseout(function() {
+            $('.smenu__3').css({
+                "opacity": "0"
+            });
+        });
+
+        $('.four').mouseover(function() {
+            $('.smenu__4').css({
+                "opacity": "1"
+            });
+        });
+
+        $('.four').mouseout(function() {
+            $('.smenu__4').css({
+                "opacity": "0"
+            });
+        });
+
+        $('.five').mouseover(function() {
+            $('.smenu__5').css({
+                "opacity": "1"
+            });
+        });
+
+        $('.five').mouseout(function() {
+            $('.smenu__5').css({
+                "opacity": "0"
+            });
+        });
+    </script>
+</body>
+
+</html>
