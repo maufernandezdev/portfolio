@@ -1100,3 +1100,30 @@ codepen);
         -webkit-text-fill-color: transparent;
     }
 }
+
+
+/*404 PAGE*/
+
+.error404 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    img {
+        margin-top: 2rem;
+        max-width: 450px;
+        max-height: 250px;
+    }
+    h2 {
+        position: absolute;
+        top: 8.5rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    footer {
+        margin-top: 15rem;
+    }
+}
