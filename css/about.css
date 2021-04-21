@@ -1,0 +1,10 @@
+.menu__2:before {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: -0.75rem;
+    margin-left: 7px;
+    width: 2px;
+    height: 30px;
+    background-color: #64ffda;
+}

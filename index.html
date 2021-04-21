@@ -19,227 +19,112 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-    <title>Proyecto web Coder House</title>
+    <title>Mauricio Fernandez</title>
+    <!--Description-->
+    <meta name="description" content="Mauricio Fernandez is a software developer specialized in building exceptional websites and tools for other developers">
+    <!-- keywords-->
+    <meta name="keywords" content="MAURICIO FERNANDEZ,MAURICIO FERNANDEZ SOFTWARE DEVELOPER,SOFTWARE DEVELOPER BUENOS AIRES,BUENOS AIRES PROGRAMMER,FULL STACK DEVELOPER,FRONT END DEVELOPER,DESARROLLADOR BUENOS AIRES,PROGRAMADOR BUENOS AIRES">
+    <meta name="author" content="Mauricio Fernandez, Fernandezn24@gmail.com">
+
 </head>
 
 <body>
-    <div class="loading-screen">
-    </div>
-    <!-- Cuando le demos estilos css los voy a posicionar a un costado de la pantalla
-         para que siempre esten visibles
-    <div id="social-media">
-        <div id="github"></div>
-        <div id="discord"></div>
-        <div id="linkedin"></div>
-        <div id="codepen"></div>
-    </div>
-
-    <div id="mail-contact">
-        <div id="email">fernandeznm24@gmail.com</div>
-    </div>
-    -->
     <!-- header options -->
     <header class="header">
-        <div class="container">
-            <div class="container__logo">
-                <a href="index.html" class="logo-main">M</a>
-            </div>
-            <span><i class="menu-icon fas fa-bars"></i></span>
-            <nav class="navigation">
-                <ul class="links">
-                    <li>
-                        <a href="#about" class="links__1"> <span class="navigation__span">01.</span> About</a>
-                    </li>
-                    <li>
-                        <a href="#experience" class="links__2"> <span class="navigation__span">02.</span> Experience</a>
-                    </li>
-                    <li>
-                        <a href="#work" class="links__3"> <span class="navigation__span">03.</span> Work</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="links__4"> <span class="navigation__span">04.</span> Contact</a>
-                    </li>
-                    <li>
-                        <a class="button links__resume" href="https://drive.google.com/file/d/1zccIBzbvM3QBrDx8HqeXbmHt9cOd4nAh/view" target="_blank">Resume</a>
-                    </li>
-                </ul>
-            </nav>
+        <!--  
+        <span><i class="menu-icon fas fa-bars"></i></span>
+        <span><i class="fas fa-volume-up"></i></span>
+        -->
+        <ul class="links">
+            <li>
+                <a href="index.html" class="links__0"> <span class="navigation__span">01.</span> Home</a>
+            </li>
+            <li>
+                <a href="about.html" class="links__1"> <span class="navigation__span">02.</span> About</a>
+            </li>
+            <li>
+                <a href="experience.html" class="links__2"> <span class="navigation__span">03.</span> Experience</a>
+            </li>
+            <li>
+                <a href="work.html" class="links__3"> <span class="navigation__span">04.</span> Work</a>
+            </li>
+            <li>
+                <a href="contact.html" class="links__4"> <span class="navigation__span">05.</span> Contact</a>
+            </li>
+            <li>
+                <a class="button links__resume" href="https://drive.google.com/file/d/1zccIBzbvM3QBrDx8HqeXbmHt9cOd4nAh/view" target="_blank">Resume</a>
+            </li>
+        </ul>
 
-        </div>
+
     </header>
     <!-- Presentation -->
     <section class="presentation">
-        <span class="presentation__hi">Hi, my name is</span>
-        <h1 class="big__heading"> Mauricio Fernandez.</h1>
-        <h2 class="big__heading">
-            I build solutions for the web
-        </h2>
-        <p class="paragraph">
-            I'm a software developer based in Buenos Aires,<br> specializing in building and designing <span class="typed"></span></h2>
-        </p>
-        <a class="button" href="#contact" data-toggle="modal" data-target="#modalGetInTouch" data-whatever="">Get in touch</a>
-        <!--Form modal bootstrap-->
-        <div class="modal fade" id="modalGetInTouch" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalLabel"></h5>
-                        <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
-                  </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="recipient-name" placeholder="First name">
-                            </div>
-                            <div class="form-group mt-2">
-                                <input type="email" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" placeholder="Email" required>
-                            </div>
-                            <div class="form-group mt-2">
-                                <textarea class="form-control" id="message-text" placeholder="Message" rows="5"></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer d-flex flex-wrap">
-                        <button type="button" class="btn button--mod" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn button--mod" data-dismiss="modal">Send message</button>
-                    </div>
-                </div>
+        <div class="presentation__menu">
+            <div class="mailDirection">
+                <a href="mailto:fernandeznm24@gmail.com">
+                    fernandeznm24@gmail.com
+                </a>
             </div>
         </div>
-
-    </section>
-    <!-- About -->
-    <!-- In each section an id is added to reference the links in the header -->
-    <section id="about">
-        <h2> <span>01.</span> About me </h2>
-        <section class="about__first-section">
-
-            <div class="about__description">
-                <p class="paragraph">Hello! I'm Mauricio, a software developer based in Buenos Aires, Argentina.I enjoy creating things that live on the internet, be it websites, apps, or anything else. <br><br> My goal is always to create products that provide seamless performance
-                    experiences along with engaging user interfaces.<br> Shortly after graduating from National Technological University(U.T.N),I joined the developers team at Request S.A where I work on a wide variety of interesting and meaningful projects
-                    on a daily basis. <br><br> Here are a few technologies I've been working with recently:
-                </p>
-            </div>
-            <div class="skills">
-                <div>
-                    <ul>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> JavaScript(ES5)</li>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> HTML & (S)CSS</li>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> Java</li>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> C++</li>
-                    </ul>
-                    <ul>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> Microsoft SQL Server</li>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> MySQL</li>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> .NET</li>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> C#</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        </div>
-        <h2>More obout me</h2>
-        <!-- Se agrega una tabla para el desafio n2-->
-        <div class="galery">
-            <div class="galery__item">
-                <img src="img/friends.jpg">
-                <p>Get together</p>
-            </div>
-            <div class="galery__item"><img src="img/series.jpg">
-                <p>Watch series and movies</p>
-            </div>
-            <div class="galery__item"><img src="img/programming.jpg">
-                <p>Programming</p>
-            </div>
-            <div class="galery__item"><img src="img/run.jpg">
-                <p>To Run</p>
-            </div>
-            <div class="galery__item"><img src="img/tennis.jpg">
-                <p>Teach and play tennis</p>
-            </div>
-            <div class="galery__item"><img src="img/travel.jpg">
-                <p>To Travel</p>
-            </div>
-        </div>
-
-    </section>
-    <!-- Experience -->
-    <!-- In each section an id is added to reference the links in the header -->
-    <section id="experience">
-        <h2> <span>02.</span> what am i working on </h2>
-        <p class="paragraph">I am currently part of a team of developers (called puma) at Request S.A <br> within which we customize a system called esker for LATAM clients.<br> In my day to day I am in charge of:</p>
-        <ul>
-            <li class="experience__list-item"><i class="fas fa-check"></i> Keep applications productive, fix bugs, and implement new functionality.</li>
-            <li class="experience__list-item"><i class="fas fa-check"></i> Comply with deliveries according to the time estimates made.</li>
-            <li class="experience__list-item"><i class="fas fa-check"></i> Work closely with other developers.</li>
-        </ul>
-
-    </section>
-    <!-- Work -->
-    <!-- In each section an id is added to reference the links in the header -->
-    <section id="work">
-        <h2> <span>03.</span> Some Things I’ve Built </h2>
-        <div>
-            <h3>Web platform for bank users</h3>
-            <p class="paragraph">A web platform so that users of a certain bank can see their account,<br> transfer money to their own or others, request and also pay loans.</p>
-            <img src="img/cuentasusuario.png" class="work__proyect-img">
-        </div>
-        <div>
-            <img src="img/abm_peliculas.png" class="work__proyect-img">
-            <h3>Web app to manage a cinema</h3>
-            <p class="paragraph">A web application to manage a cinema. It has the following modules: <br> Sales report, movie CRUD, article CRUD, profile of the logged in administrator.</p>
-        </div>
-
-    </section>
-    <!-- Contact -->
-    <!-- In each section an id is added to reference the links in the header -->
-    <section id="contact">
-        <h2> <span>04.</span> What’s Next? </h2>
-        <h3>Get In Touch</h3>
-        <p class="paragraph">My inbox is always open. <br> Whether you have a question or just want to say hi,<br> I'll try my best to get back to you!</p>
-        <div class="d-flex justify-content-center w-100">
-            <form action="" class="row g-3 d-flex justify-content-center w-50">
-                <div class="col-md-4 w-100">
-                    <input type="text" class="form-control" id="validationServer01" placeholder="First name" required>
-                </div>
-                <div class="col-md-4 w-100">
-                    <input type="text" class="form-control" id="validationServer02" placeholder="Surname" required>
-                </div>
-                <div class="col-md-6 w-100">
-                    <input type="email" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" placeholder="Email" required>
-                </div>
-                <div d-flex flex-row bd-highlight mb-3>
-                    <select name="selectForm" id="SelectForm" class="btn btn-secondary w-100 p-2 bd-highlight">
-                        <option selected >Issue</option>
-                        <option value="hi">Say hi</option>
-                        <option value="Interview">Interview</option>
-                        <option value="jobOffer">job offer</option>
-                        <option value="other">Others</option>
-                    </select>
-                </div>
-                <div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label formLabel" for="flexCheckDefault">
-                            Notify me when this site is updated
-                        </label>
+        <div class="presentation__main">
+            <span class="presentation__hi">Hi, my name is</span>
+            <h1 class="big__heading"> Mauricio Fernandez.</h1>
+            <h2 class="big__heading">
+                I build solutions for the web
+            </h2>
+            <p class="paragraph">
+                I'm a software developer based in Buenos Aires,<br> specializing in building and designing <span class="typed"></span></h2>
+            </p>
+            <a class="button get-in-touch" href="#contact" data-toggle="modal" data-target="#modalGetInTouch" data-whatever="">Get in touch</a>
+            <!--Form modal bootstrap-->
+            <div class="modal fade" id="modalGetInTouch" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalLabel"></h5>
+                            <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+                      </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="recipient-name" placeholder="First name">
+                                </div>
+                                <div class="form-group mt-2">
+                                    <input type="email" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" placeholder="Email" required>
+                                </div>
+                                <div class="form-group mt-2">
+                                    <textarea class="form-control" id="message-text" placeholder="Message" rows="5"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer d-flex flex-wrap">
+                            <button type="button" class="btn button--mod" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn button--mod" data-dismiss="modal">Send message</button>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="4"></textarea>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <input class=" btn button--form m-1 w-30" type="submit" value="Send">
-                    <input class="btn button--form m-1 w-30" type="reset" value="Clear form">
-                </div>
-            </form>
+            </div>
         </div>
+        <div class="redes-container">
+            <ul>
+                <li class="git">
+                    <a class="github" href="https://github.com/Mauri-Fernandez" target="_blank"><i class="fab fa-github"></i></a>
+                </li>
+                <li class="disc">
+                    <a href="#" class="discord"><i class="fab fa-discord"></i></a>
+                </li>
+                <li class="lin">
+                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li class="cod">
+                    <a href="#" class="codepen"><i class="fab fa-codepen"></i></a>
+                </li>
+            </ul>
+        </div>
+
     </section>
-    <!-- Footer -->
-    <footer>
-        <p class="paragraph">Designed & Built by Mauricio Fernandez</p>
-    </footer>
     <!-- jQuery , Popper.js, Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
@@ -249,6 +134,7 @@
     <!--typed js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11 "></script>
     <!-- functional scripts -->
+
     <script>
         /* Start [MRF 2021-03-18] responsive header button */
         $('.menu-icon').click(function() {
@@ -267,6 +153,342 @@
             modal.find('.modal-body input').val(recipient)
         });
         /* End   [MRF 2021-03-18] Modal bootstrap */
+
+        /*Hover for menu items */
+        // About //
+        $('.menu__2').mouseover(function() {
+            $('.menu__2').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+        });
+
+        $('.menu__2').mouseout(function() {
+            $('.menu__2').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+        });
+
+
+        $('.submenu__about').mouseover(function() {
+            $('.menu__2').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+        });
+
+        $('.submenu__about').mouseout(function() {
+            $('.menu__2').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+        });
+
+        // Experience //
+        $('.menu__3').mouseover(function() {
+            $('.menu__2').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__3').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+        });
+
+        $('.menu__3').mouseout(function() {
+            $('.menu__3').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__2').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+        });
+
+        $('.submenu__experience').mouseover(function() {
+            $('.menu__2').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__3').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+        });
+
+        $('.submenu__experience').mouseout(function() {
+            $('.menu__3').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__2').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+        });
+
+        // Work //
+        // branch //
+        $('.menu__4').mouseover(function() {
+            $('.menu__2').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__3').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__4').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+        });
+
+        $('.menu__4').mouseout(function() {
+            $('.menu__4').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+
+            });
+            $('.menu__3').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__2').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+        });
+        // submenu item // 
+        $('.submenu__work').mouseover(function() {
+            $('.menu__2').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__3').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__4').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+        });
+
+        $('.submenu__work').mouseout(function() {
+            $('.menu__4').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+
+            });
+            $('.menu__3').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__2').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+        });
+
+
+        // Contact //
+        // Branch //
+        $('.menu__5').mouseover(function() {
+            $('.menu__2').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__3').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__4').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__5').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+
+        });
+
+        $('.menu__5').mouseout(function() {
+            $('.menu__5').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__4').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__3').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__2').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+        });
+
+        // Submenu item //
+        $('.submenu__contact').mouseover(function() {
+            $('.menu__2').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__3').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__4').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__5').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+
+        });
+
+        $('.submenu__contact').mouseout(function() {
+            $('.menu__5').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__4').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__3').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__2').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+        });
+
+        /*Hover for menu items */
+
+        $('.zero').mouseover(function() {
+            $('.smenu__0').css({
+                "opacity": "1"
+            });
+        });
+
+        $('.zero').mouseout(function() {
+            $('.smenu__0').css({
+                "opacity": "0"
+            });
+        });
+
+        $('.one').mouseover(function() {
+            $('.smenu__1').css({
+                "opacity": "1"
+            });
+        });
+
+        $('.one').mouseout(function() {
+            $('.smenu__1').css({
+                "opacity": "0"
+            });
+        });
+
+        $('.two').mouseover(function() {
+            $('.smenu__2').css({
+                "opacity": "1"
+            });
+        });
+
+        $('.two').mouseout(function() {
+            $('.smenu__2').css({
+                "opacity": "0"
+            });
+        });
+
+        $('.three').mouseover(function() {
+            $('.smenu__3').css({
+                "opacity": "1"
+            });
+        });
+
+        $('.three').mouseout(function() {
+            $('.smenu__3').css({
+                "opacity": "0"
+            });
+        });
+
+        $('.four').mouseover(function() {
+            $('.smenu__4').css({
+                "opacity": "1"
+            });
+        });
+
+        $('.four').mouseout(function() {
+            $('.smenu__4').css({
+                "opacity": "0"
+            });
+        });
+
+        $('.five').mouseover(function() {
+            $('.smenu__5').css({
+                "opacity": "1"
+            });
+        });
+
+        $('.five').mouseout(function() {
+            $('.smenu__5').css({
+                "opacity": "0"
+            });
+        });
     </script>
 </body>
 

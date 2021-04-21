@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    console.log("ready!");
     // Start typed //
     const typed = new Typed('.typed', {
 
@@ -22,46 +21,63 @@ $(document).ready(function() {
 
     });
     // End Typed //
+    /*
+    if (localStorage.getItem("loading") != "false") {
+
+        localStorage.setItem("loading", "true");
+    }
 
     // Start Gsap //
-    TweenMax.to(".loading-screen", 4, {
-        delay: 2,
-        top: "-110%",
-        ease: Expo.easeInOut
+    if (localStorage.getItem("loading") == "true") {
+        TweenMax.to(".loading-screen", 4, {
+            delay: 0.2,
+            top: "-100%",
+            ease: Expo.easeInOut
 
+        });
+        localStorage.setItem("loading", "false");
+    }*/
+
+    /*
+    TweenMax.from(".links__0", 3, {
+        delay: 0.5,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
     });
 
     TweenMax.from(".links__1", 3, {
-        delay: 2.2,
+        delay: 0.5,
         opacity: 0,
         y: 20,
         ease: Expo.easeInOut
     });
     TweenMax.from(".links__2", 3, {
-        delay: 2.4,
+        delay: 0.7,
         opacity: 0,
         y: 20,
         ease: Expo.easeInOut
     });
     TweenMax.from(".links__3", 3, {
-        delay: 2.6,
+        delay: 0.9,
         opacity: 0,
         y: 20,
         ease: Expo.easeInOut
     });
     TweenMax.from(".links__4", 3, {
-        delay: 2.8,
-        opacity: 0,
-        y: 20,
-        ease: Expo.easeInOut
-    });
-    TweenMax.from(".links__resume", 3, {
-        delay: 3,
+        delay: 1.1,
         opacity: 0,
         y: 20,
         ease: Expo.easeInOut
     });
 
+    TweenMax.from(".links__resume", 3, {
+        delay: 1.3,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+    });
+*/
 
     // End Gsap //
 
