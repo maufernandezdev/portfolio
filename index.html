@@ -29,69 +29,43 @@
 </head>
 
 <body>
-    <div class="loading-screen">
-    </div>
-    <div id="mail-contact">
-        <div id="email">fernandeznm24@gmail.com</div>
-    </div>
-    -->
     <!-- header options -->
     <header class="header">
-        <div class="container">
-            <!--
-                <div class="container__logo">
-                <a href="index.html" class="logo-main">M</a>
-            </div>
-            <span><i class="menu-icon fas fa-bars"></i></span>
-            -->
-            <nav class="navigation">
-                <ul class="links">
-                    <li>
-                        <a href="about.html" class="links__1"> <span class="navigation__span">01.</span> About</a>
-                    </li>
-                    <li>
-                        <a href="experience.html" class="links__2"> <span class="navigation__span">02.</span> Experience</a>
-                    </li>
-                    <li>
-                        <a href="work.html" class="links__3"> <span class="navigation__span">03.</span> Work</a>
-                    </li>
-                    <li>
-                        <a href="contact.html" class="links__4"> <span class="navigation__span">04.</span> Contact</a>
-                    </li>
-                    <li>
-                        <a class="button links__resume" href="https://drive.google.com/file/d/1zccIBzbvM3QBrDx8HqeXbmHt9cOd4nAh/view" target="_blank">Resume</a>
-                    </li>
-                </ul>
-            </nav>
+        <!--  
+        <span><i class="menu-icon fas fa-bars"></i></span>
+        <span><i class="fas fa-volume-up"></i></span>
+        -->
+        <ul class="links">
+            <li>
+                <a href="index.html" class="links__0"> <span class="navigation__span">01.</span> Home</a>
+            </li>
+            <li>
+                <a href="about.html" class="links__1"> <span class="navigation__span">02.</span> About</a>
+            </li>
+            <li>
+                <a href="experience.html" class="links__2"> <span class="navigation__span">03.</span> Experience</a>
+            </li>
+            <li>
+                <a href="work.html" class="links__3"> <span class="navigation__span">04.</span> Work</a>
+            </li>
+            <li>
+                <a href="contact.html" class="links__4"> <span class="navigation__span">05.</span> Contact</a>
+            </li>
+            <li>
+                <a class="button links__resume" href="https://drive.google.com/file/d/1zccIBzbvM3QBrDx8HqeXbmHt9cOd4nAh/view" target="_blank">Resume</a>
+            </li>
+        </ul>
 
-        </div>
+
     </header>
     <!-- Presentation -->
     <section class="presentation">
         <div class="presentation__menu">
-            <div class="menu__branch-1">
-                <div><a href="#" class="menu__1">o</a></div>
-                <div><a href="#" class="menu__2">o</a> </div>
-                <div><a href="#" class="menu__3">o</a> </div>
-                <div><a href="#" class="menu__4">o</a> </div>
-                <div><a href="#" class="menu__5">o</a> </div>
+            <div class="mailDirection">
+                <a href="mailto:fernandeznm24@gmail.com">
+                    fernandeznm24@gmail.com
+                </a>
             </div>
-            <div class="menu__branch-2">
-                <div><a href="#" class="menu__6">o</a> </div>
-                <div><a href="#" class="menu__7">o</a> </div>
-                <div><a href="#" class="menu__8">o</a> </div>
-                <div><a href="#" class="menu__9">o</a> </div>
-                <div><a href="#" class="menu__10">o</a> </div>
-            </div>
-            <div class="menu__submenu">
-                <p>Index</p>
-                <p>About</p>
-                <p>Experience</p>
-                <p>Work</p>
-                <p>Contact</p>
-            </div>
-
-
         </div>
         <div class="presentation__main">
             <span class="presentation__hi">Hi, my name is</span>
@@ -135,24 +109,21 @@
         </div>
         <div class="redes-container">
             <ul>
-                <li>
+                <li class="git">
                     <a class="github" href="https://github.com/Mauri-Fernandez" target="_blank"><i class="fab fa-github"></i></a>
                 </li>
-                <li>
+                <li class="disc">
                     <a href="#" class="discord"><i class="fab fa-discord"></i></a>
                 </li>
-                <li>
+                <li class="lin">
                     <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
                 </li>
-                <li>
+                <li class="cod">
                     <a href="#" class="codepen"><i class="fab fa-codepen"></i></a>
                 </li>
             </ul>
         </div>
-        <!-- Footer -->
-        <footer>
-            <p>Designed & Built by Mauricio Fernandez</p>
-        </footer>
+
     </section>
     <!-- jQuery , Popper.js, Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
@@ -163,6 +134,7 @@
     <!--typed js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11 "></script>
     <!-- functional scripts -->
+
     <script>
         /* Start [MRF 2021-03-18] responsive header button */
         $('.menu-icon').click(function() {
@@ -181,6 +153,342 @@
             modal.find('.modal-body input').val(recipient)
         });
         /* End   [MRF 2021-03-18] Modal bootstrap */
+
+        /*Hover for menu items */
+        // About //
+        $('.menu__2').mouseover(function() {
+            $('.menu__2').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+        });
+
+        $('.menu__2').mouseout(function() {
+            $('.menu__2').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+        });
+
+
+        $('.submenu__about').mouseover(function() {
+            $('.menu__2').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+        });
+
+        $('.submenu__about').mouseout(function() {
+            $('.menu__2').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+        });
+
+        // Experience //
+        $('.menu__3').mouseover(function() {
+            $('.menu__2').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__3').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+        });
+
+        $('.menu__3').mouseout(function() {
+            $('.menu__3').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__2').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+        });
+
+        $('.submenu__experience').mouseover(function() {
+            $('.menu__2').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__3').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+        });
+
+        $('.submenu__experience').mouseout(function() {
+            $('.menu__3').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__2').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+        });
+
+        // Work //
+        // branch //
+        $('.menu__4').mouseover(function() {
+            $('.menu__2').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__3').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__4').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+        });
+
+        $('.menu__4').mouseout(function() {
+            $('.menu__4').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+
+            });
+            $('.menu__3').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__2').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+        });
+        // submenu item // 
+        $('.submenu__work').mouseover(function() {
+            $('.menu__2').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__3').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__4').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+        });
+
+        $('.submenu__work').mouseout(function() {
+            $('.menu__4').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+
+            });
+            $('.menu__3').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__2').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+        });
+
+
+        // Contact //
+        // Branch //
+        $('.menu__5').mouseover(function() {
+            $('.menu__2').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__3').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__4').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__5').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+
+        });
+
+        $('.menu__5').mouseout(function() {
+            $('.menu__5').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__4').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__3').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__2').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+        });
+
+        // Submenu item //
+        $('.submenu__contact').mouseover(function() {
+            $('.menu__2').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__3').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__4').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+            $('.menu__5').css({
+                "--white": "#64ffda",
+                "-webkit-text-fill-color": "#64ffda",
+                "animation": "glow-title 1.5s ease-in-out infinite alternate"
+            });
+
+        });
+
+        $('.submenu__contact').mouseout(function() {
+            $('.menu__5').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__4').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__3').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+            $('.menu__2').css({
+                "--white": "#fff",
+                "-webkit-text-fill-color": "#fff",
+                "animation": "none"
+            });
+        });
+
+        /*Hover for menu items */
+
+        $('.zero').mouseover(function() {
+            $('.smenu__0').css({
+                "opacity": "1"
+            });
+        });
+
+        $('.zero').mouseout(function() {
+            $('.smenu__0').css({
+                "opacity": "0"
+            });
+        });
+
+        $('.one').mouseover(function() {
+            $('.smenu__1').css({
+                "opacity": "1"
+            });
+        });
+
+        $('.one').mouseout(function() {
+            $('.smenu__1').css({
+                "opacity": "0"
+            });
+        });
+
+        $('.two').mouseover(function() {
+            $('.smenu__2').css({
+                "opacity": "1"
+            });
+        });
+
+        $('.two').mouseout(function() {
+            $('.smenu__2').css({
+                "opacity": "0"
+            });
+        });
+
+        $('.three').mouseover(function() {
+            $('.smenu__3').css({
+                "opacity": "1"
+            });
+        });
+
+        $('.three').mouseout(function() {
+            $('.smenu__3').css({
+                "opacity": "0"
+            });
+        });
+
+        $('.four').mouseover(function() {
+            $('.smenu__4').css({
+                "opacity": "1"
+            });
+        });
+
+        $('.four').mouseout(function() {
+            $('.smenu__4').css({
+                "opacity": "0"
+            });
+        });
+
+        $('.five').mouseover(function() {
+            $('.smenu__5').css({
+                "opacity": "1"
+            });
+        });
+
+        $('.five').mouseout(function() {
+            $('.smenu__5').css({
+                "opacity": "0"
+            });
+        });
     </script>
 </body>
 
