@@ -15,10 +15,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href=" https://unpkg.com/aos@next/dist/aos.css" />
     <!-- jQuery, fontawsome, gsap-->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
     <title>Mauricio Fernandez</title>
     <!--Description-->
     <meta name="description" content="Mauricio Fernandez is a software developer specialized in building exceptional websites and tools for other developers">
@@ -37,22 +39,22 @@
         -->
         <ul class="links">
             <li>
-                <a href="index.html" class="links__0"> <span class="navigation__span">01.</span> Home</a>
+                <a data-aos="fade-down" data-aos-duration="900" href="index.html" class="links__0"> <span class="navigation__span">01.</span> Home</a>
             </li>
             <li>
-                <a href="about.html" class="links__1"> <span class="navigation__span">02.</span> About</a>
+                <a data-aos="fade-down" data-aos-duration="1100" href="about.html" class="links__1"> <span class="navigation__span">02.</span> About</a>
             </li>
             <li>
-                <a href="experience.html" class="links__2"> <span class="navigation__span">03.</span> Experience</a>
+                <a data-aos="fade-down" data-aos-duration="1300" href="experience.html" class="links__2"> <span class="navigation__span">03.</span> Experience</a>
             </li>
             <li>
-                <a href="work.html" class="links__3"> <span class="navigation__span">04.</span> Work</a>
+                <a data-aos="fade-down" data-aos-duration="1500" href="work.html" class="links__3"> <span class="navigation__span">04.</span> Work</a>
             </li>
             <li>
-                <a href="contact.html" class="links__4"> <span class="navigation__span">05.</span> Contact</a>
+                <a data-aos="fade-down" data-aos-duration="1700" href="contact.html" class="links__4"> <span class="navigation__span">05.</span> Contact</a>
             </li>
             <li>
-                <a class="button links__resume" href="https://drive.google.com/file/d/1zccIBzbvM3QBrDx8HqeXbmHt9cOd4nAh/view" target="_blank">Resume</a>
+                <a data-aos="fade-down" data-aos-duration="1900" class="button links__resume" href="https://drive.google.com/file/d/1zccIBzbvM3QBrDx8HqeXbmHt9cOd4nAh/view" target="_blank">Resume</a>
             </li>
         </ul>
 
@@ -60,71 +62,36 @@
     </header>
     <!-- Presentation -->
     <section class="presentation">
-        <div class="presentation__menu">
-            <div class="mailDirection">
-                <a href="mailto:fernandeznm24@gmail.com">
-                    fernandeznm24@gmail.com
-                </a>
-            </div>
-        </div>
-        <div class="presentation__main">
-            <span class="presentation__hi">Hi, my name is</span>
-            <h1 class="big__heading"> Mauricio Fernandez.</h1>
-            <h2 class="big__heading">
-                I build solutions for the web
-            </h2>
-            <p class="paragraph">
-                I'm a software developer based in Buenos Aires,<br> specializing in building and designing <span class="typed"></span></h2>
-            </p>
-            <a class="button get-in-touch" href="#contact" data-toggle="modal" data-target="#modalGetInTouch" data-whatever="">Get in touch</a>
-            <!--Form modal bootstrap-->
-            <div class="modal fade" id="modalGetInTouch" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalLabel"></h5>
-                            <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
-                      </button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="recipient-name" placeholder="First name">
-                                </div>
-                                <div class="form-group mt-2">
-                                    <input type="email" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" placeholder="Email" required>
-                                </div>
-                                <div class="form-group mt-2">
-                                    <textarea class="form-control" id="message-text" placeholder="Message" rows="5"></textarea>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer d-flex flex-wrap">
-                            <button type="button" class="btn button--mod" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn button--mod" data-dismiss="modal">Send message</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="redes-container">
+
+        <div class="presentation__wolf" data-aos="zoom-in" data-aos-duration="1500">
+            <img data-aos="fade-down" data-aos-duration="1900" src="img/lentes.png" alt="lentes" class="lentes">
+            <img src="img/lobo.png" alt="lobo"></div>
+        <p data-aos="fade-up" data-aos-duration="1900" class="paragraph">
+            I'm a <span class="typed"></span></h2>
+        </p>
+        <!-- <a class="button get-in-touch" href="#contact" data-toggle="modal" data-target="#modalGetInTouch" data-whatever="">Get in touch</a> -->
+        <footer>
             <ul>
                 <li class="git">
-                    <a class="github" href="https://github.com/Mauri-Fernandez" target="_blank"><i class="fab fa-github"></i></a>
+                    <a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1100" class="github" href="https://github.com/Mauri-Fernandez" target="_blank"><i class="fab fa-github"></i></a>
                 </li>
                 <li class="disc">
-                    <a href="#" class="discord"><i class="fab fa-discord"></i></a>
+                    <a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1100" href="#" class="discord"><i class="fab fa-discord"></i></a>
                 </li>
                 <li class="lin">
-                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li class="mail">
+                    <a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" href="mailto:fernandeznm24@gmail.com" class="mail"><i class="far fa-envelope"></i></a>
                 </li>
                 <li class="cod">
-                    <a href="#" class="codepen"><i class="fab fa-codepen"></i></a>
+                    <a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1700" href="#" class="codepen"><i class="fab fa-codepen"></i></a>
                 </li>
             </ul>
-        </div>
-
+        </footer>
     </section>
+
+
     <!-- jQuery , Popper.js, Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
@@ -154,341 +121,19 @@
         });
         /* End   [MRF 2021-03-18] Modal bootstrap */
 
-        /*Hover for menu items */
-        // About //
-        $('.menu__2').mouseover(function() {
-            $('.menu__2').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-        });
 
-        $('.menu__2').mouseout(function() {
-            $('.menu__2').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-            });
-        });
+        // lentes lobo //
+        /*$('.lentes').css({
+            "opacity": "1",
+            "transform": "translateY(0px)",
 
 
-        $('.submenu__about').mouseover(function() {
-            $('.menu__2').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-        });
-
-        $('.submenu__about').mouseout(function() {
-            $('.menu__2').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-            });
-        });
-
-        // Experience //
-        $('.menu__3').mouseover(function() {
-            $('.menu__2').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-            $('.menu__3').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-        });
-
-        $('.menu__3').mouseout(function() {
-            $('.menu__3').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-            });
-            $('.menu__2').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-            });
-        });
-
-        $('.submenu__experience').mouseover(function() {
-            $('.menu__2').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-            $('.menu__3').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-        });
-
-        $('.submenu__experience').mouseout(function() {
-            $('.menu__3').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-            });
-            $('.menu__2').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-            });
-        });
-
-        // Work //
-        // branch //
-        $('.menu__4').mouseover(function() {
-            $('.menu__2').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-            $('.menu__3').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-            $('.menu__4').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-        });
-
-        $('.menu__4').mouseout(function() {
-            $('.menu__4').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-
-            });
-            $('.menu__3').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-            });
-            $('.menu__2').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-            });
-        });
-        // submenu item // 
-        $('.submenu__work').mouseover(function() {
-            $('.menu__2').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-            $('.menu__3').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-            $('.menu__4').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-        });
-
-        $('.submenu__work').mouseout(function() {
-            $('.menu__4').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-
-            });
-            $('.menu__3').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-            });
-            $('.menu__2').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-            });
-        });
-
-
-        // Contact //
-        // Branch //
-        $('.menu__5').mouseover(function() {
-            $('.menu__2').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-            $('.menu__3').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-            $('.menu__4').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-            $('.menu__5').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-
-        });
-
-        $('.menu__5').mouseout(function() {
-            $('.menu__5').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-            });
-            $('.menu__4').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-            });
-            $('.menu__3').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-            });
-            $('.menu__2').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-            });
-        });
-
-        // Submenu item //
-        $('.submenu__contact').mouseover(function() {
-            $('.menu__2').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-            $('.menu__3').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-            $('.menu__4').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-            $('.menu__5').css({
-                "--white": "#64ffda",
-                "-webkit-text-fill-color": "#64ffda",
-                "animation": "glow-title 1.5s ease-in-out infinite alternate"
-            });
-
-        });
-
-        $('.submenu__contact').mouseout(function() {
-            $('.menu__5').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-            });
-            $('.menu__4').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-            });
-            $('.menu__3').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-            });
-            $('.menu__2').css({
-                "--white": "#fff",
-                "-webkit-text-fill-color": "#fff",
-                "animation": "none"
-            });
-        });
-
-        /*Hover for menu items */
-
-        $('.zero').mouseover(function() {
-            $('.smenu__0').css({
-                "opacity": "1"
-            });
-        });
-
-        $('.zero').mouseout(function() {
-            $('.smenu__0').css({
-                "opacity": "0"
-            });
-        });
-
-        $('.one').mouseover(function() {
-            $('.smenu__1').css({
-                "opacity": "1"
-            });
-        });
-
-        $('.one').mouseout(function() {
-            $('.smenu__1').css({
-                "opacity": "0"
-            });
-        });
-
-        $('.two').mouseover(function() {
-            $('.smenu__2').css({
-                "opacity": "1"
-            });
-        });
-
-        $('.two').mouseout(function() {
-            $('.smenu__2').css({
-                "opacity": "0"
-            });
-        });
-
-        $('.three').mouseover(function() {
-            $('.smenu__3').css({
-                "opacity": "1"
-            });
-        });
-
-        $('.three').mouseout(function() {
-            $('.smenu__3').css({
-                "opacity": "0"
-            });
-        });
-
-        $('.four').mouseover(function() {
-            $('.smenu__4').css({
-                "opacity": "1"
-            });
-        });
-
-        $('.four').mouseout(function() {
-            $('.smenu__4').css({
-                "opacity": "0"
-            });
-        });
-
-        $('.five').mouseover(function() {
-            $('.smenu__5').css({
-                "opacity": "1"
-            });
-        });
-
-        $('.five').mouseout(function() {
-            $('.smenu__5').css({
-                "opacity": "0"
-            });
-        });
+        });*/
+    </script>
+    <!-- aos-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

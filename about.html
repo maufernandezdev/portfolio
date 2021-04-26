@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href=" https://unpkg.com/aos@next/dist/aos.css" />
     <!-- jQuery, fontawsome, gsap-->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -57,56 +58,119 @@
     <section class="about">
 
         <section class="about__first-section">
-            <h2> <span>01.</span> About me </h2>
-            <div class="about__description">
-                <p class="paragraph">Hello! I'm Mauricio, a software developer based in Buenos Aires, Argentina.I enjoy creating things that live on the internet, be it websites, apps, or anything else. <br><br> My goal is always to create products that provide seamless performance
-                    experiences along with engaging user interfaces.<br> Shortly after graduating from National Technological University(U.T.N),I joined the developers team at Request S.A where I work on a wide variety of interesting and meaningful projects
-                    on a daily basis. <br><br> Here are a few technologies I've been working with recently:
-                </p>
-            </div>
-            <div class="skills">
-                <div>
-                    <ul>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> JavaScript(ES5)</li>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> HTML & (S)CSS</li>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> Java</li>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> C++</li>
-                    </ul>
-                    <ul>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> Microsoft SQL Server</li>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> MySQL</li>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> .NET</li>
-                        <li class="skills__list-item"><i class="fas fa-check"></i> C#</li>
-                    </ul>
+            <div class="about__description" data-aos="fade-up" data-aos-duration="700" data-aos-once="true">
+                <div class="container-description">
+                    <h2> <span>02.</span> About me </h2>
+                    <p class="paragraph">Hello! I'm Mauricio, a software developer based in Buenos Aires, Argentina.I enjoy creating things that live on the internet, be it websites, apps, or anything else. <br><br> My goal is always to create products that provide seamless
+                        performance experiences along with engaging user interfaces.<br> Shortly after graduating from National Technological University(U.T.N),I joined the developers team at Request S.A where I work on a wide variety of interesting and
+                        meaningful projects on a daily basis.
+                    </p>
+                </div>
+                <div class="container-galery">
+                    <h4>Here are a few technologies I've been working with recently</h4>
+                    <div class="galery" data-aos="zoom-in" data-aos-duration="900" data-aos-once="true">
+                        <div class="galery__item" data-aos="fade-down-right" data-aos-duration="900" data-aos-once="true">
+                            <img src="img/cplus.png">
+
+                        </div>
+                        <div class="galery__item" data-aos="fade-down" data-aos-duration="900" data-aos-once="true"><img src="img/js.png">
+
+                        </div>
+                        <div class="galery__item" data-aos="fade-down-left" data-aos-duration="900" data-aos-once="true"><img src="img/html5.png">
+
+                        </div>
+                        <div data-aos="fade-right" data-aos-duration="900" data-aos-once="true" class="galery__item"><img src="img/sass.png">
+
+                        </div>
+                        <div data-aos="fade-left" data-aos-duration="900" data-aos-once="true" class="galery__item"><img src="img/java.png">
+
+                        </div>
+                        <div class="galery__item" data-aos="fade-up-right" data-aos-duration="900" data-aos-once="true"><img src="img/git.png">
+
+                        </div>
+                        <div class="galery__item" data-aos="fade-up-left" data-aos-duration="900" data-aos-once="true"><img src="img/mysql.png">
+
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </section>
         </div>
-        <h2>More obout me</h2>
-        <div class="galery">
-            <div class="galery__item">
-                <img src="img/friends.jpg">
-                <p>Get together</p>
-            </div>
-            <div class="galery__item"><img src="img/series.jpg">
-                <p>Watch series and movies</p>
-            </div>
-            <div class="galery__item"><img src="img/programming.jpg">
-                <p>Programming</p>
-            </div>
-            <div class="galery__item"><img src="img/run.jpg">
-                <p>To Run</p>
-            </div>
-            <div class="galery__item"><img src="img/tennis.jpg">
-                <p>Teach and play tennis</p>
-            </div>
-            <div class="galery__item"><img src="img/travel.jpg">
-                <p>To Travel</p>
+
+        <div class="container">
+            <div class="line">
+                <ul>
+                    <li>
+                        <div class="line-content">
+                            <h3 class="date">01.</h3>
+                            <p data-aos="fade-right" data-aos-duration="900" data-aos-once="true">I like to travel and see new places</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line-content">
+                            <h3 class="date">02.</h3>
+                            <p data-aos="fade-left" data-aos-duration="900" data-aos-once="true">I teach and play tennis
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line-content">
+                            <h3 class="date">03.</h3>
+                            <p data-aos="fade-right" data-aos-duration="900" data-aos-once="true">I love running especially when it rains</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line-content">
+                            <h3 class="date">04.</h3>
+                            <p data-aos="fade-left" data-aos-duration="900" data-aos-once="true">I like to program and create new things
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line-content">
+                            <h3 class="date">05.</h3>
+                            <p data-aos="fade-right" data-aos-duration="900" data-aos-once="true">
+                                I also watch series, movies</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line-content">
+                            <h3 class="date">06.</h3>
+                            <p data-aos="fade-left" data-aos-duration="900" data-aos-once="true">I love getting together with my friends and my family
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line-content">
+                            <h3 class="date">07.</h3>
+                            <p data-aos="fade-right" data-aos-duration="900" data-aos-once="true">
+                                I am usually motivated and with a positive mindset
+                            </p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
         <!-- Footer -->
         <footer>
-            <p>Designed & Built by Mauricio Fernandez</p>
+            <ul>
+                <li class="git">
+                    <a data-aos-once="true" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1100" class="github" href="https://github.com/Mauri-Fernandez" target="_blank"><i class="fab fa-github"></i></a>
+                </li>
+                <li class="disc">
+                    <a data-aos-once="true" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1100" href="#" class="discord"><i class="fab fa-discord"></i></a>
+                </li>
+                <li class="lin">
+                    <a data-aos-once="true" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li class="mail">
+                    <a data-aos-once="true" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" href="mailto:fernandeznm24@gmail.com" class="mail"><i class="far fa-envelope"></i></a>
+                </li>
+                <li class="cod">
+                    <a data-aos-once="true" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1700" href="#" class="codepen"><i class="fab fa-codepen"></i></a>
+                </li>
+            </ul>
         </footer>
     </section>
     <!-- jQuery , Popper.js, Bootstrap JS -->
@@ -116,6 +180,11 @@
     <!-- Scripts -->
     <script src="js/main.js "></script>
     <!-- functional scripts -->
+    <!-- aos-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -4,9 +4,9 @@ $(document).ready(function() {
 
         strings: [
 
-            '<i>exceptional websites.</i>',
-            '<i>things for the web.</i>',
-            '<i>and everything in between.</i>'
+            '<i>software developer.</i>',
+            '<i>autodidact.</i>',
+            '<i>full stack developer.</i>'
         ],
 
         typeSpeed: 100,
@@ -14,6 +14,27 @@ $(document).ready(function() {
         backSpeed: 75,
         backDelay: 1500,
         loop: true,
+        loopCount: false,
+        showCursor: true,
+        cursorChar: '|',
+        contentType: 'html',
+
+    });
+
+    const typed__story = new Typed('.typed__story', {
+
+        strings: [
+
+
+            '<i>hola mi nombre es mauricio fernandez, <br> bienvenido a mi sitio web personal.</i>',
+
+        ],
+
+        typeSpeed: 50,
+        startDelay: 2500,
+        backSpeed: 75,
+        backDelay: 1500,
+        loop: false,
         loopCount: false,
         showCursor: true,
         cursorChar: '|',
