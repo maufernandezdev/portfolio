@@ -8,3 +8,10 @@
     height: 30px;
     background-color: #64ffda;
 }
+
+footer {
+    position: relative;
+    bottom: 1rem;
+    width: 100%;
+    height: 50px;
+}
