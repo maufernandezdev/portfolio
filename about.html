@@ -27,10 +27,13 @@
 <body>
     <!-- header options -->
     <header class="header">
-        <!--  
-        <span><i class="menu-icon fas fa-bars"></i></span>
-        <span><i class="fas fa-volume-up"></i></span>
-        -->
+        <div class="hamburguer menu-icon">
+            <button>
+                <span class="top-line"></span>
+                <span class="middle-line"></span>
+                <span class="bottom-line"></span>
+            </button>
+        </div>
         <ul class="links">
             <li>
                 <a href="index.html" class="links__0"> <span class="navigation__span">01.</span> Home</a>
@@ -51,8 +54,6 @@
                 <a class="button links__resume" href="https://drive.google.com/file/d/1zccIBzbvM3QBrDx8HqeXbmHt9cOd4nAh/view" target="_blank">Resume</a>
             </li>
         </ul>
-
-
     </header>
 
     <section class="about">
@@ -62,7 +63,7 @@
                 <h2> <span>02.</span> About me </h2>
                 <div class="container-description">
                     <p class="paragraph">Hello! I'm <span>Mauricio</span>, a software developer based in Buenos Aires, Argentina.I enjoy creating things that live on the internet, be it websites, apps, or anything else. <br><br> My goal is always to create products that provide
-                        seamless performance experiences along with<span>engaging user interfaces</span>.<br> Shortly after graduating from National Technological University(U.T.N),I joined the developers team at Request S.A where I work on a wide variety
+                        seamless performance experiences along with <span>engaging user interfaces</span>.<br> Shortly after graduating from National Technological University(U.T.N),I joined the developers team at Request S.A where I work on a wide variety
                         of interesting and meaningful projects on a daily basis.
                     </p>
                     <div> <img src="img/profile3.jpg" alt="me"></div>
@@ -138,7 +139,7 @@
                     <li>
                         <div class="line-content">
                             <h3 class="date" data-aos="fade-down" data-aos-duration="900" data-aos-once="true">06.</h3>
-                            <p data-aos="fade-left" data-aos-duration="900" data-aos-once="true">I love getting together with my friends and my family
+                            <p data-aos="fade-left" data-aos-duration="900" data-aos-once="true">Love getting together with my friends/family
                             </p>
                         </div>
                     </li>
@@ -176,6 +177,7 @@
     </footer>
     <!-- jQuery , Popper.js, Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
     <!-- Scripts -->
@@ -186,6 +188,12 @@
     <script>
         AOS.init();
     </script>
+    <script>
+        $('.menu-icon').click(function() {
+            $('.links').slideToggle();
+        });
+    </script>
+
 </body>
 
 </html>
