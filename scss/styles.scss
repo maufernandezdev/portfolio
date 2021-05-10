@@ -600,8 +600,6 @@
         width: 85%;
         grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
         grid-auto-rows: 100px;
-        /* grid-column-gap: 10px;
-    grid-row-gap: 45px;*/
         grid-gap: 10px;
         padding: 2rem;
     }
@@ -711,162 +709,6 @@
         @include animation-call;
     }
     /*End Button*/
-    /* Start [2021-03-18] - Modal Get in touch index */
-    
-    .modal-header {
-        background-color: #64ffda;
-        border: none
-    }
-    
-    .button--mod {
-        @extend .button;
-        width: 48%;
-        margin: 0px auto 10px auto;
-        margin-top: 0rem;
-        padding: 10px;
-        font-size: 1.2rem;
-    }
-    
-    .mod:active {
-        @include animation-call;
-    }
-    
-    .mod:focus {
-        @include animation-call;
-    }
-    
-    .modal-body,
-    .modal-footer,
-    .form-control {
-        background-color: $dark-blue;
-        background-color: transparent;
-        border: none;
-        color: #fff
-    }
-    
-    .form-control {
-        border: 1px solid #64ffda;
-    }
-    
-    .form-control:focus {
-        background-color: $dark-blue;
-        background-color: transparent;
-        @include animation-call;
-        color: #fff
-    }
-    
-    .form-control:active {
-        background-color: $dark-blue;
-        background-color: transparent;
-        @include animation-call;
-        color: #fff
-    }
-    /* [2021-03-19] - modal confirm */
-    
-    .modal-confirm {
-        color: #434e65;
-        width: 525px;
-    }
-    
-    .modal-confirm .modal-content {
-        padding: 20px;
-        font-size: 16px;
-        border-radius: 5px;
-        border: none;
-    }
-    
-    .modal-confirm .modal-header {
-        background: #47c9a2;
-        border-bottom: none;
-        position: relative;
-        text-align: center;
-        margin: -20px -20px 0;
-        border-radius: 5px 5px 0 0;
-        padding: 35px;
-    }
-    
-    .modal-confirm h4 {
-        text-align: center;
-        font-size: 36px;
-        margin: 10px 0;
-    }
-    
-    .modal-confirm .form-control,
-    .modal-confirm .btn {
-        min-height: 40px;
-        border-radius: 3px;
-    }
-    
-    .modal-confirm .close {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        color: #fff;
-        text-shadow: none;
-        opacity: 0.5;
-    }
-    
-    .modal-confirm .close:hover {
-        opacity: 0.8;
-    }
-    
-    .modal-confirm .icon-box {
-        color: #fff;
-        width: 95px;
-        height: 95px;
-        display: inline-block;
-        border-radius: 50%;
-        z-index: 9;
-        border: 5px solid #fff;
-        padding: 15px;
-        text-align: center;
-    }
-    
-    .modal-confirm .icon-box i {
-        font-size: 64px;
-        margin: -4px 0 0 -4px;
-    }
-    
-    .modal-confirm.modal-dialog {
-        margin-top: 80px;
-    }
-    
-    .modal-confirm .btn,
-    .modal-confirm .btn:active {
-        color: #fff;
-        border-radius: 4px;
-        background: #eeb711 !important;
-        text-decoration: none;
-        transition: all 0.4s;
-        line-height: normal;
-        border-radius: 30px;
-        margin-top: 10px;
-        padding: 6px 20px;
-        border: none;
-    }
-    
-    .modal-confirm .btn:hover,
-    .modal-confirm .btn:focus {
-        background: #eda645 !important;
-        outline: none;
-    }
-    
-    .modal-confirm .btn span {
-        margin: 1px 3px 0;
-        float: left;
-    }
-    
-    .modal-confirm .btn i {
-        margin-left: 1px;
-        font-size: 20px;
-        float: right;
-    }
-    
-    .trigger-btn {
-        display: inline-block;
-        margin: 100px auto;
-    }
-    /* End   [2021-03-18] - Modal Get in touch index */
     /* Start [2021-03-16] - form */
     
     .formLabel {
@@ -948,7 +790,7 @@
         margin: auto;
     }
     /*End Footer*/
-    /* Start [2021-03-05] - Experience */
+    /* Start [2021-03-05] - Experience/ now Service */
     
     .services {
         display: flex;
@@ -979,7 +821,7 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            /*transition: var(--transition) !important;*/
+            border: 1px solid $aqua;
             img {
                 border-radius: 5px;
                 width: 100%;
@@ -1010,7 +852,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 100vw;
+        width: 100%;
         height: 100%;
         background: linear-gradient(to top, transparent, black);
         padding: 1rem;
@@ -1037,12 +879,99 @@
         flex-wrap: wrap;
         justify-content: center;
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         background: linear-gradient(to top, transparent, black);
         h2,
         h3 {
             text-align: center;
         }
+        /*contact form*/
+        .contenedor-contacto {
+            background: transparent;
+            padding: 50px;
+            width: 100%;
+            margin-top: 0px;
+        }
+        .flex-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: transparent;
+            margin: 10px 50px;
+            padding: 20px;
+            border: 1px solid $aqua;
+            border-radius: 5px;
+        }
+        .form {
+            min-width: 400px;
+            flex: 1;
+            text-align: center;
+            padding: 30px;
+            order: 5;
+        }
+        .form__input {
+            width: 100%;
+            padding: 7px;
+            margin: 6px 0;
+            border: none;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: transparent;
+            color: #fff;
+            font-size: 1rem;
+        }
+        .form__input:focus {
+            border: 1px solid $aqua;
+            outline: none;
+        }
+        .form textarea {
+            min-height: 150px;
+            resize: none;
+        }
+        /* Estilo imagen correo */
+        .form-img {
+            flex: 1;
+            padding: 10px;
+            display: flex;
+            min-width: 300px;
+            max-width: 400px;
+            order: 1;
+        }
+        .form-img div {
+            padding: 10px;
+        }
+        .img-container {
+            margin: auto;
+        }
+        .img-container div {
+            background-color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            padding: 40px;
+        }
+        .form-img img {
+            width: 90%;
+            margin: auto;
+        }
+        .form input[type="submit"] {
+            background-color: #fff;
+            border: solid 1px $aqua;
+            width: 100%;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 12px;
+            color: $aqua;
+        }
+        .form input[type="submit"]:hover {
+            background-color: #00aae4;
+            background: $aqua;
+            color: #fff;
+            font-weight: bold;
+            padding: 12px;
+            transition: all 0.7s;
+        }
+        /* End contact form */
     }
     /* End   [2021-03-05] - Contact */
     /* End   [2021-03-10] - Mobile version */
@@ -1066,29 +995,60 @@
     
     @media only screen and (min-width: 360px) {
         body {
-            background-color: violet;
+            overflow-x: hidden;
+        }
+        .header {
+            ul {
+                li {
+                    a {
+                        width: 110px;
+                    }
+                }
+            }
+        }
+        .git::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 45px;
+            height: 1px;
+            background-color: $aqua;
+            top: 1.2rem;
+            left: 0;
+            right: 25em;
+            bottom: 0;
+            margin: auto;
+        }
+        .cod::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 45px;
+            height: 1px;
+            background-color: $aqua;
+            top: 1.2rem;
+            left: 0;
+            right: -20em;
+            bottom: 0;
+            margin: auto;
         }
         .about {
             .about__description {
-                width: 100%;
+                width: 90%;
                 .container-description {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: center;
                     width: 100%;
                     .container-galery {
-                        width: 100%;
-                        padding: 2rem 0rem 5rem 0rem;
+                        width: 95%;
+                        padding: 0rem;
                     }
                     .paragraph {
                         width: 100%;
                         text-align: left;
                         align-self: center;
                     }
-                }
-                .galery {
-                    width: 55%;
-                    margin: 0px auto;
                 }
                 h4 {
                     text-decoration-skip-ink: auto;
@@ -1099,12 +1059,17 @@
                     padding: 10px;
                     text-align: center;
                 }
+                .galery {
+                    width: 90%;
+                    margin: 0px auto;
+                    padding: 0;
+                }
             }
             /*line*/
             /*aboutme more*/
             .container {
-                min-height: 100vh;
-                width: 57%;
+                min-height: 95vh;
+                width: 90%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -1112,7 +1077,7 @@
                 background-color: transparent;
             }
             .line {
-                width: 90%;
+                width: 95%;
                 height: auto;
                 max-width: 800px;
                 margin: 0 auto;
@@ -1160,7 +1125,7 @@
                 background-color: gray;
             }
             .line ul li {
-                width: 75%;
+                width: 130px;
                 position: relative;
                 margin-bottom: 50px;
                 padding: 0px 10px;
@@ -1168,13 +1133,13 @@
             .line ul li:nth-child(odd) {
                 float: left;
                 clear: right;
-                transform: translateX(-136px);
+                transform: translateX(-37px);
                 border-radius: 20px 0px 20px 20px;
             }
             .line ul li:nth-child(even) {
                 float: right;
                 clear: left;
-                transform: translateX(101px);
+                transform: translateX(2px);
                 border-radius: 0px 20px 20px 20px;
             }
             .line ul li::before {
@@ -1203,12 +1168,192 @@
                 background-color: aqua;
             }
         }
+        /* start service */
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, transparent, black);
+            margin-bottom: 3rem;
+            .service-cards {
+                margin-top: 4rem;
+                display: grid;
+                width: 90%;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                grid-auto-rows: 300px;
+                grid-column-gap: 10px;
+                grid-row-gap: 45px;
+                background-color: transparent;
+            }
+            .service-cards__item {
+                border-radius: 5px;
+                padding: 10px;
+                opacity: 1;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                border: 1px solid $aqua;
+                img {
+                    border-radius: 5px;
+                    width: 100%;
+                    height: 75%;
+                    background-color: $aqua;
+                    padding: 1rem
+                }
+                p {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    height: 20%;
+                    margin: 0;
+                    padding: 0;
+                }
+                &:hover {
+                    opacity: 1;
+                    cursor: pointer;
+                }
+            }
+            h2 {
+                text-align: center;
+            }
+        }
+        /*Work*/
+        .work {
+            padding: 2rem 0rem;
+            .description {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid $aqua;
+                margin: 2rem;
+                padding: 1rem;
+                p {
+                    width: 100%;
+                    padding: 5px;
+                    margin: 0;
+                    font-size: 1.1rem;
+                }
+                .p-work {
+                    margin-top: 1rem;
+                    width: 70%;
+                }
+                /*Github links*/
+                @for $i from 0 through 3 {
+                    .link__#{$i} {
+                        margin-top: 1rem;
+                        line-height: 35px;
+                        font-size: 1.2rem;
+                        transition: var(--transition);
+                        &:hover {
+                            color: $aqua;
+                        }
+                    }
+                }
+            }
+        }
+        .contact {
+            /*contact form*/
+            .contenedor-contacto {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                background: transparent;
+                padding: 0px;
+                width: 100%;
+                margin-top: 0px;
+                margin-bottom: 1rem;
+            }
+            .flex-container {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                background: transparent;
+                margin: 10px 50px;
+                padding: 0px;
+                border: 1px solid $aqua;
+                border-radius: 5px;
+                width: 100%;
+            }
+            .form {
+                min-width: 250px;
+                flex: 1;
+                text-align: center;
+                padding: 30px;
+                order: 5;
+            }
+            .form__input {
+                width: 100%;
+                padding: 7px;
+                margin: 6px 0;
+                border: none;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background: transparent;
+                color: #fff;
+                font-size: 1rem;
+            }
+            .form__input:focus {
+                border: 1px solid $aqua;
+                outline: none;
+            }
+            .form textarea {
+                min-height: 150px;
+                resize: none;
+            }
+            /* Estilo imagen correo */
+            .form-img {
+                flex: 1;
+                padding: 10px;
+                display: flex;
+                min-width: 300px;
+                max-width: 400px;
+                order: 1;
+            }
+            .form-img div {
+                padding: 10px;
+            }
+            .img-container {
+                margin: auto;
+            }
+            .img-container div {
+                background-color: #fff;
+                border-radius: 50%;
+                text-align: center;
+                padding: 40px;
+            }
+            .form-img img {
+                width: 90%;
+                margin: auto;
+            }
+            .form input[type="submit"] {
+                background-color: #fff;
+                border: solid 1px $aqua;
+                width: 100%;
+                border-radius: 5px;
+                font-weight: bold;
+                padding: 12px;
+                color: $aqua;
+            }
+            .form input[type="submit"]:hover {
+                background-color: #00aae4;
+                background: $aqua;
+                color: #fff;
+                font-weight: bold;
+                padding: 12px;
+                transition: all 0.7s;
+            }
+            /* End contact form */
+        }
     }
     
     @media only screen and (min-width: 480px) {
-        body {
-            background-color: green;
-        }
         .about {
             .about__description {
                 width: 90%;
@@ -1241,6 +1386,7 @@
                 .galery {
                     width: 90%;
                     margin: 0px auto;
+                    padding: 2rem;
                 }
             }
             /*line*/
@@ -1368,7 +1514,7 @@
                     width: 71%;
                 }
                 /*Github links*/
-                @for $i from 0 through 2 {
+                @for $i from 0 through 3 {
                     .link__#{$i} {
                         margin-top: 1rem;
                         line-height: 35px;
@@ -1381,14 +1527,106 @@
                 }
             }
         }
+        .contact {
+            /*contact form*/
+            .contenedor-contacto {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                background: transparent;
+                padding: 0px;
+                width: 100%;
+                margin-top: 0px;
+                margin-bottom: 1rem;
+            }
+            .flex-container {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                background: transparent;
+                margin: 10px 50px;
+                padding: 0px;
+                border: 1px solid $aqua;
+                border-radius: 5px;
+                width: 100%;
+            }
+            .form {
+                min-width: 250px;
+                flex: 1;
+                text-align: center;
+                padding: 30px;
+                order: 5;
+            }
+            .form__input {
+                width: 100%;
+                padding: 7px;
+                margin: 6px 0;
+                border: none;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background: transparent;
+                color: #fff;
+                font-size: 1rem;
+            }
+            .form__input:focus {
+                border: 1px solid $aqua;
+                outline: none;
+            }
+            .form textarea {
+                min-height: 150px;
+                resize: none;
+            }
+            /* Estilo imagen correo */
+            .form-img {
+                flex: 1;
+                padding: 10px;
+                display: flex;
+                min-width: 300px;
+                max-width: 400px;
+                order: 1;
+            }
+            .form-img div {
+                padding: 10px;
+            }
+            .img-container {
+                margin: auto;
+            }
+            .img-container div {
+                background-color: #fff;
+                border-radius: 50%;
+                text-align: center;
+                padding: 40px;
+            }
+            .form-img img {
+                width: 90%;
+                margin: auto;
+            }
+            .form input[type="submit"] {
+                background-color: #fff;
+                border: solid 1px $aqua;
+                width: 100%;
+                border-radius: 5px;
+                font-weight: bold;
+                padding: 12px;
+                color: $aqua;
+            }
+            .form input[type="submit"]:hover {
+                background-color: #00aae4;
+                background: $aqua;
+                color: #fff;
+                font-weight: bold;
+                padding: 12px;
+                transition: all 0.7s;
+            }
+            /* End contact form */
+        }
     }
     
     @media only screen and (min-width: 640px) {}
     
     @media only screen and (min-width: 767px) {
-        body {
-            background-color: #eeb711;
-        }
         .about {
             .about__description {
                 width: 90%;
@@ -1397,9 +1635,10 @@
                     flex-wrap: wrap;
                     justify-content: center;
                     width: 100%;
+                    padding: 1rem 1rem 1rem 1rem;
                     .container-galery {
                         width: 100%;
-                        padding: 2rem 0rem 2rem 0rem;
+                        padding: 2rem 0rem 5rem 0rem;
                     }
                     .paragraph {
                         width: 60%;
@@ -1418,6 +1657,7 @@
                 }
                 .galery {
                     width: 55%;
+                    padding: 2rem;
                 }
             }
             /*line*/
@@ -1545,7 +1785,7 @@
                     width: 41%;
                 }
                 /*Github links*/
-                @for $i from 0 through 2 {
+                @for $i from 0 through 3 {
                     .link__#{$i} {
                         margin-top: 1rem;
                         line-height: 35px;
@@ -1567,6 +1807,7 @@
                 .galery {
                     width: 45%;
                     margin: 0px auto;
+                    padding: 2rem;
                 }
             }
         }
@@ -1592,7 +1833,7 @@
                     width: 31%;
                 }
                 /*Github links*/
-                @for $i from 0 through 2 {
+                @for $i from 0 through 3 {
                     .link__#{$i} {
                         margin-top: 1rem;
                         line-height: 35px;
@@ -1609,10 +1850,6 @@
     /* Start [2021-03-10] - Responsive 950px - DESKTOP */
     
     @media only screen and (min-width: 1240px) {
-        body {
-            background-color: red;
-        }
-        ;
         /*
     .header span i {
         display: none;
@@ -1880,8 +2117,8 @@
                 }
                 .galery {
                     width: 30%;
-                    background-color: grey;
                     margin: 0px auto;
+                    padding: 2rem;
                 }
             }
             .about-me {
@@ -2088,7 +2325,7 @@
                     width: 29%;
                 }
                 /*Github links*/
-                @for $i from 0 through 2 {
+                @for $i from 0 through 3 {
                     .link__#{$i} {
                         margin-top: 1rem;
                         line-height: 35px;
@@ -2128,9 +2365,19 @@
                     border-radius: 10px;
                     transition: .2s;
                     position: absolute;
-                    top: 146.8rem;
+                    top: 148.25rem;
                 }
-                @for $i from 0 through 2 {
+                .link__3::before {
+                    content: '';
+                    height: 1px;
+                    width: 0px;
+                    background-color: $aqua;
+                    border-radius: 10px;
+                    transition: .2s;
+                    position: absolute;
+                    top: 194.7rem;
+                }
+                @for $i from 0 through 3 {
                     .link__#{$i}:hover::before {
                         width: 87px;
                     }
@@ -2164,6 +2411,93 @@
                 }
             }
         }
+        /*contact form*/
+        .contenedor-contacto {
+            background: transparent;
+            padding: 50px;
+            width: 100%;
+            margin-top: 0px;
+        }
+        .flex-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: transparent;
+            margin: 10px 50px;
+            padding: 20px;
+            border: 1px solid $aqua;
+            border-radius: 5px;
+        }
+        .form {
+            min-width: 400px;
+            flex: 1;
+            text-align: center;
+            padding: 30px;
+            order: 5;
+        }
+        .form__input {
+            width: 100%;
+            padding: 7px;
+            margin: 6px 0;
+            border: none;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: transparent;
+            color: #fff;
+            font-size: 1rem;
+        }
+        .form__input:focus {
+            border: 1px solid $aqua;
+            outline: none;
+        }
+        .form textarea {
+            min-height: 150px;
+            resize: none;
+        }
+        /* Estilo imagen correo */
+        .form-img {
+            flex: 1;
+            padding: 10px;
+            display: flex;
+            min-width: 300px;
+            max-width: 400px;
+            order: 1;
+        }
+        .form-img div {
+            padding: 10px;
+        }
+        .img-container {
+            margin: auto;
+        }
+        .img-container div {
+            background-color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            padding: 40px;
+        }
+        .form-img img {
+            width: 90%;
+            margin: auto;
+        }
+        .form input[type="submit"] {
+            background-color: #fff;
+            border: solid 1px $aqua;
+            width: 100%;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 12px;
+            color: $aqua;
+        }
+        .form input[type="submit"]:hover {
+            background-color: #00aae4;
+            background: $aqua;
+            color: #fff;
+            font-weight: bold;
+            padding: 12px;
+            transition: all 0.7s;
+        }
+        /* End contact form */
     }
     
     @media only screen and (min-width: 1575px) {
@@ -2174,6 +2508,7 @@
                 }
                 .galery {
                     width: 24%;
+                    padding: 2rem;
                 }
             }
         }
@@ -2274,6 +2609,7 @@
     $icons:(github,
     discord,
     linkedin,
+    mail,
     codepen);
     /*Each*/
     
