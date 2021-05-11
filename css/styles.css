@@ -82,7 +82,7 @@ textarea {
 }
 
 .big__heading {
-  font-size: clamp(40px, 8vw, 80px);
+  font-size: clamp(60px, 8vw, 80px);
   text-align: center;
 }
 
@@ -396,7 +396,7 @@ section {
   display: flex;
   width: 100%;
   height: 100%;
-  padding-top: 2rem;
+  padding: 2rem 0rem;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -408,11 +408,9 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  margin-top: 1rem;
 }
 .about .about__description {
   width: 100%;
-  padding: 2rem 0rem;
 }
 .about .about__description .container-description {
   display: flex;
@@ -423,7 +421,6 @@ section {
   margin: 0px auto;
   padding: 2rem;
   margin-bottom: 8rem;
-  margin-top: 1rem;
   border-radius: 5px;
   border: 1px solid #64ffda;
 }
@@ -464,17 +461,6 @@ section {
 }
 .about .about__description .container-description div img:hover {
   opacity: 1;
-}
-.about .about-me {
-  margin-top: 3rem;
-  border-radius: 5px;
-  width: 57%;
-  border: 1px solid #64ffda;
-  padding: 0rem 2rem;
-  color: #fff;
-}
-.about .about-me__things {
-  font-family: "Raleway", sans-serif;
 }
 .about .container {
   min-height: 100vh;
@@ -733,7 +719,7 @@ section {
 /*Start Footer*/
 footer {
   position: absolute;
-  bottom: 0;
+  bottom: 1rem;
   width: 100%;
   height: 40px;
   text-align: center;
@@ -743,22 +729,12 @@ footer ul {
   list-style: none;
   display: flex;
   justify-content: center;
-}
-footer ul li {
-  padding: 5px;
-  margin: 0px auto;
-}
-
-footer {
-  bottom: 1rem;
-  width: 100%;
-  height: 50px;
-}
-footer ul {
   width: 185px;
   margin: 0px auto;
 }
 footer ul li {
+  padding: 5px;
+  margin: 0px auto;
   display: flex;
   justify-content: center;
   margin: 0px 5px;
@@ -815,6 +791,7 @@ footer ul li:last-child {
   height: 100%;
   background: linear-gradient(to top, transparent, black);
   margin-bottom: 3rem;
+  padding: 4rem 0rem;
 }
 .services .service-cards {
   margin-top: 4rem;
@@ -869,7 +846,7 @@ footer ul li:last-child {
   width: 100%;
   height: 100%;
   background: linear-gradient(to top, transparent, black);
-  padding: 1rem;
+  padding: 4rem 0rem;
 }
 .work .description {
   border: 1px solid #64ffda;
@@ -895,12 +872,14 @@ footer ul li:last-child {
   width: 100vw;
   height: 100%;
   background: linear-gradient(to top, transparent, black);
+  padding: 4rem 0rem;
   /*contact form*/
   /* Estilo imagen correo */
   /* End contact form */
 }
 .contact h2,
 .contact h3 {
+  width: 100%;
   text-align: center;
 }
 .contact .contenedor-contacto {
@@ -971,13 +950,13 @@ footer ul li:last-child {
   margin: auto;
 }
 .contact .form input[type=submit] {
-  background-color: #fff;
+  background-color: #64ffda;
   border: solid 1px #64ffda;
   width: 100%;
   border-radius: 5px;
   font-weight: bold;
   padding: 12px;
-  color: #64ffda;
+  color: #fff;
 }
 .contact .form input[type=submit]:hover {
   background-color: #00aae4;
@@ -1008,8 +987,14 @@ footer ul li:last-child {
     overflow-x: hidden;
   }
 
+  /*header*/
   .header ul li a {
     width: 110px;
+  }
+
+  /* footer */
+  footer {
+    margin-top: 2rem;
   }
 
   .git::before {
@@ -1021,7 +1006,7 @@ footer ul li:last-child {
     background-color: #64ffda;
     top: 1.2rem;
     left: 0;
-    right: 25em;
+    right: 16.5em;
     bottom: 0;
     margin: auto;
   }
@@ -1035,14 +1020,82 @@ footer ul li:last-child {
     background-color: #64ffda;
     top: 1.2rem;
     left: 0;
-    right: -20em;
+    right: -16.5em;
     bottom: 0;
     margin: auto;
   }
 
+  /*presentation section*/
+  .presentation {
+    height: 90vh;
+  }
+  .presentation .presentation__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    margin-bottom: 15rem;
+  }
+  .presentation .presentation__content .presentation__hi {
+    display: none;
+  }
+  .presentation .presentation__content h1 {
+    margin-bottom: 0;
+    padding: 7px;
+  }
+  .presentation .presentation__content .big__heading {
+    font-size: clamp(40px, 8vw, 55px);
+  }
+  .presentation .presentation__content p {
+    margin-top: 0;
+    padding: 1rem;
+  }
+  .presentation .presentation__content h2 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    font-weight: normal;
+    -webkit-text-stroke: 1px #64ffda;
+    -webkit-text-fill-color: transparent;
+    animation: glow-title 2s ease-in-out infinite alternate;
+  }
+  .presentation .presentation__content .start {
+    font-size: 2rem;
+    width: 175px;
+    padding: 5px;
+    text-align: center;
+  }
+  .presentation .big__heading::before {
+    content: "Hi, my name is";
+    display: block;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    width: 95%;
+    height: 50px;
+    margin-top: -3.5rem;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color: #64ffda;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+
+  /*end presentation*/
+  /*about section*/
   .about {
+    padding: 2rem 0rem;
     /*line*/
     /*aboutme more*/
+  }
+  .about h4 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 0;
+    color: #64ffda;
+    font-size: 1.7;
   }
   .about .about__description {
     width: 90%;
@@ -1062,15 +1115,6 @@ footer ul li:last-child {
     text-align: left;
     align-self: center;
   }
-  .about .about__description h4 {
-    text-decoration-skip-ink: auto;
-    text-decoration: none;
-    font-family: "Raleway", sans-serif;
-    font-size: 1.5rem;
-    color: #64ffda;
-    padding: 10px;
-    text-align: center;
-  }
   .about .about__description .galery {
     width: 90%;
     margin: 0px auto;
@@ -1080,10 +1124,12 @@ footer ul li:last-child {
     min-height: 95vh;
     width: 90%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 100px 0;
     background-color: transparent;
+    margin-top: 3rem;
   }
   .about .line {
     width: 95%;
@@ -1127,14 +1173,14 @@ footer ul li:last-child {
     content: "";
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 2%;
     transform: translateX(-50%);
     width: 2px;
     height: 100%;
     background-color: gray;
   }
   .about .line ul li {
-    width: 130px;
+    width: 250px;
     position: relative;
     margin-bottom: 50px;
     padding: 0px 10px;
@@ -1142,13 +1188,13 @@ footer ul li:last-child {
   .about .line ul li:nth-child(odd) {
     float: left;
     clear: right;
-    transform: translateX(-37px);
-    border-radius: 20px 0px 20px 20px;
+    transform: translateX(0px);
+    border-radius: 0px 20px 20px 20px;
   }
   .about .line ul li:nth-child(even) {
     float: right;
     clear: left;
-    transform: translateX(2px);
+    transform: translateX(-25px);
     border-radius: 0px 20px 20px 20px;
   }
   .about .line ul li::before {
@@ -1159,6 +1205,7 @@ footer ul li:last-child {
     border-radius: 50%;
     background-color: gray;
     top: 0px;
+    left: -2.95rem;
   }
   .about .line ul li:nth-child(odd)::before {
     transform: translate(50%, -50%);
@@ -1187,6 +1234,7 @@ footer ul li:last-child {
     height: 100%;
     background: linear-gradient(to top, transparent, black);
     margin-bottom: 3rem;
+    padding: 4rem 0rem;
   }
   .services .service-cards {
     margin-top: 4rem;
@@ -1232,7 +1280,7 @@ footer ul li:last-child {
 
   /*Work*/
   .work {
-    padding: 2rem 0rem;
+    padding: 4rem 0rem;
   }
   .work .description {
     display: flex;
@@ -1294,6 +1342,7 @@ footer ul li:last-child {
 
   .contact {
     /*contact form*/
+    padding: 4rem 0rem;
     /* Estilo imagen correo */
     /* End contact form */
   }
@@ -1371,13 +1420,13 @@ footer ul li:last-child {
     margin: auto;
   }
   .contact .form input[type=submit] {
-    background-color: #fff;
+    background-color: #64ffda;
     border: solid 1px #64ffda;
     width: 100%;
     border-radius: 5px;
     font-weight: bold;
     padding: 12px;
-    color: #64ffda;
+    color: #fff;
   }
   .contact .form input[type=submit]:hover {
     background-color: #00aae4;
@@ -1389,9 +1438,65 @@ footer ul li:last-child {
   }
 }
 @media only screen and (min-width: 480px) {
+  .presentation .presentation__content {
+    margin-bottom: 5rem;
+    padding: 0;
+  }
+  .presentation .presentation__content .presentation__hi {
+    display: inline-block;
+  }
+  .presentation .presentation__content h1 {
+    padding: 0rem;
+  }
+  .presentation .big__heading::before {
+    width: 100%;
+    margin-top: -3.5rem;
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+
+  /*footer line*/
+  .git::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: #64ffda;
+    top: 1.2rem;
+    left: 0;
+    right: 20em;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .cod::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: #64ffda;
+    top: 1.2rem;
+    left: 0;
+    right: -20.5em;
+    bottom: 0;
+    margin: auto;
+  }
+
+  /*about section*/
   .about {
+    padding: 2rem 0rem;
     /*line*/
-    /*aboutme more*/
+    /*about me more*/
+  }
+  .about h4 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    color: #64ffda;
+    font-size: 1.7;
   }
   .about .about__description {
     width: 90%;
@@ -1413,15 +1518,6 @@ footer ul li:last-child {
     text-align: left;
     align-self: center;
   }
-  .about .about__description h4 {
-    text-decoration-skip-ink: auto;
-    text-decoration: none;
-    font-family: "Raleway", sans-serif;
-    font-size: 1.5rem;
-    color: #64ffda;
-    padding: 10px;
-    text-align: center;
-  }
   .about .about__description .galery {
     width: 90%;
     margin: 0px auto;
@@ -1431,6 +1527,7 @@ footer ul li:last-child {
     min-height: 100vh;
     width: 57%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 100px 0;
@@ -1510,6 +1607,7 @@ footer ul li:last-child {
     border-radius: 50%;
     background-color: gray;
     top: 0px;
+    left: 12.8rem;
   }
   .about .line ul li:nth-child(odd)::before {
     transform: translate(50%, -50%);
@@ -1528,8 +1626,9 @@ footer ul li:last-child {
     background-color: aqua;
   }
 
+  /*work section*/
   .work {
-    padding: 2rem 0rem;
+    padding: 4rem 0rem;
   }
   .work .description {
     display: flex;
@@ -1589,8 +1688,11 @@ footer ul li:last-child {
     color: #64ffda;
   }
 
+  /*end work*/
+  /*contact section*/
   .contact {
     /*contact form*/
+    padding: 4rem 0rem;
     /* Estilo imagen correo */
     /* End contact form */
   }
@@ -1668,13 +1770,13 @@ footer ul li:last-child {
     margin: auto;
   }
   .contact .form input[type=submit] {
-    background-color: #fff;
+    background-color: #64ffda;
     border: solid 1px #64ffda;
     width: 100%;
     border-radius: 5px;
     font-weight: bold;
     padding: 12px;
-    color: #64ffda;
+    color: #fff;
   }
   .contact .form input[type=submit]:hover {
     background-color: #00aae4;
@@ -1686,9 +1788,64 @@ footer ul li:last-child {
   }
 }
 @media only screen and (min-width: 767px) {
+  .presentation .presentation__content {
+    margin-bottom: 7rem;
+    padding: 0;
+  }
+  .presentation .presentation__content .presentation__hi {
+    display: inline-block;
+  }
+  .presentation .presentation__content h1 {
+    padding: 0rem;
+  }
+  .presentation .big__heading::before {
+    margin-top: -3.5rem;
+    width: 100%;
+  }
+
+  /*footer line*/
+  .git::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: #64ffda;
+    top: 1.2rem;
+    left: 0;
+    right: 29em;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .cod::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: #64ffda;
+    top: 1.2rem;
+    left: 0;
+    right: -29.5em;
+    bottom: 0;
+    margin: auto;
+  }
+
+  /*about section*/
   .about {
+    padding: 2rem 0rem;
     /*line*/
     /*aboutme more*/
+  }
+  .about h4 {
+    width: 100%;
+    text-decoration-skip-ink: auto;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    color: #64ffda;
+    font-size: 1.7;
   }
   .about .about__description {
     width: 90%;
@@ -1709,15 +1866,6 @@ footer ul li:last-child {
     text-align: left;
     align-self: center;
   }
-  .about .about__description h4 {
-    text-decoration-skip-ink: auto;
-    text-decoration: none;
-    font-family: "Raleway", sans-serif;
-    font-size: 1.5rem;
-    color: #64ffda;
-    padding: 10px;
-    text-align: center;
-  }
   .about .about__description .galery {
     width: 55%;
     padding: 2rem;
@@ -1726,6 +1874,7 @@ footer ul li:last-child {
     min-height: 100vh;
     width: 57%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 100px 0;
@@ -1805,6 +1954,7 @@ footer ul li:last-child {
     border-radius: 50%;
     background-color: gray;
     top: 0px;
+    left: 17.5rem;
   }
   .about .line ul li:nth-child(odd)::before {
     transform: translate(50%, -50%);
@@ -1824,7 +1974,7 @@ footer ul li:last-child {
   }
 
   .work {
-    padding: 2rem 0rem;
+    padding: 4rem 0rem;
   }
   .work .description {
     display: flex;
@@ -1895,7 +2045,7 @@ footer ul li:last-child {
   }
 
   .work {
-    padding: 2rem 0rem;
+    padding: 4rem 0rem;
   }
   .work .description {
     display: flex;
@@ -2092,7 +2242,7 @@ footer ul li:last-child {
   }
 
   .big__heading {
-    font-size: clamp(40px, 8vw, 55px);
+    font-size: clamp(60px, 9vw, 75px);
   }
 
   .button, .button--form {
@@ -2109,6 +2259,10 @@ footer ul li:last-child {
     width: 100%;
     justify-content: center;
     align-items: center;
+    margin-top: 7rem;
+  }
+  .presentation .presentation__content .presentation__hi {
+    display: inline-block;
   }
   .presentation .presentation__content h1 {
     margin-bottom: 0;
@@ -2132,6 +2286,12 @@ footer ul li:last-child {
     width: 175px;
     padding: 5px;
     text-align: center;
+  }
+  .presentation .big__heading::before {
+    margin-top: -3.5rem;
+    margin-left: 1rem;
+    width: 95%;
+    font-size: 2rem;
   }
 
   /*End home*/
@@ -2182,7 +2342,16 @@ footer ul li:last-child {
     justify-content: center;
     align-items: center;
     margin-bottom: 10rem;
+    padding: 2rem 0rem;
     /*aboutme more*/
+  }
+  .about h4 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    color: #64ffda;
+    font-size: 1.7;
   }
   .about .about__first-section {
     display: flex;
@@ -2251,25 +2420,16 @@ footer ul li:last-child {
     margin: 0px auto;
     padding: 2rem;
   }
-  .about .about-me {
-    margin-top: 3rem;
-    border-radius: 5px;
-    width: 57%;
-    border: 1px solid #64ffda;
-    padding: 0rem 2rem;
-    color: #fff;
-  }
-  .about .about-me__things {
-    font-family: "Raleway", sans-serif;
-  }
   .about .container {
     min-height: 100vh;
     width: 57%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 100px 0;
+    padding: 100px 0px;
     background-color: transparent;
+    border-radius: 5px;
   }
   .about .line {
     width: 90%;
@@ -2344,6 +2504,7 @@ footer ul li:last-child {
     border-radius: 50%;
     background-color: gray;
     top: 0px;
+    left: 19.4rem;
   }
   .about .line ul li:nth-child(odd)::before {
     transform: translate(50%, -50%);
@@ -2368,12 +2529,6 @@ footer ul li:last-child {
     background-color: transparent;
     padding: 2rem 0rem 5rem 0rem;
   }
-  .container-galery h4 {
-    text-align: center;
-    padding-bottom: 20px;
-    color: #64ffda;
-    font-family: "Nunito Sans", sans-serif;
-  }
 
   /* services */
   .services {
@@ -2384,7 +2539,7 @@ footer ul li:last-child {
     width: 100vw;
     height: 100%;
     background: linear-gradient(to top, transparent, black);
-    padding-top: 2.7rem;
+    padding: 4rem 0rem;
     margin-bottom: 4rem;
   }
   .services .service-cards {
@@ -2423,14 +2578,13 @@ footer ul li:last-child {
   }
   .services .service-cards__item:hover {
     cursor: pointer;
-    transform: translateY(-10px) !important;
   }
   .services h2 {
     text-align: center;
   }
 
   .work {
-    padding: 2rem 3rem;
+    padding: 4rem 3rem;
   }
   .work .description {
     display: flex;
@@ -2548,6 +2702,105 @@ footer ul li:last-child {
     width: 87px;
   }
 
+  .contact {
+    padding: 4rem 0rem;
+    /*contact form*/
+    /* Estilo imagen correo */
+    /* End contact form */
+  }
+  .contact h3 {
+    width: 100%;
+  }
+  .contact p {
+    width: 50%;
+  }
+  .contact .contenedor-contacto {
+    background: transparent;
+    padding: 50px;
+    width: 100%;
+    margin-top: 0px;
+  }
+  .contact .flex-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: transparent;
+    margin: 10px 50px;
+    padding: 20px;
+    border: 1px solid #64ffda;
+    border-radius: 5px;
+    width: 80%;
+  }
+  .contact .form {
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+    order: 5;
+  }
+  .contact .form__input {
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    font-size: 1rem;
+  }
+  .contact .form__input:focus {
+    border: 1px solid #64ffda;
+    outline: none;
+  }
+  .contact .form textarea {
+    min-height: 150px;
+    resize: none;
+  }
+  .contact .form-img {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    min-width: 300px;
+    max-width: 400px;
+    order: 1;
+  }
+  .contact .form-img div {
+    padding: 10px;
+  }
+  .contact .img-container {
+    margin: auto;
+  }
+  .contact .img-container div {
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 40px;
+  }
+  .contact .form-img img {
+    width: 90%;
+    margin: auto;
+  }
+  .contact .form input[type=submit] {
+    background-color: #64ffda;
+    border: solid 1px #64ffda;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 12px;
+    color: #fff;
+  }
+  .contact .form input[type=submit]:hover {
+    background-color: #00aae4;
+    background: #64ffda;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px;
+    transition: all 0.7s;
+  }
+
+  /*footer*/
   footer {
     position: absolute;
     bottom: 1rem;
@@ -2575,107 +2828,6 @@ footer ul li:last-child {
   footer ul li:last-child {
     margin-right: 2.1rem;
   }
-
-  /*contact form*/
-  .contenedor-contacto {
-    background: transparent;
-    padding: 50px;
-    width: 100%;
-    margin-top: 0px;
-  }
-
-  .flex-container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: transparent;
-    margin: 10px 50px;
-    padding: 20px;
-    border: 1px solid #64ffda;
-    border-radius: 5px;
-  }
-
-  .form {
-    min-width: 400px;
-    flex: 1;
-    text-align: center;
-    padding: 30px;
-    order: 5;
-  }
-
-  .form__input {
-    width: 100%;
-    padding: 7px;
-    margin: 6px 0;
-    border: none;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background: transparent;
-    color: #fff;
-    font-size: 1rem;
-  }
-
-  .form__input:focus {
-    border: 1px solid #64ffda;
-    outline: none;
-  }
-
-  .form textarea {
-    min-height: 150px;
-    resize: none;
-  }
-
-  /* Estilo imagen correo */
-  .form-img {
-    flex: 1;
-    padding: 10px;
-    display: flex;
-    min-width: 300px;
-    max-width: 400px;
-    order: 1;
-  }
-
-  .form-img div {
-    padding: 10px;
-  }
-
-  .img-container {
-    margin: auto;
-  }
-
-  .img-container div {
-    background-color: #fff;
-    border-radius: 50%;
-    text-align: center;
-    padding: 40px;
-  }
-
-  .form-img img {
-    width: 90%;
-    margin: auto;
-  }
-
-  .form input[type=submit] {
-    background-color: #fff;
-    border: solid 1px #64ffda;
-    width: 100%;
-    border-radius: 5px;
-    font-weight: bold;
-    padding: 12px;
-    color: #64ffda;
-  }
-
-  .form input[type=submit]:hover {
-    background-color: #00aae4;
-    background: #64ffda;
-    color: #fff;
-    font-weight: bold;
-    padding: 12px;
-    transition: all 0.7s;
-  }
-
-  /* End contact form */
 }
 @media only screen and (min-width: 1575px) {
   .about .about__description .container-description {
@@ -2685,48 +2837,18 @@ footer ul li:last-child {
     width: 24%;
     padding: 2rem;
   }
+  .about .line ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+    left: 24.5rem;
+  }
 }
-.presentation__wolf::after {
-  content: "<Mauricio Fernandez/>";
-  display: block;
-  transition: 0.5s ease-in-out;
-  position: absolute;
-  width: 550px;
-  height: 85px;
-  margin-top: 4rem;
-  margin-left: 35rem;
-  font-size: clamp(50px, 10vw, 60px);
-  color: #fff;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 700;
-  text-align: right;
-}
-
-.presentation__wolf::before {
-  content: "Hi, my name is";
-  display: block;
-  transition: 0.5s ease-in-out;
-  position: absolute;
-  width: 250px;
-  height: 50px;
-  margin-top: 1.7rem;
-  margin-left: 35rem;
-  font-family: "Raleway", sans-serif;
-  color: #64ffda;
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 5px;
-}
-
-/* End   [2021-03-10] - Responsive 1024px - DESKTOP */
-.loading-screen {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background: #000;
-  z-index: 100;
-}
-
+/* End   [2021-03-10] - Responsive 1575px - DESKTOP */
 /* menu html*/
 .menu {
   display: flex;
