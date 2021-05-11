@@ -2512,7 +2512,7 @@ footer ul li:last-child {
     border-radius: 50%;
     background-color: gray;
     top: 0px;
-    left: 19.4rem;
+    left: 21.1rem;
   }
   .about .line ul li:nth-child(odd)::before {
     transform: translate(50%, -50%);
@@ -2837,7 +2837,7 @@ footer ul li:last-child {
     margin-right: 2.1rem;
   }
 }
-@media only screen and (min-width: 1425px) {
+@media only screen and (min-width: 1370px) {
   .about .line ul li::before {
     content: "";
     position: absolute;
@@ -2846,7 +2846,7 @@ footer ul li:last-child {
     border-radius: 50%;
     background-color: gray;
     top: 0px;
-    left: 22rem;
+    left: 21.4rem;
   }
 }
 @media only screen and (min-width: 1575px) {

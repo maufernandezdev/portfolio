@@ -2375,7 +2375,7 @@
                 border-radius: 50%;
                 background-color: gray;
                 top: 0px;
-                left: 19.4rem;
+                left: 21.1rem;
             }
             .line ul li:nth-child(odd)::before {
                 transform: translate(50%, -50%);
@@ -2666,7 +2666,7 @@
         }
     }
     
-    @media only screen and (min-width: 1425px) {
+    @media only screen and (min-width: 1370px) {
         .about {
             .line ul li::before {
                 content: "";
@@ -2676,7 +2676,7 @@
                 border-radius: 50%;
                 background-color: gray;
                 top: 0px;
-                left: 22rem;
+                left: 21.4rem;
             }
         }
     }
