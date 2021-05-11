@@ -1027,8 +1027,8 @@ footer ul li:last-child {
 
   /*presentation section*/
   .presentation {
-    height: 90vh;
-    padding-top: 7rem;
+    height: 75vh;
+    padding: 7rem 0rem;
   }
   .presentation .presentation__content {
     display: flex;
@@ -1439,8 +1439,11 @@ footer ul li:last-child {
   }
 }
 @media only screen and (min-width: 480px) {
+  .presentation {
+    padding: 7rem 0rem;
+  }
   .presentation .presentation__content {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     padding: 0;
   }
   .presentation .presentation__content .presentation__hi {
@@ -1789,8 +1792,11 @@ footer ul li:last-child {
   }
 }
 @media only screen and (min-width: 767px) {
+  .presentation {
+    padding: 7rem 0rem;
+  }
   .presentation .presentation__content {
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
     padding: 0;
   }
   .presentation .presentation__content .presentation__hi {
@@ -2253,6 +2259,7 @@ footer ul li:last-child {
   /*Start home*/
   .presentation {
     height: 75vh;
+    padding: 1rem 0rem;
   }
   .presentation .presentation__content {
     display: flex;

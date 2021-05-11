@@ -1018,8 +1018,8 @@
         }
         /*presentation section*/
         .presentation {
-            height: 90vh;
-            padding-top: 7rem;
+            height: 75vh;
+            padding: 7rem 0rem;
             .presentation__content {
                 display: flex;
                 flex-wrap: wrap;
@@ -1403,8 +1403,9 @@
     
     @media only screen and (min-width: 480px) {
         .presentation {
+            padding: 7rem 0rem;
             .presentation__content {
-                margin-bottom: 5rem;
+                margin-bottom: 4rem;
                 padding: 0;
                 .presentation__hi {
                     display: inline-block;
@@ -1728,8 +1729,9 @@
     
     @media only screen and (min-width: 767px) {
         .presentation {
+            padding: 7rem 0rem;
             .presentation__content {
-                margin-bottom: 7rem;
+                margin-bottom: 5rem;
                 padding: 0;
                 .presentation__hi {
                     display: inline-block;
@@ -2125,6 +2127,7 @@
         /*Start home*/
         .presentation {
             height: 75vh;
+            padding: 1rem 0rem;
             .presentation__content {
                 display: flex;
                 flex-wrap: wrap;
