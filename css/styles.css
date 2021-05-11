@@ -400,7 +400,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10rem;
+  margin-bottom: 2rem;
   /*aboutme more*/
 }
 .about .about__first-section {
@@ -1028,7 +1028,7 @@ footer ul li:last-child {
   /*presentation section*/
   .presentation {
     height: 80vh;
-    padding: 6rem 0rem 7rem 0rem;
+    padding: 5rem 0rem 8rem 0rem;
   }
   .presentation .presentation__content {
     display: flex;
@@ -2349,7 +2349,7 @@ footer ul li:last-child {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
     padding: 2rem 0rem;
     /*aboutme more*/
   }
