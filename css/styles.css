@@ -1027,7 +1027,7 @@ footer ul li:last-child {
 
   /*presentation section*/
   .presentation {
-    height: 75vh;
+    height: 90vh;
     padding-top: 7rem;
   }
   .presentation .presentation__content {
