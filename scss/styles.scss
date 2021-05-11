@@ -1018,7 +1018,7 @@
         }
         /*presentation section*/
         .presentation {
-            height: 90vh;
+            height: 80vh;
             padding: 4.5rem 0rem 8rem 0rem;
             .presentation__content {
                 display: flex;
@@ -2662,6 +2662,21 @@
                 li:last-child {
                     margin-right: 2.1rem;
                 }
+            }
+        }
+    }
+    
+    @media only screen and (min-width: 1425px) {
+        .about {
+            .line ul li::before {
+                content: "";
+                position: absolute;
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                background-color: gray;
+                top: 0px;
+                left: 22rem;
             }
         }
     }
