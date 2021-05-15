@@ -400,7 +400,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10rem;
+  margin-bottom: 2rem;
   /*aboutme more*/
 }
 .about .about__first-section {
@@ -1027,8 +1027,8 @@ footer ul li:last-child {
 
   /*presentation section*/
   .presentation {
-    height: 75vh;
-    padding-top: 7rem;
+    height: 80vh;
+    padding: 4.5rem 0rem 8rem 0rem;
   }
   .presentation .presentation__content {
     display: flex;
@@ -1439,8 +1439,11 @@ footer ul li:last-child {
   }
 }
 @media only screen and (min-width: 480px) {
+  .presentation {
+    padding: 7rem 0rem;
+  }
   .presentation .presentation__content {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     padding: 0;
   }
   .presentation .presentation__content .presentation__hi {
@@ -1789,8 +1792,11 @@ footer ul li:last-child {
   }
 }
 @media only screen and (min-width: 767px) {
+  .presentation {
+    padding: 7rem 0rem;
+  }
   .presentation .presentation__content {
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
     padding: 0;
   }
   .presentation .presentation__content .presentation__hi {
@@ -2253,6 +2259,7 @@ footer ul li:last-child {
   /*Start home*/
   .presentation {
     height: 75vh;
+    padding: 1rem 0rem;
   }
   .presentation .presentation__content {
     display: flex;
@@ -2342,7 +2349,7 @@ footer ul li:last-child {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
     padding: 2rem 0rem;
     /*aboutme more*/
   }
@@ -2505,7 +2512,7 @@ footer ul li:last-child {
     border-radius: 50%;
     background-color: gray;
     top: 0px;
-    left: 19.4rem;
+    left: 21.1rem;
   }
   .about .line ul li:nth-child(odd)::before {
     transform: translate(50%, -50%);
@@ -2828,6 +2835,18 @@ footer ul li:last-child {
   }
   footer ul li:last-child {
     margin-right: 2.1rem;
+  }
+}
+@media only screen and (min-width: 1370px) {
+  .about .line ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+    left: 21.4rem;
   }
 }
 @media only screen and (min-width: 1575px) {
