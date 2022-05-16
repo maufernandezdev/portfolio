@@ -10,6 +10,15 @@ body {
 
 /* Start [2021-03-24] Colors */
 /* End   [2021-03-24] Colors */
+:root {
+  --padding-section: 3em 2em;
+  /* ====== Transition ====== */
+  --tran-03: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.3s ease;
+  --tran-05: all 0.3s ease;
+}
+
 @keyframes anim-shadow-reg-primary {
   100% {
     box-shadow: 0px 0px 5px 1px #64ffda;
@@ -27,9 +36,9 @@ body {
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
-  background: #1e0e2d;
-  background: linear-gradient(to bottom, #1e0e2d 0%, #1E0E2D 100%);
-  padding: 2em 0em;
+  background: #0d1126;
+  background: linear-gradient(45deg, #0d1126 0%, #301748 100%);
+  padding: 3em 0em;
 }
 .presentation .presentation__content .hi {
   color: #64ffda;
@@ -40,7 +49,7 @@ body {
 .presentation .presentation__content h1 {
   width: 100%;
   font-size: 2em;
-  color: #ccc;
+  color: #fff;
 }
 .presentation .presentation__content .paragraph {
   width: 100%;
@@ -86,19 +95,20 @@ body {
   margin-top: 0.3em;
 }
 .presentation .container img {
-  width: 55%;
+  width: 75%;
+  height: 325px;
   margin: 0px auto;
 }
 .presentation .container .paragraph {
   width: 100%;
-  color: #ccc;
+  color: #fff;
   text-align: center;
 }
 .presentation .container .paragraph .typed {
   color: #64ffda;
 }
 .presentation .end {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 h2 {
@@ -122,9 +132,16 @@ section {
   background-color: #151519;
   color: #fff;
   padding: 1em 1.5em;
+  padding: var(--padding-section);
 }
 .about h2 {
   padding: 0;
+  margin: 0;
+}
+.about hr {
+  color: #E1147B;
+  width: 100%;
+  height: 2px;
 }
 .about .about__first-section .container-description {
   font-size: 0.9em;
@@ -195,13 +212,19 @@ section {
 
 .work {
   padding: 2em 1.5em 4em 1.5em;
+  padding: var(--padding-section);
   background-color: #000;
   background: #0d1126;
   background: linear-gradient(to bottom, #0d1126 0%, #101010 100%);
 }
 .work h2 {
   padding: 0em;
-  margin-bottom: 1.5em;
+}
+.work hr {
+  color: #E1147B;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 1.5rem;
 }
 .work .carousel {
   margin: 0.5em 0em;
@@ -264,6 +287,7 @@ section {
   background: linear-gradient(to bottom, #1e0e2d 0%, #1E0E2D 100%);
   padding: 1em 1.5em;
   padding: 2em 1.5em 4em 1.5em;
+  padding: var(--padding-section);
 }
 .contact h2 {
   padding: 0;
@@ -382,27 +406,30 @@ footer {
 footer ul {
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-start;
   height: auto;
   margin-top: 0.2em;
   align-items: center;
-  padding: 0.5em 3em;
+  padding: 0.5em 2em;
 }
 footer ul li {
   list-style: none;
-  margin: 0em 0.5em;
+  margin-right: 0.5rem;
 }
 footer ul li a i {
   font-size: 1.5rem;
   color: #64ffda;
   color: #ccc;
+  color: #777777;
   border-radius: 50%;
 }
 footer label {
   color: #64ffda;
-  text-align: center;
+  color: #777777;
+  text-align: left;
   width: 100%;
   font-size: 1em;
+  padding: 0.5em 2em;
 }
 
 /*# sourceMappingURL=main.css.map */
