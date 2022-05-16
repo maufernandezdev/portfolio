@@ -38,7 +38,7 @@ body {
     display: flex;
     width: 100%;
     // height: 100vh;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
@@ -47,7 +47,7 @@ body {
 
     background: #0d1126;
     background: linear-gradient(45deg, #0d1126 0%, #301748 100%);
-    padding: 3em 0em;
+    padding: 3em 0em 0em 0em;
 
     .presentation__content {
 
@@ -78,6 +78,7 @@ body {
             display: flex;
             width: 100%;
             justify-content: center;
+            margin-top: 1.2em;
 
             .button {
                 border: 1px solid $aqua;
@@ -85,49 +86,47 @@ body {
                 color: $aqua;
                 text-decoration: none;
                 padding: 0.5em;
+                margin: 0em 0.5em;
                 border-radius: 5px;
                 width: 100%;
-                max-width: 150px;
+                max-width: 125px;
                 text-align: center;
+            }
+
+            .talk {
+                background-color: $aqua;
+                color: #fff;
+                color: #000;
             }
         }
     }
 
-    .container {
+    .container-img {
         display: flex;
         width: 100%;
-        justify-content: center;
+        justify-content: flex-end;
+        align-items: flex-end;
+        align-self: flex-end;
         flex-wrap: wrap;
-        margin: 1rem 0rem;
-
-        .button {
-            border: 1px solid $aqua;
-            background-color: transparent;
-            color: $aqua;
-            text-decoration: none;
-            padding: 0.5em;
-            border-radius: 5px;
-            width: 100%;
-            max-width: 150px;
-            text-align: center;
-            margin-top: 0.3em;
-        }
+        margin: 1.5rem 0rem 0rem 0rem;
 
         img {
-            width: 75%;
-            height: 325px;
+            width: 350px;
+            height: 375px;
             margin: 0px auto;
+            padding: 0em 1em;
+            // border-top-left-radius: 50%;
+            // border-top-right-radius: 50%;
+            // border-radius: 50%;
             // background-color: $aqua;
-        }
-
-        .paragraph {
-            width: 100%;
-            color: #fff;
-            text-align: center;
-
-            .typed {
-                color: $aqua
-            }
+            // padding: 1em 1em 0em 1em;
+            // background-color: #64FFDA;
+            object-fit: cover;
+            object-position: 15px 0px;
+            background-image: url("../img/blob-haikei(4).svg");
+            // background-image: url("../img/blurry-gradient-haikei.svg");
+            // background-attachment: fixed;
+            // background-size: cover;
         }
     }
 
@@ -168,7 +167,7 @@ section {
 
     hr {
         color: #E1147B;
-        width: 100%;
+        width: 10%;
         height: 2px;
     }
 
@@ -293,7 +292,7 @@ section {
 
     hr {
         color: #E1147B;
-        width: 100%;
+        width: 10%;
         height: 2px;
         margin-bottom: 1.5rem;
     }

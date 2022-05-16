@@ -32,13 +32,13 @@ body {
 .presentation {
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
   background: #0d1126;
   background: linear-gradient(45deg, #0d1126 0%, #301748 100%);
-  padding: 3em 0em;
+  padding: 3em 0em 0em 0em;
 }
 .presentation .presentation__content .hi {
   color: #64ffda;
@@ -63,6 +63,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
+  margin-top: 1.2em;
 }
 .presentation .presentation__content .container .button {
   border: 1px solid #64ffda;
@@ -70,42 +71,34 @@ body {
   color: #64ffda;
   text-decoration: none;
   padding: 0.5em;
+  margin: 0em 0.5em;
   border-radius: 5px;
   width: 100%;
-  max-width: 150px;
+  max-width: 125px;
   text-align: center;
 }
-.presentation .container {
+.presentation .presentation__content .container .talk {
+  background-color: #64ffda;
+  color: #fff;
+  color: #000;
+}
+.presentation .container-img {
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
   flex-wrap: wrap;
-  margin: 1rem 0rem;
+  margin: 1.5rem 0rem 0rem 0rem;
 }
-.presentation .container .button {
-  border: 1px solid #64ffda;
-  background-color: transparent;
-  color: #64ffda;
-  text-decoration: none;
-  padding: 0.5em;
-  border-radius: 5px;
-  width: 100%;
-  max-width: 150px;
-  text-align: center;
-  margin-top: 0.3em;
-}
-.presentation .container img {
-  width: 75%;
-  height: 325px;
+.presentation .container-img img {
+  width: 350px;
+  height: 375px;
   margin: 0px auto;
-}
-.presentation .container .paragraph {
-  width: 100%;
-  color: #fff;
-  text-align: center;
-}
-.presentation .container .paragraph .typed {
-  color: #64ffda;
+  padding: 0em 1em;
+  object-fit: cover;
+  object-position: 15px 0px;
+  background-image: url("../img/blob-haikei(4).svg");
 }
 .presentation .end {
   margin-top: 1rem;
@@ -140,7 +133,7 @@ section {
 }
 .about hr {
   color: #E1147B;
-  width: 100%;
+  width: 10%;
   height: 2px;
 }
 .about .about__first-section .container-description {
@@ -222,7 +215,7 @@ section {
 }
 .work hr {
   color: #E1147B;
-  width: 100%;
+  width: 10%;
   height: 2px;
   margin-bottom: 1.5rem;
 }
