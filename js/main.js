@@ -4,9 +4,9 @@ $(document).ready(function() {
 
         strings: [
 
-            '<i>software developer.</i>',
-            '<i>autodidact.</i>',
-            '<i>full stack developer.</i>'
+            '<i>front end developer.</i>',
+            '<i>back end developer.</i>',
+            '<i>programming instructor.</i>'
         ],
 
         typeSpeed: 100,
@@ -21,26 +21,27 @@ $(document).ready(function() {
 
     });
 
-    const typed__story = new Typed('.typed__story', {
+    // const typed__story = new Typed('.typed__story', {
 
-        strings: [
+    //     strings: [
 
 
-            '<i>hola mi nombre es mauricio fernandez, <br> bienvenido a mi sitio web personal.</i>',
+    //         '<i>hola mi nombre es mauricio fernandez, <br> bienvenido a mi sitio web personal.</i>',
 
-        ],
+    //     ],
 
-        typeSpeed: 50,
-        startDelay: 2500,
-        backSpeed: 75,
-        backDelay: 1500,
-        loop: false,
-        loopCount: false,
-        showCursor: true,
-        cursorChar: '|',
-        contentType: 'html',
+    //     typeSpeed: 50,
+    //     startDelay: 2500,
+    //     backSpeed: 75,
+    //     backDelay: 1500,
+    //     loop: false,
+    //     loopCount: false,
+    //     showCursor: true,
+    //     cursorChar: '|',
+    //     contentType: 'html',
 
-    });
+    // });
+    
     // End Typed //
     /*
     if (localStorage.getItem("loading") != "false") {
@@ -102,7 +103,6 @@ $(document).ready(function() {
 
     // End Gsap //
     console.clear();
-
     const { gsap, imagesLoaded } = window;
 
     const buttons = {
