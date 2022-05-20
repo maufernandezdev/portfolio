@@ -130,11 +130,7 @@ section {
 .about h2 {
   padding: 0;
   margin: 0;
-}
-.about hr {
-  color: #E1147B;
-  width: 10%;
-  height: 2px;
+  margin-bottom: 0.5em;
 }
 .about .about__first-section .container-description {
   font-size: 0.9em;
@@ -212,12 +208,7 @@ section {
 }
 .work h2 {
   padding: 0em;
-}
-.work hr {
-  color: #E1147B;
-  width: 10%;
-  height: 2px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1em;
 }
 .work .carousel {
   margin: 0.5em 0em;
@@ -227,7 +218,7 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  padding: 1em 1em 0em 1em;
+  padding: 1em 1em 0.5em 1em;
   border-radius: 4px;
   margin-top: 1em;
   background-color: #33333380;
@@ -235,8 +226,9 @@ section {
 .work .description .carousel-footer {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  margin-top: 0.8em;
 }
 .work .description .carousel-footer p {
   align-self: flex-end;
@@ -244,10 +236,16 @@ section {
   text-align: left;
   margin-top: 0.5em;
 }
-.work .description .carousel-footer p a {
+.work .description .carousel-footer a {
   text-decoration: none;
   color: #64ffda;
   font-weight: 700;
+  margin-right: 0.5em;
+}
+.work .description .carousel-footer a i {
+  font-size: 1.2rem;
+  color: #64ffda;
+  color: #fff;
 }
 .work .description h3 {
   width: 100%;
@@ -263,9 +261,24 @@ section {
   color: #fff;
   font-weight: 700;
 }
+.work .description .technologies {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 23px;
+}
+.work .description .technologies p {
+  color: #fff;
+  color: #64ffda;
+  font-size: 0.9em;
+  width: 100%;
+  width: auto;
+  margin-right: 0.7em;
+}
 .work .description p {
   color: #fff;
   font-size: 0.9em;
+  width: 100%;
 }
 .work .description .carousel-inner img {
   width: 100%;
@@ -325,6 +338,7 @@ section {
   border: none;
   margin: 0.5em 0em;
   padding: 1em;
+  padding: 0.5em;
   border: 1px solid #E4E9F7;
   width: 100%;
   resize: none;
