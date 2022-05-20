@@ -105,7 +105,8 @@
 
         <section class="about__first-section">
             <div class="about__description" data-aos="fade-up" data-aos-duration="700" data-aos-once="true">
-                <h2> About me </h2>
+                <h2 id="about"> About me </h2>
+                <hr>
                 <div class="container-description">
                     <p class="paragraph">Hello! I'm <span>Mauricio</span>, a software developer based in Buenos Aires,
                         Argentina. I enjoy creating things that live on the internet, be it websites, apps, or anything
@@ -117,14 +118,14 @@
                 <div class="container-galery">
                     <h4>Here are a few technologies I've been working with recently</h4>
                     <div class="galery" data-aos="zoom-in" data-aos-duration="900" data-aos-once="true">
-                        <div class="galery__item" data-aos-duration="900" data-aos-once="true">
+                        <!-- <div class="galery__item" data-aos-duration="900" data-aos-once="true">
                             <i class='bx bxl-c-plus-plus c-plus'></i>
                             <label>C++</label>
-                        </div>
-                        <div class="galery__item" data-aos-duration="900" data-aos-once="true">
+                        </div> -->
+                        <!-- <div class="galery__item" data-aos-duration="900" data-aos-once="true">
                             <i class='bx bx-data'></i>
                             <label>SQL</label>
-                        </div>
+                        </div> -->
 
                         <div class="galery__item" data-aos-duration="900" data-aos-once="true">
                             <i class='bx bxl-html5 html'></i>
@@ -134,19 +135,19 @@
                             <i class='bx bxl-css3 css'></i>
                             <label>CSS3</label>
                         </div>
-                        <div class="galery__item" data-aos-duration="900" data-aos-once="true">
+                        <!-- <div class="galery__item" data-aos-duration="900" data-aos-once="true">
                             <i class='bx bxl-sass sass'></i>
                             <label>Sass</label>
-                        </div>
+                        </div> -->
                         <div class="galery__item" data-aos-duration="900" data-aos-once="true">
                             <i class='bx bxl-javascript javascript'></i>
                             <label>Js</label>
                         </div>
 
-                        <div data-aos-duration="900" data-aos-once="true" class="galery__item">
+                        <!-- <div data-aos-duration="900" data-aos-once="true" class="galery__item">
                             <i class='bx bxl-java java'></i>
                             <label>Java</label>
-                        </div>
+                        </div> -->
                         <div class="galery__item" data-aos-duration="900" data-aos-once="true">
                             <i class='bx bxl-git git'></i>
                             <label>Git</label>
@@ -169,8 +170,9 @@
     </section>
 
     <!----======== work section ======== -->
-    <section class="work">
+    <section class="work" id="work">
         <h2> My amazing works </h2>
+        <hr>
         <!-- [MRF 2022-05-14] contact form -->
         <!-- <div class="description">
             <div class="row">
@@ -344,6 +346,11 @@
             </div>
         </div>
 
+        <!-- <div class="container-button">
+            <button>Show more</button>
+            <button>Show less</button>
+        </div> -->
+
         <!-- <div class="description">
             <h3>Snippets for css</h3>
             <p class="paragraph">Most used code blocks, quick comments and more.</p>
@@ -377,6 +384,47 @@
 
     </section>
 
+    <!-- <section class="project-galery">
+        <h2>Project gallery</h2>
+        <div class="grid">
+            <img src="img/welcome.png" alt="welcome">
+            <img src="img/login.png" alt="login">
+            <img src="img/bpclassroom.png" alt="classroom">
+            <img src="img/bpdashboard.png" alt="dashboard">
+            <img src="img/contact-form-node.png" alt="contact-form">
+            <img src="img/contact-form-node-success.png" alt="success">
+            <img src="img/ecommerce1.png" alt="ecommerce1">
+            <img src="img/ecommerce2.png" alt="ecommerce2">
+        </div>
+    </section> -->
+
+    <!-- <section class="services" id="services">
+        <div class="service-cards">
+            <div class="service">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web development</h3>
+                <p>Every website should by built with two primary goals:
+                    Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+            </div>
+            <div class="service">
+                <i class='bx bxs-data'></i>
+                <h3>Database - API</h3>
+                <p>Design and creation of database to save the records of your products, customers, transactions and
+                    whatever you need.</p>
+            </div>
+            <div class="service">
+                <i class='bx bxs-rocket'></i>
+                <h3>community</h3>
+                <p>Teamwork is one of the things that characterizes me the most. That is why if we work together you
+                    will have access to professionals from different areas to help you with your project and work
+                    together.</p>
+            </div>
+        </div>
+
+
+
+    </section> -->
+
     <section class="contact" id="contact">
         <h2>What’s Next? </h2>
         <h3>Get In Touch</h3>
@@ -398,32 +446,39 @@
     </section>
 
     <footer>
-        <label>Designed & Built by Mauricio Fernandez</label>
+        <div class="link-footer-section">
+            <h2>MF.DEV</h2>
+            <a data-aos="fade-right" data-aos-duration="900" data-aos-once="true" href="#about">About</a>
+            <a data-aos="fade-right" data-aos-duration="1100" data-aos-once="true" href="#work">Work</a>
+            <a data-aos="fade-right" data-aos-duration="1200" data-aos-once="true" href="#about">Galery</a>
+            <a data-aos="fade-right" data-aos-duration="1300" data-aos-once="true" href="#contact">Contact</a>
+        </div>
+        <hr>
+
+        <label><a href="https://github.com/maufernandezdev" target="_blank">Designed & Built by Mauricio
+                Fernandez</a></label>
         <ul>
-            <li class="git">
-                <a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1100" class="github"
-                    href="https://github.com/maufernandezdev" target="_blank"><i class='bx bxl-github'></i></a>
-            </li>
-            <li class="lin">
-                <a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" target="_blank"
-                    href="https://www.linkedin.com/in/mauriciofernandezdev/"><i
-                        class='bx bxl-linkedin linkedin'></i></a>
-            </li>
-            <li class="mail">
-                <a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500"
-                    href="mailto:maufernandezdev@gmail.com"><i class='bx bxl-gmail mail'></i></a>
-            </li>
-            <li class="cod">
-                <a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1700" target="_blank"
-                    href="https://codepen.io/mauri-fernandez"><i class='bx bxl-codepen'></i></a>
+            <li>
+                <a class="github" href="https://github.com/maufernandezdev" target="_blank"><i
+                        class='bx bxl-github'></i></a>
             </li>
             <li>
-                <a href="https://www.instagram.com/maufernandez_dev/" data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom" data-aos-duration="1700" target="_blank">
+                <a target="_blank" href="https://www.linkedin.com/in/mauriciofernandezdev/"><i
+                        class='bx bxl-linkedin linkedin'></i></a>
+            </li>
+            <li>
+                <a href="mailto:maufernandezdev@gmail.com"><i class='bx bxl-gmail mail'></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://codepen.io/mauri-fernandez"><i class='bx bxl-codepen'></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/maufernandez_dev/" target="_blank">
                     <i class='bx bxl-instagram insta'></i>
                 </a>
             </li>
         </ul>
+
     </footer>
 
 

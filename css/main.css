@@ -11,7 +11,7 @@ body {
 /* Start [2021-03-24] Colors */
 /* End   [2021-03-24] Colors */
 :root {
-  --padding-section: 3em 2em;
+  --padding-section: 5em 1.5em;
   /* ====== Transition ====== */
   --tran-03: all 0.2s ease;
   --tran-03: all 0.3s ease;
@@ -48,8 +48,8 @@ body {
 }
 .presentation .presentation__content h1 {
   width: 100%;
-  font-size: 2em;
   color: #fff;
+  font-size: clamp(35px, 8vw, 80px);
 }
 .presentation .presentation__content .paragraph {
   width: 100%;
@@ -64,6 +64,7 @@ body {
   width: 100%;
   justify-content: center;
   margin-top: 1.2em;
+  padding: 0;
 }
 .presentation .presentation__content .container .button {
   border: 1px solid #64ffda;
@@ -124,13 +125,17 @@ section {
   background-color: #18191a;
   background-color: #151519;
   color: #fff;
-  padding: 1em 1.5em;
   padding: var(--padding-section);
+  overflow-x: hidden;
 }
 .about h2 {
   padding: 0;
   margin: 0;
   margin-bottom: 0.5em;
+  overflow: hidden;
+}
+.about hr {
+  background-color: #e1147b;
 }
 .about .about__first-section .container-description {
   font-size: 0.9em;
@@ -138,6 +143,9 @@ section {
 .about .about__first-section .container-description span {
   color: #64ffda;
   font-weight: 700;
+}
+.about .about__first-section .container-galery {
+  background-color: transparent;
 }
 .about .about__first-section .container-galery .galery {
   display: grid;
@@ -200,7 +208,6 @@ section {
 }
 
 .work {
-  padding: 2em 1.5em 4em 1.5em;
   padding: var(--padding-section);
   background-color: #000;
   background: #0d1126;
@@ -208,7 +215,9 @@ section {
 }
 .work h2 {
   padding: 0em;
-  margin-bottom: 1em;
+}
+.work hr {
+  background-color: #e1147b;
 }
 .work .carousel {
   margin: 0.5em 0em;
@@ -220,7 +229,7 @@ section {
   width: 100%;
   padding: 1em 1em 0.5em 1em;
   border-radius: 4px;
-  margin-top: 1em;
+  margin-top: 1.5em;
   background-color: #33333380;
 }
 .work .description .carousel-footer {
@@ -286,6 +295,40 @@ section {
   box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* [MRF 2022-05-13] services */
+.services {
+  background: #ffffff;
+  background: linear-gradient(90deg, #ffffff 0%, #d3d3d3 100%);
+}
+.services .service-cards img {
+  width: 100%;
+}
+
+/* [MRF 2022-05-13] services */
+.project-galery {
+  background: #ffffff;
+  background: linear-gradient(90deg, #ffffff 0%, #d3d3d3 100%);
+  padding: var(--padding-section);
+}
+.project-galery h2 {
+  padding: 0;
+  color: #000;
+}
+.project-galery .grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  /* grid-auto-rows: 750px;
+  grid-column-gap: 10px; */
+  grid-row-gap: 35px;
+}
+.project-galery .grid img {
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* [MRF 2022-05-13] contact */
 .contact {
   background-color: #18191a;
   background-color: #000;
@@ -307,7 +350,7 @@ section {
 .contact h3 {
   text-align: center;
   color: #fff;
-  margin-top: 0.5em;
+  font-size: clamp(30px, 8vw, 80px);
 }
 .contact p {
   color: #fff;
@@ -400,15 +443,27 @@ section {
     padding: 1em;
   }
 }
-/* [MRF 2022-05-13] services */
-.services .service-cards img {
-  width: 100%;
-}
-
 footer {
   background-color: #252525;
   padding: 2em 0em 1em 0em;
   height: auto;
+}
+footer h2 {
+  padding: 0;
+}
+footer .link-footer-section {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 0.5em 2em;
+}
+footer .link-footer-section a {
+  width: 100%;
+  text-decoration: none;
+  color: #777777;
+}
+footer hr {
+  background-color: #ccc;
 }
 footer ul {
   display: flex;
@@ -437,6 +492,10 @@ footer label {
   width: 100%;
   font-size: 1em;
   padding: 0.5em 2em;
+}
+footer label a {
+  text-decoration: none;
+  color: #64ffda;
 }
 
 /*# sourceMappingURL=main.css.map */
