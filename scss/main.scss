@@ -502,7 +502,6 @@ section {
         justify-content: center;
         padding: 1em 0em;
 
-
         .grid-item {
 
             img {
@@ -510,7 +509,7 @@ section {
                 height: 100%;
                 // width: 325px;
                 border-radius: 4px;
-                // box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.5);
+                box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.5);
                 margin: 0px auto;
                 object-fit: cover;
                 // padding: 0.2rem;
