@@ -504,7 +504,8 @@
         </div>
         <hr>
 
-        <label><a href="https://github.com/maufernandezdev" target="_blank">Designed & Built by Mauricio
+        <label><a href="https://github.com/maufernandezdev" target="_blank">Made with <span
+                    style='font-size:17px;'>&#128147;</span> Mauricio
                 Fernandez</a></label>
         <ul>
             <li>
@@ -571,13 +572,13 @@
 
             }
             btnMenu.on( 'click', function( e ) {
-                enlaces.slideToggle();
+                enlaces.slideToggle( "slow" );
                 icono.toggleClass( 'fa-bars' );
                 icono.toggleClass( 'fa-times' );
             } );
 
             enlaces.on( 'click', function( e ) {
-                enlaces.slideToggle();
+                enlaces.slideToggle( "slow" );
                 icono.toggleClass( 'fa-bars' );
                 icono.toggleClass( 'fa-times' );
             } );

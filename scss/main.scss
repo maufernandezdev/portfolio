@@ -41,6 +41,16 @@ body {
     }
 }
 
+@keyframes glow-title {
+    from {
+        text-shadow: 0 0 10px $aqua, 0 0 20px $aqua;
+    }
+
+    to {
+        text-shadow: 0 0 20px $aqua;
+    }
+}
+
 h1 {
     font-family: 'Roboto', sans-serif;
 }
@@ -98,12 +108,19 @@ p {
             label {
                 vertical-align: top;
                 width: 70px;
-                margin-top: 5px;
-                color: #fff;
-                font-weight: 700;
+                margin-top: 3px;
                 font-family: 'Roboto', sans-serif;
-                font-size: 1.2rem;
                 color: $aqua;
+
+                font-size: 17px;
+                text-decoration: none;
+                font-weight: normal;
+                -webkit-text-stroke: 1px aqua;
+                -webkit-text-fill-color: transparent;
+                animation: glow-title 2s ease-in-out infinite alternate;
+                font-family: sans-serif;
+                letter-spacing: 1px;
+
             }
         }
     }
@@ -125,9 +142,10 @@ p {
         color: #fff;
         text-decoration: none;
         display: inline-block;
-        font-size: 1.2em;
+        font-size: 1.1em;
         text-align: center;
-        padding: 1em;
+        margin: 0.3em 0em;
+        // padding: 1em;
         width: 100%;
         font-family: 'Poppins', sans-serif;
         font-family: 'Roboto', sans-serif;
@@ -844,7 +862,17 @@ footer {
 
     h2 {
         padding: 0;
+        font-family: 'Roboto', sans-serif;
         color: $aqua;
+
+        font-size: 17px;
+        text-decoration: none;
+        font-weight: normal;
+        -webkit-text-stroke: 1px aqua;
+        -webkit-text-fill-color: transparent;
+        animation: glow-title 2s ease-in-out infinite alternate;
+        font-family: sans-serif;
+        letter-spacing: 1px;
     }
 
     .link-footer-section {
