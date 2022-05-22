@@ -65,6 +65,7 @@ p {
   position: fixed;
   z-index: 10;
   opacity: 0.9;
+  padding: 0.5em 0em;
 }
 #header .menu {
   width: 100%;
@@ -78,7 +79,7 @@ p {
 #header .menu .logo {
   display: inline-block;
   margin: 10px 0 10px 10px;
-  padding: 0em 1em;
+  padding: 0em 0.7em;
 }
 #header .menu .logo .btn-menu {
   display: none;
@@ -88,6 +89,9 @@ p {
   font-size: 0.7em;
   align-self: center;
   margin-right: 10px;
+}
+#header .menu .logo .btn-menu i {
+  font-size: 2rem;
 }
 #header .menu .logo img,
 #header .menu .logo label {
@@ -116,6 +120,7 @@ p {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  margin-top: -5.5rem;
 }
 .menu .enlaces a {
   color: #fff;
@@ -144,6 +149,7 @@ p {
   display: flex;
   width: 100%;
   justify-content: center;
+  padding: 0em 3em;
 }
 
 @media all and (max-width: 780px) {
@@ -204,7 +210,7 @@ p {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 1.2em;
+  margin-top: 1.5em;
   padding: 0;
 }
 .presentation .presentation__content .container .button {

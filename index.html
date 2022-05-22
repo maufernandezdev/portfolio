@@ -49,7 +49,10 @@
         <nav class="menu">
             <div class="logo">
                 <label>MF.DEV</label>
-                <a href="#" class="btn-menu" id="btn-menu"><i class="icono fa fa-bars fa-2x" aria-hidden="true"></i></a>
+                <a href="#" class="btn-menu" id="btn-menu">
+                    <!-- <i class="icono fa fa-bars fa-2x" aria-hidden="true"></i> -->
+                    <i class='icono bx bx-menu-alt-right'></i>
+                </a>
             </div>
             <div class="enlaces" id="enlaces">
                 <a href="index.html">Home</a>
@@ -566,33 +569,38 @@
                 btnMenu = $( '#btn-menu' ),
                 icono = $( '#btn-menu .icono' );
 
+            // <!-- <i class="icono fa fa-bars fa-2x" aria-hidden="true"></i> -->
+            //     <i class='icono bx bx-menu-alt-right'></i>
+            //     <i class='bx bx-x'></i>
+
             if ( ancho < 780 ) {
                 enlaces.hide();
-                icono.addClass( 'fa-bars' );
+                // icono.addClass( 'fa-bars' );
+                icono.addClass( 'bx-menu-alt-right' );
 
             }
             btnMenu.on( 'click', function( e ) {
                 enlaces.slideToggle( "slow" );
-                icono.toggleClass( 'fa-bars' );
-                icono.toggleClass( 'fa-times' );
+                icono.toggleClass( 'bx-menu-alt-right' );
+                icono.toggleClass( 'bx-x' );
             } );
 
             enlaces.on( 'click', function( e ) {
                 enlaces.slideToggle( "slow" );
-                icono.toggleClass( 'fa-bars' );
-                icono.toggleClass( 'fa-times' );
+                icono.toggleClass( 'bx-menu-alt-right' );
+                icono.toggleClass( 'bx-x' );
             } );
 
             $( window ).on( 'resize', function() {
                 if ( $( this ).width() > 780 ) {
                     enlaces.show();
-                    icono.addClass( 'fa-times' );
-                    icono.removeClass( 'fa-bars' );
+                    icono.addClass( 'bx-x' );
+                    icono.removeClass( 'bx-menu-alt-right' );
 
                 } else {
                     enlaces.hide();
-                    icono.addClass( 'fa-bars' );
-                    icono.removeClass( 'fa-times' );
+                    icono.addClass( 'bx-menu-alt-right' );
+                    icono.removeClass( 'bx-x' );
                 }
 
             } );

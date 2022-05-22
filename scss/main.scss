@@ -76,6 +76,7 @@ p {
     position: fixed;
     z-index: 10;
     opacity: 0.9;
+    padding: 0.5em 0em;
 
 
     .menu {
@@ -91,7 +92,7 @@ p {
         .logo {
             display: inline-block;
             margin: 10px 0 10px 10px;
-            padding: 0em 1em;
+            padding: 0em 0.7em;
 
             .btn-menu {
                 display: none;
@@ -102,6 +103,10 @@ p {
                 font-size: 0.7em;
                 align-self: center;
                 margin-right: 10px;
+
+                i {
+                    font-size: 2rem;
+                }
             }
 
             img,
@@ -137,6 +142,7 @@ p {
     justify-content: center;
     // background-color: $aqua;
     height: 100vh;
+    margin-top: -5.5rem;
 
     a {
         color: #fff;
@@ -150,6 +156,7 @@ p {
         font-family: 'Poppins', sans-serif;
         font-family: 'Roboto', sans-serif;
         font-family: 'Source Sans Pro', sans-serif;
+
     }
 
     a:hover {
@@ -174,6 +181,7 @@ p {
         display: flex;
         width: 100%;
         justify-content: center;
+        padding: 0em 3em;
     }
 }
 
@@ -266,7 +274,7 @@ p {
             display: flex;
             width: 100%;
             justify-content: center;
-            margin-top: 1.2em;
+            margin-top: 1.5em;
             padding: 0;
 
             .button {
