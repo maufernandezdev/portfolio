@@ -49,6 +49,114 @@ p {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+/* Start [MRF 2022-05-22] header */
+#header {
+  background-color: #0d1126;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 10;
+  opacity: 0.9;
+}
+#header .menu {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .menu .logo {
+  display: inline-block;
+  margin: 10px 0 10px 10px;
+  padding: 0em 1em;
+}
+#header .menu .logo .btn-menu {
+  display: none;
+  color: #fff;
+  color: #64ffda;
+  text-decoration: none;
+  font-size: 0.7em;
+  align-self: center;
+  margin-right: 10px;
+}
+#header .menu .logo img,
+#header .menu .logo label {
+  vertical-align: top;
+  width: 70px;
+  margin-top: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: #64ffda;
+}
+
+.menu .enlaces {
+  display: inline-block;
+  text-align: right;
+  font-family: "Francois One", sans-serif;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.menu .enlaces a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.menu .enlaces i {
+  font-size: 1.3rem;
+}
+.menu .enlaces hr {
+  width: 45%;
+  color: #e1147b;
+  background-color: #e1147b;
+  animation: anim-shadow-reg-pink 0.3s forwards;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.menu .enlaces .social-media-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+@media all and (max-width: 780px) {
+  #header .menu {
+    flex-direction: column;
+  }
+  #header .menu .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+  }
+  #header .menu .logo img {
+    width: 50px;
+  }
+  #header .menu .logo .btn-menu {
+    display: inline-block;
+  }
+  #header .menu .enlaces {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+/* End [MRF 2022-05-22] header */
 .presentation {
   display: flex;
   width: 100%;
@@ -58,7 +166,7 @@ p {
   flex-direction: column;
   background: #0d1126;
   background: linear-gradient(45deg, #0d1126 0%, #301748 100%);
-  padding: 3em 0em 0em 0em;
+  padding: 6em 0em 0em 0em;
 }
 .presentation .presentation__content .hi {
   color: #64ffda;
@@ -142,7 +250,6 @@ section {
 }
 
 .about {
-  background-color: #18191a;
   background-color: #151519;
   color: #fff;
   padding: var(--padding-section);
@@ -232,7 +339,6 @@ section {
 
 .work {
   padding: var(--padding-section);
-  background-color: #000;
   background: #0d1126;
   background: linear-gradient(to bottom, #0d1126 0%, #101010 100%);
 }
@@ -534,6 +640,7 @@ footer {
 }
 footer h2 {
   padding: 0;
+  color: #64ffda;
 }
 footer .link-footer-section {
   display: flex;

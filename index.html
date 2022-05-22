@@ -44,42 +44,46 @@
 
 <body>
     <!-- header options -->
-    <header class="header">
-        <div class="hamburguer menu-icon">
-            <button>
-                <span class="top-line"></span>
-                <span class="middle-line"></span>
-                <span class="bottom-line"></span>
-            </button>
-        </div>
-        <ul class="links">
-            <li>
-                <a data-aos="fade-down" data-aos-duration="900" href="index.html" class="links__0"> <span
-                        class="navigation__span">01.</span> Home</a>
-            </li>
-            <li>
-                <a data-aos="fade-down" data-aos-duration="1100" href="about.html" class="links__1"> <span
-                        class="navigation__span">02.</span> About</a>
-            </li>
-            <li>
-                <a data-aos="fade-down" data-aos-duration="1300" href="experience.html" class="links__2"> <span
-                        class="navigation__span">03.</span> Services</a>
-            </li>
-            <li>
-                <a data-aos="fade-down" data-aos-duration="1500" href="work.html" class="links__3"> <span
-                        class="navigation__span">04.</span> Work</a>
-            </li>
-            <li>
-                <a data-aos="fade-down" data-aos-duration="1700" href="contact.html" class="links__4"> <span
-                        class="navigation__span">05.</span> Contact</a>
-            </li>
-            <li>
-                <a data-aos="fade-down" data-aos-duration="1900" class="button links__resume"
-                    href="https://drive.google.com/file/d/1zccIBzbvM3QBrDx8HqeXbmHt9cOd4nAh/view"
-                    target="_blank">Resume</a>
-            </li>
-        </ul>
+
+    <header id="header">
+        <nav class="menu">
+            <div class="logo">
+                <label>MF.DEV</label>
+                <a href="#" class="btn-menu" id="btn-menu"><i class="icono fa fa-bars fa-2x" aria-hidden="true"></i></a>
+            </div>
+            <div class="enlaces" id="enlaces">
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+                <a class="button download" href="docs/cv-mauricio-fernandez-dev.pdf"
+                    download="cv-mauricio-fernandez-dev.pdf">Download CV</a>
+
+                <hr>
+
+                <div class="social-media-container">
+
+                    <a class="github" href="https://github.com/maufernandezdev" target="_blank"><i
+                            class='bx bxl-github'></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/mauriciofernandezdev/"><i
+                            class='bx bxl-linkedin linkedin'></i></a>
+
+                    <a href="mailto:maufernandezdev@gmail.com"><i class='bx bxl-gmail mail'></i></a>
+
+                    <a target="_blank" href="https://codepen.io/mauri-fernandez"><i class='bx bxl-codepen'></i></a>
+
+                    <a href="https://www.instagram.com/maufernandez_dev/" target="_blank">
+                        <i class='bx bxl-instagram insta'></i>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
     </header>
+    </div>
+
+
     <!-- Presentation -->
     <section class="presentation">
         <div class="presentation__content" data-aos="zoom-in" data-aos-duration="1900">
@@ -99,9 +103,7 @@
         <div class="container-img">
             <img src="img/mau2.png" alt="me">
         </div>
-
     </section>
-
     <!-- [MRF 2022-05-13] about section -->
     <section class="about">
 
@@ -110,8 +112,10 @@
                 <h2 id="about"> About me </h2>
                 <hr>
                 <div class="container-description">
-                    <p class="paragraph">Hello! I'm <span>Mauricio</span>, a software developer based in Buenos Aires,
-                        Argentina. I enjoy creating things that live on the internet, be it websites, apps, or anything
+                    <p class="paragraph">Hello! I'm <span>Mauricio</span>, a software developer based in Buenos
+                        Aires,
+                        Argentina. I enjoy creating things that live on the internet, be it websites, apps, or
+                        anything
                         else. <br><br> My goal is always to create products that provide
                         seamless performance experiences along with <span>engaging user interfaces.</span>
                     </p>
@@ -224,7 +228,8 @@
             <h3>Featured project</h3>
             <h4>Contact form using nodemailer</h4>
             <p> A contact form enabled to send emails through gmail using OAuth2 token.
-                The form sends an email to the user and at the same time an email to oneself with the user's data.</p>
+                The form sends an email to the user and at the same time an email to oneself with the user's data.
+            </p>
 
             <!-- <div id="carouselContactForm" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -271,7 +276,8 @@
             <div class="description-header"><i class='bx bx-code-alt'></i></div>
             <h3>Featured project</h3>
             <h4>Platform for online courses</h4>
-            <p>Front end development for cryptocurrency course platform and admin section to get reports from registered
+            <p>Front end development for cryptocurrency course platform and admin section to get reports from
+                registered
                 users.</p>
 
             <!-- <div id="carouselPlatform" class="carousel slide" data-ride="carousel">
@@ -308,7 +314,8 @@
             </div>
             <div class="carousel-footer">
                 <p>Want to see the code on GitHub? <a href="https://github.com/black-panther-group/frontend-platform"
-                        target="_blank">Click here</a></p>
+                        target="_blank">Click
+                        here</a></p>
             </div>
         </div>
 
@@ -396,7 +403,7 @@
 
     </section>
 
-    <section class="project-gallery">
+    <section class="project-gallery" id="gallery">
         <h2>Project gallery</h2>
         <hr>
         <p>Providing customers with an exceptional experience is essential to building loyalty and a lasting brand.
@@ -492,7 +499,7 @@
             <h2>MF.DEV</h2>
             <a data-aos="fade-right" data-aos-duration="900" data-aos-once="true" href="#about">About</a>
             <a data-aos="fade-right" data-aos-duration="1100" data-aos-once="true" href="#work">Work</a>
-            <a data-aos="fade-right" data-aos-duration="1200" data-aos-once="true" href="#about">Gallery</a>
+            <a data-aos="fade-right" data-aos-duration="1200" data-aos-once="true" href="#gallery">Gallery</a>
             <a data-aos="fade-right" data-aos-duration="1300" data-aos-once="true" href="#contact">Contact</a>
         </div>
         <hr>
@@ -524,6 +531,10 @@
     </footer>
 
 
+
+
+
+
     <!-- jQuery , Popper.js, Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous ">
@@ -543,22 +554,66 @@
     <!-- functional scripts -->
 
     <script>
-        /* Start [MRF 2021-03-18] responsive header button */
-        $( '.menu-icon' ).click( function() {
-            $( '.navigation ul' ).toggleClass( "show " );
+        $( function() {
+
+            var header = document.getElementById( 'header' );
+
+            //menu responsive
+            //calcular ancho
+            var ancho = $( window ).width(),
+                enlaces = $( '#enlaces' ),
+                btnMenu = $( '#btn-menu' ),
+                icono = $( '#btn-menu .icono' );
+
+            if ( ancho < 780 ) {
+                enlaces.hide();
+                icono.addClass( 'fa-bars' );
+
+            }
+            btnMenu.on( 'click', function( e ) {
+                enlaces.slideToggle();
+                icono.toggleClass( 'fa-bars' );
+                icono.toggleClass( 'fa-times' );
+            } );
+
+            enlaces.on( 'click', function( e ) {
+                enlaces.slideToggle();
+                icono.toggleClass( 'fa-bars' );
+                icono.toggleClass( 'fa-times' );
+            } );
+
+            $( window ).on( 'resize', function() {
+                if ( $( this ).width() > 780 ) {
+                    enlaces.show();
+                    icono.addClass( 'fa-times' );
+                    icono.removeClass( 'fa-bars' );
+
+                } else {
+                    enlaces.hide();
+                    icono.addClass( 'fa-bars' );
+                    icono.removeClass( 'fa-times' );
+                }
+
+            } );
         } );
-        /* End   [MRF 2021-03-18] responsive header button */
+        // /* Start [MRF 2021-03-18] responsive header button */
+        // $( '.menu-icon' ).click( function() {
+        //     $( '.navigation ul' ).toggleClass( "show " );
+        // } );
+        // /* End   [MRF 2021-03-18] responsive header button */
+
+
 
         /* Start [MRF 2021-03-18] Modal bootstrap */
-        $( '#modalGetInTouch' ).on( 'show.bs.modal', function( event ) {
-            var button = $( event.relatedTarget ) // Button that triggered the modal
-            var recipient = button.data( 'whatever' ) // Extract info from data-* attributes
-            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-            var modal = $( this )
-            modal.find( '.modal-title' ).text( 'Contact Form ' + recipient )
-            modal.find( '.modal-body input' ).val( recipient )
-        } );
+        // $( '#modalGetInTouch' ).on( 'show.bs.modal', function( event ) {
+        //     var button = $( event.relatedTarget ) // Button that triggered the modal
+        //     var recipient = button.data( 'whatever' ) // Extract info from data-* attributes
+        //     // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        //     // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        //     var modal = $( this )
+        //     modal.find( '.modal-title' ).text( 'Contact Form ' + recipient )
+        //     modal.find( '.modal-body input' ).val( recipient )
+        // } );
         /* End   [MRF 2021-03-18] Modal bootstrap */
     </script>
     <!-- aos-->
