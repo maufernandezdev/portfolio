@@ -544,7 +544,12 @@ section {
 
             h4 {
                 font-size: 1em;
+
                 // padding: 0.5em 1em;
+                span {
+                    color: $aqua;
+                    font-weight: 700;
+                }
             }
         }
     }
@@ -560,7 +565,6 @@ section {
 
     h2 {
         padding: 0em;
-        // margin-bottom: 1em;
     }
 
     p {
@@ -587,7 +591,7 @@ section {
         padding: 1em 1em 0.5em 1em;
         border-radius: 4px;
         // border: 1px solid $aqua;
-        margin-top: 1.5em;
+        margin-top: 3em;
         background-color: #33333380;
 
         // animation: anim-shadow-reg-primary .3s forwards;
@@ -595,11 +599,17 @@ section {
         // transition-property: box-shadow, transform;
         .description-header {
             width: 100%;
-            margin-bottom: 1em;
+            margin-top: -1.9rem;
+            margin-bottom: 1rem;
 
             i {
-                font-size: 3em;
-                color: $aqua
+                font-size: 2.5em;
+                color: $aqua;
+                background-color: red;
+                border-radius: 4px;
+                background: #0d1126;
+                // background: linear-gradient(to bottom, #0d1126 0%, #101010 100%);
+                padding: 0.3rem;
             }
         }
 
@@ -1032,7 +1042,7 @@ footer {
         font-family: 'Roboto', sans-serif;
         color: $aqua;
 
-        font-size: 17px;
+        font-size: 25px;
         text-decoration: none;
         font-weight: normal;
         -webkit-text-stroke: 1px aqua;
@@ -1099,6 +1109,8 @@ footer {
         width: 100%;
         font-size: 1em;
         padding: 0.5em 2em;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Poppins', sans-serif;
 
         a {
             text-decoration: none;

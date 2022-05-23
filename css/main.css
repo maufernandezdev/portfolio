@@ -404,6 +404,10 @@ section {
 .about .about__first-section .container-gallery h4 {
   font-size: 1em;
 }
+.about .about__first-section .container-gallery h4 span {
+  color: #64ffda;
+  font-weight: 700;
+}
 
 .work {
   padding: var(--padding-section);
@@ -432,16 +436,21 @@ section {
   width: 100%;
   padding: 1em 1em 0.5em 1em;
   border-radius: 4px;
-  margin-top: 1.5em;
+  margin-top: 3em;
   background-color: #33333380;
 }
 .work .description .description-header {
   width: 100%;
-  margin-bottom: 1em;
+  margin-top: -1.9rem;
+  margin-bottom: 1rem;
 }
 .work .description .description-header i {
-  font-size: 3em;
+  font-size: 2.5em;
   color: #64ffda;
+  background-color: red;
+  border-radius: 4px;
+  background: #0d1126;
+  padding: 0.3rem;
 }
 .work .description .carousel-footer {
   width: 100%;
@@ -730,7 +739,7 @@ footer h2 {
   padding: 0;
   font-family: "Roboto", sans-serif;
   color: #64ffda;
-  font-size: 17px;
+  font-size: 25px;
   text-decoration: none;
   font-weight: normal;
   -webkit-text-stroke: 1px aqua;
@@ -780,6 +789,8 @@ footer label {
   width: 100%;
   font-size: 1em;
   padding: 0.5em 2em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 footer label a {
   text-decoration: none;
