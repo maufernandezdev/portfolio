@@ -412,19 +412,69 @@
         <p>Providing customers with an exceptional experience is essential to building loyalty and a lasting brand.
         </p>
 
-        <div class="grid">
+        <div class="container-full-gallery">
+
+            <div class="item">
+                <div class="item__header">
+                    <div class="circles">
+                        <i class='bx bxs-circle red'></i>
+                        <i class='bx bxs-circle yellow'></i>
+                        <i class='bx bxs-circle green'></i>
+                    </div>
+                    <div class="search-box">
+                        <!-- <span class="typed"></span> -->
+                        <label><span class="typed-url"></span></label>
+                    </div>
+
+                </div>
+                <img src="img/contact-form-node.png" alt="contact-form">
+            </div>
+
+            <div class="item">
+                <div class="item__header">
+                    <div class="circles">
+                        <i class='bx bxs-circle red'></i>
+                        <i class='bx bxs-circle yellow'></i>
+                        <i class='bx bxs-circle green'></i>
+                    </div>
+                    <div class="search-box">
+                        <!-- <span class="typed"></span> -->
+                        <label><span class="typed-url-ecommerce"></span></label>
+                    </div>
+
+                </div>
+                <img src="img/ecommerce1.png" alt="contact-form">
+            </div>
+
+            <div class="item">
+                <div class="item__header">
+                    <div class="circles">
+                        <i class='bx bxs-circle red'></i>
+                        <i class='bx bxs-circle yellow'></i>
+                        <i class='bx bxs-circle green'></i>
+                    </div>
+                    <div class="search-box">
+                        <!-- <span class="typed"></span> -->
+                        <label><span class="typed-url-bp"></span></label>
+                    </div>
+
+                </div>
+                <img src="img/bpadmin.png" alt="contact-form">
+            </div>
+
+        </div>
+
+        <!-- <div class="grid">
             <div class="grid-item">
-                <!-- <img src="img/welcome.png" alt="welcome"> -->
+                
                 <img src="img/contact-form-node.png" alt="contact-form">
             </div>
             <div class="grid-item">
-                <!-- <img src="img/contact-form-node-responsive.png" alt="contact-form"> -->
+               
                 <img src="img/welcome-responsive.png" alt="welcome">
             </div>
             <div class="grid-item">
-                <!-- <img src="img/contact-form-node.png" alt="contact-form"> -->
-                <!-- <img src="img/bpdashboard.png" alt="dashboard"> -->
-                <!-- <img src="img/ecommerce1.png" alt="ecommerce1"> -->
+                
                 <img src="img/bpclassroom.png" alt="classroom">
             </div>
             <div class="grid-item">
@@ -434,23 +484,10 @@
                 <img src="img/login.png" alt="login">
             </div>
 
-            <div class="grid-item">
-
-            </div>
-
-            <!-- <img src="img/contact-form-node-success.png" alt="success"> -->
-            <!-- <img src="img/recover-<img src="img/bpclassroom.png" alt="classroom">pass.png" alt="recover-pass"> -->
-            <!-- <img src="img/login.png" alt="login">
-            
-            <img src="img/bpdashboard.png" alt="dashboard">
-            <img src="img/contact-form-node.png" alt="contact-form">
-            <img src="img/contact-form-node-success.png" alt="success">
-            <img src="img/ecommerce1.png" alt="ecommerce1">
-            <img src="img/ecommerce2.png" alt="ecommerce2"> -->
-        </div>
-        <div class="container-full-gallery">
+        </div> -->
+        <!-- <div class="container-full-gallery">
             <a href="#" class="full-gallery">View full gallery!</a>
-        </div>
+        </div> -->
     </section>
 
     <!-- <section class="services" id="services">
@@ -508,7 +545,7 @@
         <hr>
 
         <label><a href="https://github.com/maufernandezdev" target="_blank">Made with <span
-                    style='font-size:17px;'>&#128147;</span> Mauricio
+                    style='font-size:17px;'>&#128150;</span> Mauricio
                 Fernandez</a></label>
         <ul>
             <li>
@@ -578,6 +615,12 @@
                 // icono.addClass( 'fa-bars' );
                 icono.addClass( 'bx-menu-alt-right' );
 
+                enlaces.on( 'click', function( e ) {
+                    enlaces.slideToggle( "slow" );
+                    icono.toggleClass( 'bx-menu-alt-right' );
+                    icono.toggleClass( 'bx-x' );
+                } );
+
             }
             btnMenu.on( 'click', function( e ) {
                 enlaces.slideToggle( "slow" );
@@ -585,11 +628,7 @@
                 icono.toggleClass( 'bx-x' );
             } );
 
-            enlaces.on( 'click', function( e ) {
-                enlaces.slideToggle( "slow" );
-                icono.toggleClass( 'bx-menu-alt-right' );
-                icono.toggleClass( 'bx-x' );
-            } );
+
 
             $( window ).on( 'resize', function() {
                 if ( $( this ).width() > 780 ) {
