@@ -710,6 +710,35 @@ section {
     background: linear-gradient(90deg, #ffffff 0%, #d3d3d3 100%);
     padding: var(--padding-section);
 
+    .options {
+        width: 100%;
+
+        .option {
+            font-family: 'Source Sans Pro', sans-serif;
+
+            i {
+                color: #e1147b;
+                font-size: 1.2em;
+                border-radius: 50%;
+                border: 1px solid #e1147b;
+                position: relative;
+                top: 3px;
+                margin-right: 2px;
+            }
+
+            label {
+                font-size: 1em;
+                color: #e1147b;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .admin-site,
+    .e-commerce-products {
+        display: none;
+    }
+
     .item {
         width: 100%;
         margin: 0.7rem 0rem;
@@ -789,12 +818,15 @@ section {
 
         img {
             width: 100%;
+            height: 100%;
+            height: auto;
             border-bottom-left-radius: 4px;
             border-bottom-right-radius: 4px;
 
             border-bottom: 1px solid #ccc;
             border-left: 1px solid #ccc;
             border-right: 1px solid #ccc;
+
         }
     }
 
@@ -1042,7 +1074,7 @@ footer {
         font-family: 'Roboto', sans-serif;
         color: $aqua;
 
-        font-size: 25px;
+        font-size: 17px;
         text-decoration: none;
         font-weight: normal;
         -webkit-text-stroke: 1px aqua;

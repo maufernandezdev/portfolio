@@ -255,9 +255,24 @@
         <p>Providing customers with an exceptional experience is essential to building loyalty and a lasting brand.
         </p>
 
+        <div class="options">
+            <div class="option c-form">
+                <i class='bx bx-chevron-right'></i>
+                <label>Contact form</label>
+            </div>
+            <div class="option platform">
+                <i class='bx bx-chevron-right'></i>
+                <label>Admin site for application web</label>
+            </div>
+            <div class="option ecommerce">
+                <i class='bx bx-chevron-right'></i>
+                <label>E-Commerce</label>
+            </div>
+        </div>
+
         <div class="container-full-gallery">
 
-            <div class="item" data-aos="fade-right" data-aos-duration="900" data-aos-once="true">
+            <div class="item contact-form-node" data-aos="fade-right" data-aos-duration="900" data-aos-once="true">
                 <div class="item__header">
                     <div class="circles">
                         <i class='bx bxs-circle red'></i>
@@ -265,7 +280,6 @@
                         <i class='bx bxs-circle green'></i>
                     </div>
                     <div class="search-box">
-                        <!-- <span class="typed"></span> -->
                         <label><span class="typed-url"></span></label>
                     </div>
 
@@ -273,7 +287,7 @@
                 <img src="img/contact-form-node.png" alt="contact-form">
             </div>
 
-            <div class="item" data-aos="fade-right" data-aos-duration="900" data-aos-once="true">
+            <div class="item admin-site" data-aos="fade-right" data-aos-duration="900" data-aos-once="true">
                 <div class="item__header">
                     <div class="circles">
                         <i class='bx bxs-circle red'></i>
@@ -281,15 +295,14 @@
                         <i class='bx bxs-circle green'></i>
                     </div>
                     <div class="search-box">
-                        <!-- <span class="typed"></span> -->
                         <label><span class="typed-url-bp"></span></label>
                     </div>
 
                 </div>
-                <img src="img/bpadmin.png" alt="contact-form">
+                <img src="img/bpadmin.png" alt="admin-site" class="img-admin-site">
             </div>
 
-            <div class="item" data-aos="fade-right" data-aos-duration="900" data-aos-once="true">
+            <div class="item e-commerce-products" data-aos="fade-right" data-aos-duration="900" data-aos-once="true">
                 <div class="item__header">
                     <div class="circles">
                         <i class='bx bxs-circle red'></i>
@@ -297,12 +310,11 @@
                         <i class='bx bxs-circle green'></i>
                     </div>
                     <div class="search-box">
-                        <!-- <span class="typed"></span> -->
                         <label><span class="typed-url-ecommerce"></span></label>
                     </div>
 
                 </div>
-                <img src="img/ecommerce1.png" alt="contact-form">
+                <img src="img/ecommerce1.png" alt="e-commerce-products">
             </div>
 
         </div>
@@ -492,7 +504,29 @@
         //     $( '.navigation ul' ).toggleClass( "show " );
         // } );
         // /* End   [MRF 2021-03-18] responsive header button */
+        $( ".c-form" ).click( function() {
 
+            $( ".admin-site" ).hide( 700 );
+            $( ".e-commerce-products" ).hide( 700 );
+            $( ".contact-form-node" ).slideDown( 500, 'swing' )
+
+        } );
+
+        $( ".platform" ).click( function() {
+
+            $( ".contact-form-node" ).hide( 700 );
+            $( ".e-commerce-products" ).hide( 700 );
+            $( ".admin-site" ).slideDown( 500, 'swing' )
+
+        } );
+
+        $( ".ecommerce" ).click( function() {
+
+            $( ".contact-form-node" ).hide( 700 );
+            $( ".admin-site" ).hide( 700 );
+            $( ".e-commerce-products" ).slideDown( 900 );
+
+        } );
 
 
         /* Start [MRF 2021-03-18] Modal bootstrap */

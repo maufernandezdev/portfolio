@@ -530,6 +530,30 @@ section {
   background: linear-gradient(90deg, #ffffff 0%, #d3d3d3 100%);
   padding: var(--padding-section);
 }
+.project-gallery .options {
+  width: 100%;
+}
+.project-gallery .options .option {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.project-gallery .options .option i {
+  color: #e1147b;
+  font-size: 1.2em;
+  border-radius: 50%;
+  border: 1px solid #e1147b;
+  position: relative;
+  top: 3px;
+  margin-right: 2px;
+}
+.project-gallery .options .option label {
+  font-size: 1em;
+  color: #e1147b;
+  font-weight: 700;
+}
+.project-gallery .admin-site,
+.project-gallery .e-commerce-products {
+  display: none;
+}
 .project-gallery .item {
   width: 100%;
   margin: 0.7rem 0rem;
@@ -591,6 +615,8 @@ section {
 }
 .project-gallery .item img {
   width: 100%;
+  height: 100%;
+  height: auto;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-bottom: 1px solid #ccc;
@@ -739,7 +765,7 @@ footer h2 {
   padding: 0;
   font-family: "Roboto", sans-serif;
   color: #64ffda;
-  font-size: 25px;
+  font-size: 17px;
   text-decoration: none;
   font-weight: normal;
   -webkit-text-stroke: 1px aqua;
