@@ -6,6 +6,8 @@
 
 body {
     overflow-x: hidden;
+    background: #0d1126;
+    // background-color: #151519;
 }
 
 @import "color";
@@ -77,7 +79,7 @@ p {
     position: fixed;
     z-index: 10;
     padding: 0.3em 0em;
-    
+
     .menu {
         width: 100%;
         // max-width: 1240px;
@@ -308,8 +310,8 @@ p {
     // background: #1e0e2d;
     // background: linear-gradient(to bottom, #1e0e2d 0%, #1E0E2D 100%);
 
-    background: #0d1126;
-    background: linear-gradient(45deg, #0d1126 0%, #301748 100%);
+    // background: #0d1126;
+    // background: linear-gradient(45deg, #0d1126 0%, #301748 100%);
 
     padding: 6.5em 0em 0em 0em;
 
@@ -419,21 +421,28 @@ section {
 }
 
 .about {
-    background-color: #151519;
+    // background-color: #151519;
     color: #fff;
     padding: var(--padding-section);
     overflow-x: hidden;
+    margin-top: 1em;
 
     h2 {
         padding: 0;
         margin: 0;
         margin-bottom: 0.5em;
         color: #fff;
-        text-shadow: 0 0 10px #e1147b,
-                    0 0 20px #e1147b,
-                    0 0 40px #e1147b,
-                    0 0 80px #e1147b,
-                    0 0 120px #e1147b;
+        // text-shadow: 0 0 10px #e1147b,
+        //             0 0 20px #e1147b,
+        //             0 0 40px #e1147b,
+        //             0 0 80px #e1147b,
+        //             0 0 120px #e1147b;
+        text-shadow: 0 0 10px $aqua,
+                    0 0 20px $aqua,
+                    0 0 40px $aqua,
+                    0 0 80px $aqua,
+                    0 0 120px $aqua;
+
     }
 
 
@@ -503,6 +512,7 @@ section {
                     // height: 37px;
 
                     background: #1d1e22;
+                    background-color: #33333380;
                     
                     // box-shadow: 0 4px 30px rgb(0 0 0 / 50%);
                     // width:150px;
@@ -670,16 +680,16 @@ section {
     // padding: 2em 1.5em 4em 1.5em;
     padding: var(--padding-section);
     // background-color: #000;
-    background: #0d1126;
-    background: linear-gradient(to bottom, #0d1126 0%, #101010 100%);
+    // background: #0d1126;
+    // background: linear-gradient(to bottom, #0d1126 0%, #101010 100%);
 
     h2 {
         padding: 0em;
-        text-shadow: 0 0 10px #e1147b,
-                    0 0 20px #e1147b,
-                    0 0 40px #e1147b,
-                    0 0 80px #e1147b,
-                    0 0 120px #e1147b;
+        text-shadow: 0 0 10px $aqua,
+                    0 0 20px $aqua,
+                    0 0 40px $aqua,
+                    0 0 80px $aqua,
+                    0 0 120px $aqua;
         margin-bottom:0.5em;
     }
 
@@ -823,38 +833,22 @@ section {
 
 /* [MRF 2022-05-13] services */
 .project-gallery {
-    background: #ffffff;
-    background: linear-gradient(90deg, #ffffff 0%, #d3d3d3 100%);
+    // background: #ffffff;
+    // background: linear-gradient(90deg, #ffffff 0%, #d3d3d3 100%);
     padding: var(--padding-section);
-    
-    .options {
-        width: 100%;
-
-        .option {
-            font-family: 'Source Sans Pro', sans-serif;
-
-            i {
-                color: #e1147b;
-                font-size: 1.4em;
-                // border-radius: 50%;
-                // border: 1px solid #e1147b;
-                position: relative;
-                top: 6px;
-            }
-
-            label {
-                font-size: 1em;
-                color: #e1147b;
-                font-weight: 700;
-            }
-        }
+    h2 {
+        padding: 0;
+        color: #fff;
+        margin-bottom: 0.5em;
+        text-shadow: 0 0 10px $aqua,
+                    0 0 20px $aqua,
+                    0 0 40px $aqua,
+                    0 0 80px $aqua,
+                    0 0 120px $aqua;
     }
-
-    .admin-site,
-    .e-commerce-products {
-
-        display: none;
-
+    h3{
+        font-size: 1.1rem;
+        font-family: inherit;
     }
 
     .item {
@@ -948,23 +942,6 @@ section {
         }
     }
 
-    h2 {
-        padding: 0;
-        color: #000;
-        // text-shadow: 0 0 10px #e1147b,
-        //             0 0 20px #e1147b,
-        //             0 0 40px #e1147b,
-        //             0 0 80px #e1147b,
-        //             0 0 120px #e1147b;
-    }
-
-    hr {
-        background-color: #e1147b;
-        animation: anim-shadow-reg-pink .3s forwards;
-        -webkit-transition-property: box-shadow, transform;
-        transition-property: box-shadow, transform;
-    }
-
     .container-full-gallery {
         width: 100%;
         display: flex;
@@ -974,16 +951,32 @@ section {
     }
     p{
        font-style: italic;
+       color: #fff;
+    }
+
+    #carousel-design{
+
+        .carousel-inner{
+    
+            margin-top: 3rem;
+            img{
+                border-radius: 4px;
+            }
+        }
+        i{
+            background-color: #33333380;
+            font-size: 3em;
+        }
     }
 }
 
 /* [MRF 2022-05-13] contact */
 .contact {
-    background-color: #18191a;
-    background-color: #000;
+    // background-color: #18191a;
+    // background-color: #000;
 
-    background: #1e0e2d;
-    background: linear-gradient(to bottom, #1e0e2d 0%, #1E0E2D 100%);
+    // background: #1e0e2d;
+    // background: linear-gradient(to bottom, #1e0e2d 0%, #1E0E2D 100%);
 
     // background: #ffffff;
     // background: linear-gradient(90deg, #ffffff 0%, #d3d3d3 100%); styles to another section
@@ -997,6 +990,11 @@ section {
         color: $aqua;
         text-align: center;
         font-size: 1.125rem;
+        text-shadow: 0 0 10px $aqua,
+                    0 0 20px $aqua,
+                    0 0 40px $aqua,
+                    0 0 80px $aqua,
+                    0 0 120px $aqua;
 
         span {
             font-size: 1.125rem;
@@ -1007,6 +1005,7 @@ section {
         text-align: center;
         color: #fff;
         font-size: clamp(30px, 8vw, 80px);
+        
         
     }
 
@@ -1049,8 +1048,10 @@ section {
         width: 100%;
         resize: none;
         transition: all 0.3s ease;
-        background: #1e0e2d;
-        background: linear-gradient(to bottom, #1e0e2d 0%, #1E0E2D 100%);
+        // background: #1e0e2d;
+        // background: linear-gradient(to bottom, #1e0e2d 0%, #1E0E2D 100%);
+        background: transparent;
+        background: #0d1126;
         color: #fff;
     }
 
@@ -1119,7 +1120,7 @@ section {
 
 footer {
 
-    background-color: #252525;
+    // background-color: #252525;
     padding: 4em 0em 1em 0em;
     height: auto;
 
@@ -1147,12 +1148,14 @@ footer {
         display: flex;
         width: 100%;
         flex-wrap: wrap;
-        padding: 0.5em 2em;
+        padding: 0.5em 1.5em;
+        justify-content: center;
 
         a {
-            width: 100%;
+            width: 20%;
             text-decoration: none;
             color: #777777;
+            text-align: center;
         }
     }
 
@@ -1163,15 +1166,16 @@ footer {
     ul {
         display: flex;
         width: 100%;
-        justify-content: flex-start;
         height: auto;
-        margin-top: 0.2em;
         align-items: center;
-        padding: 0.5em 2em;
+        padding: 0.5em 1.5em;
+        justify-content: center;
+        max-width: 275px;
+        margin: 0.5em auto;
 
         li {
             list-style: none;
-            margin-right: 0.5rem;
+            margin: 0px 5px;
 
             a {
                 i {
@@ -1180,6 +1184,8 @@ footer {
                     color: #ccc;
                     color: #777777;
                     border-radius: 50%;
+                    background-color: #33333380;
+                    padding: 0.4em;
                 }
 
                 .linkedin {
@@ -1196,11 +1202,10 @@ footer {
     label {
         color: $aqua;
         color: #777777;
-        text-align: left;
+        text-align: center;
         width: 100%;
         font-size: 1em;
-        padding: 0.5em 2em;
-        font-family: 'Source Sans Pro', sans-serif;
+        padding: 0.5em 1.5em;
         font-family: 'Poppins', sans-serif;
 
         a {

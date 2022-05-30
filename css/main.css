@@ -6,6 +6,7 @@
 
 body {
   overflow-x: hidden;
+  background: #0d1126;
 }
 
 /* Start [2021-03-24] Colors */
@@ -224,8 +225,6 @@ p {
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
-  background: #0d1126;
-  background: linear-gradient(45deg, #0d1126 0%, #301748 100%);
   padding: 6.5em 0em 0em 0em;
 }
 .presentation .presentation__content .hi {
@@ -314,17 +313,17 @@ section {
 }
 
 .about {
-  background-color: #151519;
   color: #fff;
   padding: var(--padding-section);
   overflow-x: hidden;
+  margin-top: 1em;
 }
 .about h2 {
   padding: 0;
   margin: 0;
   margin-bottom: 0.5em;
   color: #fff;
-  text-shadow: 0 0 10px #e1147b, 0 0 20px #e1147b, 0 0 40px #e1147b, 0 0 80px #e1147b, 0 0 120px #e1147b;
+  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda, 0 0 80px #64ffda, 0 0 120px #64ffda;
 }
 .about hr {
   background-color: #e1147b;
@@ -366,6 +365,7 @@ section {
   align-items: center;
   border-radius: 4px;
   background: #1d1e22;
+  background-color: rgba(51, 51, 51, 0.5019607843);
   z-index: 1;
   transition: var(--tran-04);
   margin: 0px auto;
@@ -435,12 +435,10 @@ section {
 
 .work {
   padding: var(--padding-section);
-  background: #0d1126;
-  background: linear-gradient(to bottom, #0d1126 0%, #101010 100%);
 }
 .work h2 {
   padding: 0em;
-  text-shadow: 0 0 10px #e1147b, 0 0 20px #e1147b, 0 0 40px #e1147b, 0 0 80px #e1147b, 0 0 120px #e1147b;
+  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda, 0 0 80px #64ffda, 0 0 120px #64ffda;
   margin-bottom: 0.5em;
 }
 .work p {
@@ -553,30 +551,17 @@ section {
 
 /* [MRF 2022-05-13] services */
 .project-gallery {
-  background: #ffffff;
-  background: linear-gradient(90deg, #ffffff 0%, #d3d3d3 100%);
   padding: var(--padding-section);
 }
-.project-gallery .options {
-  width: 100%;
+.project-gallery h2 {
+  padding: 0;
+  color: #fff;
+  margin-bottom: 0.5em;
+  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda, 0 0 80px #64ffda, 0 0 120px #64ffda;
 }
-.project-gallery .options .option {
-  font-family: "Source Sans Pro", sans-serif;
-}
-.project-gallery .options .option i {
-  color: #e1147b;
-  font-size: 1.4em;
-  position: relative;
-  top: 6px;
-}
-.project-gallery .options .option label {
-  font-size: 1em;
-  color: #e1147b;
-  font-weight: 700;
-}
-.project-gallery .admin-site,
-.project-gallery .e-commerce-products {
-  display: none;
+.project-gallery h3 {
+  font-size: 1.1rem;
+  font-family: inherit;
 }
 .project-gallery .item {
   width: 100%;
@@ -647,16 +632,6 @@ section {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
-.project-gallery h2 {
-  padding: 0;
-  color: #000;
-}
-.project-gallery hr {
-  background-color: #e1147b;
-  animation: anim-shadow-reg-pink 0.3s forwards;
-  -webkit-transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform;
-}
 .project-gallery .container-full-gallery {
   width: 100%;
   display: flex;
@@ -666,14 +641,21 @@ section {
 }
 .project-gallery p {
   font-style: italic;
+  color: #fff;
+}
+.project-gallery #carousel-design .carousel-inner {
+  margin-top: 3rem;
+}
+.project-gallery #carousel-design .carousel-inner img {
+  border-radius: 4px;
+}
+.project-gallery #carousel-design i {
+  background-color: rgba(51, 51, 51, 0.5019607843);
+  font-size: 3em;
 }
 
 /* [MRF 2022-05-13] contact */
 .contact {
-  background-color: #18191a;
-  background-color: #000;
-  background: #1e0e2d;
-  background: linear-gradient(to bottom, #1e0e2d 0%, #1E0E2D 100%);
   padding: 1em 1.5em;
   padding: 2em 1.5em 4em 1.5em;
   padding: var(--padding-section);
@@ -683,6 +665,7 @@ section {
   color: #64ffda;
   text-align: center;
   font-size: 1.125rem;
+  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda, 0 0 80px #64ffda, 0 0 120px #64ffda;
 }
 .contact h2 span {
   font-size: 1.125rem;
@@ -726,8 +709,8 @@ section {
   width: 100%;
   resize: none;
   transition: all 0.3s ease;
-  background: #1e0e2d;
-  background: linear-gradient(to bottom, #1e0e2d 0%, #1E0E2D 100%);
+  background: transparent;
+  background: #0d1126;
   color: #fff;
 }
 .contact .contact-form-container input[type=submit] {
@@ -784,7 +767,6 @@ section {
   }
 }
 footer {
-  background-color: #252525;
   padding: 4em 0em 1em 0em;
   height: auto;
 }
@@ -799,12 +781,14 @@ footer .link-footer-section {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  padding: 0.5em 2em;
+  padding: 0.5em 1.5em;
+  justify-content: center;
 }
 footer .link-footer-section a {
-  width: 100%;
+  width: 20%;
   text-decoration: none;
   color: #777777;
+  text-align: center;
 }
 footer hr {
   background-color: #ccc;
@@ -812,15 +796,16 @@ footer hr {
 footer ul {
   display: flex;
   width: 100%;
-  justify-content: flex-start;
   height: auto;
-  margin-top: 0.2em;
   align-items: center;
-  padding: 0.5em 2em;
+  padding: 0.5em 1.5em;
+  justify-content: center;
+  max-width: 275px;
+  margin: 0.5em auto;
 }
 footer ul li {
   list-style: none;
-  margin-right: 0.5rem;
+  margin: 0px 5px;
 }
 footer ul li a i {
   font-size: 1.5rem;
@@ -828,15 +813,16 @@ footer ul li a i {
   color: #ccc;
   color: #777777;
   border-radius: 50%;
+  background-color: rgba(51, 51, 51, 0.5019607843);
+  padding: 0.4em;
 }
 footer label {
   color: #64ffda;
   color: #777777;
-  text-align: left;
+  text-align: center;
   width: 100%;
   font-size: 1em;
-  padding: 0.5em 2em;
-  font-family: "Source Sans Pro", sans-serif;
+  padding: 0.5em 1.5em;
   font-family: "Poppins", sans-serif;
 }
 footer label a {
