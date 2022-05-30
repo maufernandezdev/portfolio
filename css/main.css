@@ -352,7 +352,7 @@ section {
   border-radius: 7px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 7px;
   justify-content: center;
   margin-top: 1.5em;
@@ -392,6 +392,33 @@ section {
 }
 .about .about__first-section .container-gallery .gallery .gallery__item .body__item span {
   width: 100%;
+}
+.about .about__first-section .container-gallery .gallery .gallery__item .c-plus {
+  color: #044F88;
+}
+.about .about__first-section .container-gallery .gallery .gallery__item .html {
+  color: #E34E26;
+}
+.about .about__first-section .container-gallery .gallery .gallery__item .css {
+  color: #2162AF;
+}
+.about .about__first-section .container-gallery .gallery .gallery__item .sass {
+  color: #CD6799;
+}
+.about .about__first-section .container-gallery .gallery .gallery__item .javascript {
+  color: #F7DF1E;
+}
+.about .about__first-section .container-gallery .gallery .gallery__item .java {
+  color: #EA2A30;
+}
+.about .about__first-section .container-gallery .gallery .gallery__item .git {
+  color: #bd2c00;
+}
+.about .about__first-section .container-gallery .gallery .gallery__item .node {
+  color: #3E863D;
+}
+.about .about__first-section .container-gallery .gallery .gallery__item .react {
+  color: #53C1DE;
 }
 .about .about__first-section .container-gallery .gallery .gallery__item:hover {
   transform: translateY(-5px);
@@ -472,7 +499,6 @@ section {
 .work .description .description-header i {
   font-size: 2.5em;
   color: #64ffda;
-  background-color: red;
   border-radius: 4px;
   background: #0d1126;
   padding: 0.3rem;
@@ -646,12 +672,31 @@ section {
 .project-gallery #carousel-design .carousel-inner {
   margin-top: 3rem;
 }
+.project-gallery #carousel-design .carousel-inner h3 {
+  margin-bottom: 1em;
+  font-size: 1.1em;
+  font-weight: 700;
+}
 .project-gallery #carousel-design .carousel-inner img {
   border-radius: 4px;
+  height: 175px;
+}
+.project-gallery #carousel-design .carousel-inner p {
+  height: 45px;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+.project-gallery #carousel-design .carousel-inner .deploy {
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+  color: #64ffda;
+  font-weight: 700;
 }
 .project-gallery #carousel-design i {
   background-color: rgba(51, 51, 51, 0.5019607843);
   font-size: 3em;
+  position: relative;
+  margin-top: -2rem;
 }
 
 /* [MRF 2022-05-13] contact */
