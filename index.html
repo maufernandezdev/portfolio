@@ -44,11 +44,11 @@
 
 <body>
     <!-- header options -->
-
+    css
     <header id="header">
         <nav class="menu">
             <div class="logo">
-                <label>MF.DEV</label>
+                <label>{ MF }</label>
                 <a href="#" class="btn-menu" id="btn-menu">
                     <!-- <i class="icono fa fa-bars fa-2x" aria-hidden="true"></i> -->
                     <i class='icono bx bx-menu-alt-right'></i>
@@ -92,7 +92,7 @@
         <div class="presentation__content" data-aos="zoom-in" data-aos-duration="1900">
             <p class="hi">Hi there, I'm</p>
             <h1 class="big__heading"><span class="presentation__hi">
-                    <</span>Mauricio Fernandez<span class="presentation__hi">/>
+                    </span>Mauricio Fernandez<span class="presentation__hi">
                 </span></h1>
             <p class="paragraph">
                 <span class="typed"></span></h2>
@@ -107,14 +107,14 @@
             <img src="img/mau2.png" alt="me">
         </div>
     </section>
+
     <!-- [MRF 2022-05-13] about section -->
     <section class="about">
 
         <section class="about__first-section">
             <div class="about__description">
                 <h2 id="about" data-aos="fade-down" data-aos-duration="900" data-aos-once="true"> About me </h2>
-                <hr>
-                <div class="container-description">
+                <div class="container-description" data-aos="fade-right" data-aos-duration="900" data-aos-once="true">
                     <p class="paragraph">Hello! I'm <span>Mauricio</span>, a software developer based in Buenos
                         Aires,
                         Argentina. I enjoy creating things that live on the internet, be it websites, apps, or
@@ -128,36 +128,41 @@
                     <!-- <h4>Here are a few technologies I've been working with recently</h4> -->
                     <h4>This is my <span>technology stack</span></h4>
                     <div class="gallery" data-aos="zoom-in" data-aos-duration="900" data-aos-once="true">
-                        <!-- <div class="gallery__item" data-aos-duration="900" data-aos-once="true">
+                        <div class="gallery__item" data-aos-duration="900" data-aos-once="true">
                             <i class='bx bxl-c-plus-plus c-plus'></i>
                             <label>C++</label>
-                        </div> -->
-                        <!-- <div class="gallery__item" data-aos-duration="900" data-aos-once="true">
+                        </div>
+                        <div class="gallery__item" data-aos-duration="900" data-aos-once="true">
                             <i class='bx bx-data'></i>
                             <label>SQL</label>
-                        </div> -->
+                        </div>
 
                         <div class="gallery__item" data-aos-duration="900" data-aos-once="true">
                             <i class='bx bxl-html5 html'></i>
                             <label>HTML5</label>
                         </div>
+
                         <div class="gallery__item" data-aos-duration="900" data-aos-once="true">
                             <i class='bx bxl-css3 css'></i>
-                            <label>CSS3</label>
+                            <label>CSS</label>
                         </div>
-                        <!-- <div class="gallery__item" data-aos-duration="900" data-aos-once="true">
-                            <i class='bx bxl-sass sass'></i>
-                            <label>Sass</label>
-                        </div> -->
+                        
                         <div class="gallery__item" data-aos-duration="900" data-aos-once="true">
-                            <i class='bx bxl-javascript javascript'></i>
+                           <i class='bx bxl-javascript javascript'></i>
                             <label>Js</label>
                         </div>
 
-                        <!-- <div data-aos-duration="900" data-aos-once="true" class="gallery__item">
+                        <div data-aos-duration="900" data-aos-once="true" class="gallery__item">
                             <i class='bx bxl-java java'></i>
                             <label>Java</label>
-                        </div> -->
+                        </div>
+
+                        <div class="gallery__item" data-aos-duration="900" data-aos-once="true">
+                            <i class='bx bxl-sass sass'></i>
+                            <label>Sass</label>
+
+                        </div>
+
                         <div class="gallery__item" data-aos-duration="900" data-aos-once="true">
                             <i class='bx bxl-git git'></i>
                             <label>Git</label>
@@ -172,6 +177,7 @@
                             <i class='bx bxl-react react'></i>
                             <label>React Js</label>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -182,11 +188,9 @@
     <!----======== work section ======== -->
     <section class="work" id="work">
         <h2 data-aos="fade-down" data-aos-duration="900" data-aos-once="true"> My amazing works </h2>
-        <hr>
-        <p>Every website should by built with two primary goals:
+        <p data-aos="fade-right" data-aos-duration="900" data-aos-once="true">Every website should by built with two primary goals:
             Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
-        <div class="description" data-aos="fade-up" data-aos-anchor-placement="bottom-center" data-aos-duration="700"
-            data-aos-once="true">
+        <div class="description">
             <div class="description-header"><i class='bx bx-terminal'></i></div>
             <h3>Featured project</h3>
             <h4>Contact form using nodemailer</h4>
@@ -208,8 +212,7 @@
         </div>
 
         <!-- [MRF 2022-05-15] platform crypto https://github.com/black-panther-group/frontend-platform -->
-        <div class="description" data-aos="fade-up" data-aos-anchor-placement="bottom-center" data-aos-duration="700"
-            data-aos-once="true">
+        <div class="description" >
             <div class="description-header"><i class='bx bx-terminal'></i></div>
             <h3>Featured project</h3>
             <h4>Platform for online courses</h4>
@@ -230,8 +233,7 @@
 
         <!-- [MRF 2022-05-14] bank -->
 
-        <div class="description" data-aos="fade-up" data-aos-anchor-placement="bottom-center" data-aos-duration="700"
-            data-aos-once="true">
+        <div class="description">
             <div class="description-header"><i class='bx bx-terminal'></i></div>
             <h3>Featured project</h3>
             <h4>E-commerce with mercadopago</h4>
@@ -251,8 +253,7 @@
 
     <section class="project-gallery" id="gallery">
         <h2 data-aos="fade-down" data-aos-duration="900" data-aos-once="true">Project gallery</h2>
-        <hr>
-        <p>Providing customers with an exceptional experience is essential to building loyalty and a lasting brand.
+        <p>"Providing customers with an exceptional experience is essential to building loyalty and a lasting brand."
         </p>
 
         <div class="options">
@@ -391,11 +392,11 @@
 
     <footer>
         <div class="link-footer-section">
-            <h2 data-aos="fade-down" data-aos-duration="900" data-aos-once="true">MF.DEV</h2>
-            <a data-aos="fade-right" data-aos-duration="900" data-aos-once="true" href="#about">About</a>
-            <a data-aos="fade-right" data-aos-duration="1100" data-aos-once="true" href="#work">Work</a>
-            <a data-aos="fade-right" data-aos-duration="1200" data-aos-once="true" href="#gallery">Gallery</a>
-            <a data-aos="fade-right" data-aos-duration="1300" data-aos-once="true" href="#contact">Contact</a>
+            <h2>{ MF }</h2>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
         </div>
         <hr>
 
