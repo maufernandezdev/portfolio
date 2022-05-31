@@ -75,7 +75,6 @@ $(document).ready(function() {
         cursorChar: '|',
         contentType: 'html',
     });
-
     // https://tucomercio.ml/productos.html
 
     /*
