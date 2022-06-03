@@ -4,9 +4,9 @@ $(document).ready(function() {
 
         strings: [
 
-            '<i>front end developer.</i>',
-            '<i>back end developer.</i>',
-            '<i>programming instructor.</i>'
+            '<i>Frontend developer </i>',
+            '<i>Backend developer </i>',
+            '<i>Programming tutor </i>'
         ],
 
         typeSpeed: 100,
@@ -19,61 +19,6 @@ $(document).ready(function() {
         cursorChar: '|',
         contentType: 'html',
 
-    });
-
-    /* [MRF 2022-05-22] typed form work section */
-    const typedUrl = new Typed('.typed-url', {
-
-        strings: [
-
-            '<i>https://maufernandezdev.github.io/portfolio/</i>',
-        ],
-
-        typeSpeed: 100,
-        startDelay: 300,
-        backSpeed: 75,
-        backDelay: 1500,
-        loop: true,
-        loopCount: false,
-        showCursor: true,
-        cursorChar: '|',
-        contentType: 'html',
-    });
-
-    const typedUrlEcommerce = new Typed('.typed-url-ecommerce', {
-
-        strings: [
-
-            '<i>https://tucomercio.ml/productos.html</i>',
-        ],
-
-        typeSpeed: 100,
-        startDelay: 500,
-        backSpeed: 75,
-        backDelay: 1500,
-        loop: true,
-        loopCount: false,
-        showCursor: true,
-        cursorChar: '|',
-        contentType: 'html',
-    });
-
-    const typedUrlBp = new Typed('.typed-url-bp', {
-
-        strings: [
-
-            '<i>https://academiablackpanther.com/</i>',
-        ],
-
-        typeSpeed: 100,
-        startDelay: 700,
-        backSpeed: 75,
-        backDelay: 1500,
-        loop: true,
-        loopCount: false,
-        showCursor: true,
-        cursorChar: '|',
-        contentType: 'html',
     });
     // https://tucomercio.ml/productos.html
 

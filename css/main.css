@@ -136,8 +136,10 @@ p {
 .menu .enlaces hr {
   width: 45%;
   color: #e1147b;
+  color: #64ffda;
   background-color: #e1147b;
-  animation: anim-shadow-reg-pink 0.3s forwards;
+  background-color: #64ffda;
+  animation: anim-shadow-reg 0.3s forwards;
   -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
 }
@@ -459,6 +461,26 @@ section {
   color: #64ffda;
   font-weight: 700;
 }
+.about .about__first-section .button-container {
+  display: flex;
+  margin-top: 1.5rem;
+}
+.about .about__first-section .button-container a {
+  border: 1px solid #64ffda;
+  background-color: transparent;
+  color: #64ffda;
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  width: 100%;
+  width: auto;
+  text-align: center;
+  transition: var(--tran-04);
+  font-size: 1em;
+}
+.about .about__first-section .button-container a:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+}
 
 .work {
   padding: var(--padding-section);
@@ -471,6 +493,9 @@ section {
 .work p {
   color: #fff;
   font-size: 0.9em;
+}
+.work .first-paragraph {
+  font-style: italic;
 }
 .work hr {
   background-color: #e1147b;
@@ -490,6 +515,10 @@ section {
   border-radius: 4px;
   margin-top: 3em;
   background-color: rgba(51, 51, 51, 0.5019607843);
+  transition: var(--tran-04);
+}
+.work .description:hover {
+  transform: translateY(-5px);
 }
 .work .description .description-header {
   width: 100%;
@@ -520,10 +549,11 @@ section {
   text-decoration: none;
   color: #64ffda;
   font-weight: 700;
-  margin-right: 0.5em;
+  margin-right: 0.7em;
+  margin-top: 0.5em;
 }
 .work .description .carousel-footer a i {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #64ffda;
   color: #fff;
 }
@@ -576,127 +606,63 @@ section {
 }
 
 /* [MRF 2022-05-13] services */
-.project-gallery {
+.experience {
   padding: var(--padding-section);
 }
-.project-gallery h2 {
+.experience h2 {
   padding: 0;
   color: #fff;
   margin-bottom: 0.5em;
   text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda, 0 0 80px #64ffda, 0 0 120px #64ffda;
 }
-.project-gallery h3 {
+.experience h3 {
   font-size: 1.1rem;
   font-family: inherit;
 }
-.project-gallery .item {
-  width: 100%;
-  margin: 0.7rem 0rem;
-  box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-}
-.project-gallery .item .item__header {
-  display: flex;
-  border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  height: 27px;
-  width: 100%;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0.5em;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
-.project-gallery .item .item__header i {
-  font-size: 0.5em;
-}
-.project-gallery .item .item__header .circles {
-  width: 75px;
-  display: flex;
-}
-.project-gallery .item .item__header .circles i {
-  margin-right: 3px;
-}
-.project-gallery .item .item__header .circles .red {
-  color: #ff0000;
-}
-.project-gallery .item .item__header .circles .yellow {
-  color: #FFFF00;
-}
-.project-gallery .item .item__header .circles .green {
-  color: #00FF00;
-}
-.project-gallery .item .item__header .search-box {
-  line-height: 7px;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-  padding: 0.27rem 0.5rem;
-  width: 100%;
-  text-align: center;
-  background-color: #ccc;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.project-gallery .item .item__header .search-box label {
-  font-size: 0.55em;
-  color: #000;
-}
-.project-gallery .item .item__header .search-box span i {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.55rem;
-  font-style: normal;
-}
-.project-gallery .item img {
-  width: 100%;
-  height: 100%;
-  height: auto;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-}
-.project-gallery .container-full-gallery {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 3rem;
-}
-.project-gallery p {
-  font-style: italic;
+.experience p {
   color: #fff;
+  font-size: 0.9em;
 }
-.project-gallery #carousel-design .carousel-inner {
-  margin-top: 3rem;
-}
-.project-gallery #carousel-design .carousel-inner h3 {
-  margin-bottom: 1em;
-  font-size: 1.1em;
-  font-weight: 700;
-}
-.project-gallery #carousel-design .carousel-inner img {
-  border-radius: 4px;
-  height: 175px;
-}
-.project-gallery #carousel-design .carousel-inner p {
-  height: 45px;
-  margin-top: 1em;
-  margin-bottom: 0;
-}
-.project-gallery #carousel-design .carousel-inner .deploy {
-  font-family: "Source Sans Pro", sans-serif;
-  text-decoration: none;
+.experience p span {
   color: #64ffda;
-  font-weight: 700;
 }
-.project-gallery #carousel-design i {
-  background-color: rgba(51, 51, 51, 0.5019607843);
-  font-size: 3em;
-  position: relative;
-  margin-top: -2rem;
+.experience ul {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  margin: 2em 0em;
+}
+.experience ul li {
+  width: 100%;
+  font-size: 1em;
+  color: #fff;
+  display: flex;
+}
+.experience ul li i {
+  color: #64ffda;
+  padding: 0.25em;
+}
+.experience ul li p {
+  width: 100%;
+}
+.experience .button-container {
+  display: flex;
+  margin-top: 1.5rem;
+}
+.experience .button-container a {
+  border: 1px solid #64ffda;
+  background-color: transparent;
+  color: #64ffda;
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  width: 100%;
+  width: 125px;
+  text-align: center;
+  transition: var(--tran-04);
+}
+.experience .button-container a:hover {
+  background-color: rgba(100, 255, 218, 0.1);
 }
 
 /* [MRF 2022-05-13] contact */
@@ -724,6 +690,7 @@ section {
   color: #fff;
   text-align: center;
   margin-top: 0.5em;
+  font-size: 0.9em;
 }
 .contact .contact-form-container {
   /* background-color: #fff; */
