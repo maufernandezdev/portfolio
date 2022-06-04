@@ -69,6 +69,32 @@ p {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.button-container{
+
+    display: flex;
+    margin-top: 2rem;
+    a{
+        border: 1px solid $aqua;
+        background-color: transparent;
+        // text-transform: uppercase;
+        color: $aqua;
+        text-decoration: none;
+        padding: 0.5em;
+        // margin: 0em 0.5em;
+        border-radius: 5px;
+        width: 100%;
+        width: auto;
+        width: 125px;
+        // width: 150px;
+        text-align: center;
+        transition: var(--tran-04);
+        &:hover {
+            background-color: rgba(100, 255, 218, 0.1);
+        }
+        font-size: 1em;
+    }
+}
+
 /* Start [MRF 2022-05-22] header */
 
 #header {
@@ -175,6 +201,7 @@ p {
     i {
         // margin: 5px;
         font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     hr {
@@ -490,7 +517,7 @@ section {
                 //max-width: 400px;
                 display: grid;
                 // grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
                 // grid-auto-rows: minmax(125px, auto);
                 grid-gap: 7px;
                 justify-content: center;
@@ -498,27 +525,21 @@ section {
 
                 .gallery__item {
                     width: 100%;
+                    height: 140px;
                     font-display: flex;
                     padding: 0.5em;
                     justify-content: center;
                     align-items: center;
                     border-radius: 4px;
-                    // border: 1px solid #fff;
-                    // box-shadow: 0 4px 30px rgb(0 0 0 / 50%);
-                    // border-radius: 50%;
-                    // margin: 0.5em 0em;
-                    // background-color: #151519;
-                    // box-shadow: 1.25px 1.25px 5px rgba(0, 0, 0, 0.5);
-
-                    // width: 300px;
-                    // height: 37px;
 
                     background: #1d1e22;
                     background-color: #33333380;
-                    
+
+                    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+                    background: rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(5px);
+                                
                     // box-shadow: 0 4px 30px rgb(0 0 0 / 50%);
-                    // width:150px;
-                    // height: 150px;
                     z-index: 1;
                     transition: var(--tran-04);
                     margin: 0px auto;
@@ -580,6 +601,7 @@ section {
 
                         width: 100%;
                         text-align: center;
+                        
                         // max-width: 30px;
                         // color: $aqua;
                         // background-color: red;
@@ -590,12 +612,33 @@ section {
                         width: 100%;
                         position: relative;
                         top: 0px;
-                        font-size: 0.8em;
+                        font-size: 0.9em;
                         text-align: center;
                     }
 
-                    .hedear__item {
+                    .gallery__item-container {
                         align-self: flex-start;
+                        // background-color: red;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        // background-color: red;
+                        padding: 0;
+                        margin: 0;
+                        i{
+                            width: 100%;
+                            font-size: 3.3rem;
+                        }
+                        label{
+                            // background-color: blue;
+                            font-family: 'Source Sans Pro', sans-serif;
+                            font-family: 'Poppins',sans-serif;
+                            font-size: 0.8em;
+                            margin-top: 0.5em;
+                        }
                     }
 
                     .body__item {
@@ -607,55 +650,55 @@ section {
                         }
                     }
 
-                    .c-plus {
+                    // .c-plus {
 
-                        color: #044F88;
+                    //     color: #044F88;
                     
-                    }
-                    .html {
+                    // }
+                    // .html {
                         
-                        color: #E34E26;
-                    }
+                    //     color: #E34E26;
+                    // }
 
-                    .css {
+                    // .css {
                         
-                        color: #2162AF;
-                    }
+                    //     color: #2162AF;
+                    // }
 
-                    .sass {
+                    // .sass {
                     
-                        color: #CD6799;
+                    //     color: #CD6799;
                         
-                    }
+                    // }
 
-                    .javascript {
+                    // .javascript {
                         
-                        color: #F7DF1E;
+                    //     color: #F7DF1E;
                         
-                    }
+                    // }
 
-                    .java {
+                    // .java {
                         
-                        color: #EA2A30;
+                    //     color: #EA2A30;
                         
-                    }
+                    // }
 
-                    .git {
+                    // .git {
                         
-                        color: #bd2c00;
+                    //     color: #bd2c00;
                         
-                    }
+                    // }
 
-                    .node {
+                    // .node {
                         
-                        color: #3E863D;
+                    //     color: #3E863D;
                         
-                    }
+                    // }
 
-                    .react {
+                    // .react {
                         
-                        color: #53C1DE;
-                    }
+                    //     color: #53C1DE;
+                    // }
 
                     &:hover{
                         transform: translateY(-5px);
@@ -714,22 +757,23 @@ section {
             }
 
             h4 {
-                font-size: 1em;
+                font-size: 0.9em;
                 margin-bottom: 2em;
 
                 // padding: 0.5em 1em;
                 span {
                     color: $aqua;
-                    font-weight: 700;
+                    // font-weight: 700;
                 }
             }
         }
         .button-container{
 
             display: flex;
-            margin-top: 1.5rem;
+            justify-content: center;
+            margin-top: 4rem;
             a{
-                border: 1px solid $aqua;
+                border: none;
                 background-color: transparent;
                 // text-transform: uppercase;
                 color: $aqua;
@@ -739,13 +783,22 @@ section {
                 border-radius: 5px;
                 width: 100%;
                 width: auto;
-                // width: 150px;
+                width: 125px;
                 text-align: center;
                 transition: var(--tran-04);
                 &:hover {
-                    background-color: rgba(100, 255, 218, 0.1);
+                    background-color: none;
                 }
                 font-size: 1em;
+            }
+            i{
+                color: $aqua;
+                font-size: 2rem;
+                text-shadow: 0 0 10px $aqua,
+                0 0 20px $aqua,
+                0 0 40px $aqua,
+                0 0 80px $aqua,
+                0 0 120px $aqua;
             }
         }
     }
@@ -1066,6 +1119,7 @@ section {
         background: transparent;
         background: #0d1126;
         color: #fff;
+        font-family: 'Source Sans Pro', sans-serif;
     }
 
     .contact-form-container input[type="submit"] {
@@ -1169,6 +1223,7 @@ footer {
             text-decoration: none;
             color: #777777;
             text-align: center;
+            font-family: 'Source Sans Pro', sans-serif;
         }
     }
 
