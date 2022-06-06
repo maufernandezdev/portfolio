@@ -264,18 +264,20 @@ a {
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
-  padding: 6.5em 0em 0em 0em;
+  padding: 7em 0em 0em 0em;
 }
 .presentation .presentation__content .hi {
   color: #64ffda;
   font-size: 1.1em;
   text-align: center;
   width: 100%;
+  margin-bottom: 0.5em;
 }
 .presentation .presentation__content h1 {
   width: 100%;
   color: #fff;
   font-size: clamp(35px, 8vw, 80px);
+  margin-bottom: 0.3em;
 }
 .presentation .presentation__content .paragraph {
   width: 100%;
@@ -289,7 +291,7 @@ a {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 1.5em;
+  margin: 1.5em 0em 1em 0em;
   padding: 0;
 }
 .presentation .presentation__content .container .button {
@@ -1145,8 +1147,9 @@ footer .link-footer-section {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  padding: 0.7em;
+  padding: 1em 0.7em;
   justify-content: space-between;
+  margin: 0.5em 0em;
 }
 footer .link-footer-section a {
   width: 20%;

@@ -330,7 +330,7 @@ a{
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
-    padding: 6.5em 0em 0em 0em;
+    padding: 7em 0em 0em 0em;
 
     .presentation__content {
 
@@ -339,6 +339,8 @@ a{
             font-size: 1.1em;
             text-align: center;
             width: 100%;
+            // background-color: violet;
+            margin-bottom: 0.5em;
         }
 
         h1 {
@@ -346,12 +348,15 @@ a{
             // font-size: 2em;
             color: #fff;
             font-size: clamp(35px, 8vw, 80px);
+            // background-color: violet;
+            margin-bottom: 0.3em;
         }
 
         .paragraph {
             width: 100%;
             color: #ccc;
             text-align: center;
+            // background-color: violet;
 
             .typed {
                 color: $aqua
@@ -362,7 +367,7 @@ a{
             display: flex;
             width: 100%;
             justify-content: center;
-            margin-top: 1.5em;
+            margin: 1.5em 0em 1em 0em;
             padding: 0;
 
             .button {
@@ -1463,8 +1468,10 @@ footer {
         display: flex;
         width: 100%;
         flex-wrap: wrap;
-        padding: 0.7em;
+        padding: 1em 0.7em;
         justify-content: space-between;
+        margin: 0.5em 0em;
+        // background-color: red;
 
         a {
             width: 20%;
