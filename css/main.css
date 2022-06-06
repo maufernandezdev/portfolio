@@ -19,6 +19,7 @@ body {
   --tran-03: all 0.3s ease;
   --tran-04: all 0.3s ease;
   --tran-05: all 0.3s ease;
+  --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 }
 
 @keyframes anim-shadow-reg-primary {
@@ -104,6 +105,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 #header .menu .logo {
   display: inline-block;
@@ -146,6 +148,7 @@ a {
   justify-content: center;
   height: 100vh;
   padding-bottom: 11rem;
+  width: 100%;
 }
 .menu .enlaces a {
   color: #fff;
@@ -153,25 +156,22 @@ a {
   display: inline-block;
   font-size: 1.1em;
   text-align: center;
-  margin: 0.3em 0em;
+  margin: 0.5em 0em;
   width: 100%;
-  font-family: "Poppins", sans-serif;
-  font-family: "Roboto", sans-serif;
   font-family: "Source Sans Pro", sans-serif;
 }
 .menu .enlaces i {
-  font-size: 1.3rem;
   font-size: 1.5rem;
 }
 .menu .enlaces hr {
   width: 45%;
-  color: #e1147b;
   color: #64ffda;
-  background-color: #e1147b;
   background-color: #64ffda;
+  border-color: #64ffda;
   animation: anim-shadow-reg 0.3s forwards;
   -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
+  margin: 1.5em 0em 1.5em 0em;
 }
 .menu .enlaces .social-media-container {
   display: flex;
@@ -184,12 +184,12 @@ a {
   #header {
     padding: 0.7em 0em;
   }
-
-  .menu {
+  #header .menu {
     padding: 0rem 1.5rem;
     max-width: 1440px;
+    flex-wrap: nowrap;
   }
-  .menu .logo label {
+  #header .menu .logo label {
     display: flex;
   }
 
@@ -211,6 +211,10 @@ a {
     margin: 0.3em 0.5em;
     width: auto;
     font-family: "Source Sans Pro", sans-serif;
+    transition: var(--transition);
+  }
+  .menu .enlaces a:hover {
+    color: #64ffda;
   }
   .menu .enlaces .download {
     padding: 0.5rem;
@@ -663,6 +667,7 @@ section {
   width: 100%;
   font-size: 1em;
   color: #fff;
+  margin: 0.5em 0em;
   display: flex;
 }
 .experience ul li i {
@@ -776,7 +781,7 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  padding: 1em 1em 0.5em 1em;
+  padding: 1em 1em 0.7em 1em;
   border-radius: 4px;
   margin-top: 3em;
   background-color: rgba(51, 51, 51, 0.5019607843);
@@ -854,6 +859,7 @@ section {
   color: #fff;
   font-size: 0.9em;
   width: 100%;
+  margin: 0.5em 0em;
 }
 .work .description .carousel-inner img {
   width: 100%;
@@ -1019,6 +1025,7 @@ section {
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
+  margin-top: 2em;
 }
 .contact .contact-form-container img {
   width: 100%;
@@ -1041,17 +1048,18 @@ section {
   background: #0d1126;
   color: #fff;
   font-family: "Source Sans Pro", sans-serif;
+  font-size: 1em;
 }
-.contact .contact-form-container input[type=submit] {
+.contact .contact-form-container input[type=button] {
   border: 1px solid #64ffda;
   background-color: transparent;
   color: #64ffda;
   transition: var(--tran-04);
 }
-.contact .contact-form-container input[type=submit]:hover {
+.contact .contact-form-container input[type=button]:hover {
   background-color: rgba(100, 255, 218, 0.1);
 }
-.contact .contact-form-container input[type=submit]:hover {
+.contact .contact-form-container input[type=button]:hover {
   cursor: pointer;
 }
 .contact .contact-form-container input:focus,
@@ -1137,8 +1145,8 @@ footer .link-footer-section {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  padding: 0.5em 1.5em;
-  justify-content: center;
+  padding: 0.7em;
+  justify-content: space-between;
 }
 footer .link-footer-section a {
   width: 20%;
@@ -1148,8 +1156,8 @@ footer .link-footer-section a {
   font-family: "Source Sans Pro", sans-serif;
 }
 footer hr {
-  background-color: #ccc;
   height: 1px;
+  border-color: #777777;
 }
 footer ul {
   display: flex;
@@ -1159,7 +1167,7 @@ footer ul {
   padding: 0.5em 1.5em;
   justify-content: center;
   max-width: 275px;
-  margin: 0.5em auto;
+  margin: 0em auto;
 }
 footer ul li {
   list-style: none;
@@ -1175,12 +1183,14 @@ footer ul li a i {
   padding: 0.4em;
 }
 footer label {
+  display: flex;
   color: #64ffda;
   color: #777777;
   text-align: center;
+  justify-content: center;
   width: 100%;
   font-size: 1em;
-  padding: 0.5em 1.5em;
+  padding: 1em;
   font-family: "Poppins", sans-serif;
 }
 footer label a {
@@ -1193,11 +1203,11 @@ footer label a {
     margin: 0px auto;
     padding: 2.5em 4.5em;
     justify-content: space-between;
-    transition: var(--tran-04);
   }
   footer .link-footer-section a {
     width: auto;
     font-size: 1.1em;
+    transition: var(--transition);
   }
   footer .link-footer-section a:hover {
     color: #64ffda;
