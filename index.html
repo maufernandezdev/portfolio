@@ -6,32 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
     <!-- CSS Styles -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> -->
 
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- jQuery, fontawsome, gsap-->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Mauricio Fernandez</title>
+
     <!--Description-->
     <meta name="description"
         content="Mauricio Fernandez is a software developer specialized in building exceptional websites and tools for other developers">
@@ -40,11 +35,19 @@
         content="MAURICIO FERNANDEZ,MAURICIO FERNANDEZ SOFTWARE DEVELOPER,SOFTWARE DEVELOPER BUENOS AIRES,BUENOS AIRES PROGRAMMER,FULL STACK DEVELOPER,FRONT END DEVELOPER,DESARROLLADOR BUENOS AIRES,PROGRAMADOR BUENOS AIRES">
     <meta name="author" content="Mauricio Fernandez, maufernandezdev@gmail.com">
     <meta name="theme-color" content="#0d1126">
+
+    <meta property="og:title" content="Mauricio Fernandez" data-react-helmet="true">
+    <meta property="og:description"
+    content="Mauricio Fernandez is a software developer specialized in building exceptional websites and tools for other developers."
+    data-react-helmet="true">
+    <meta property="og:image" content="https://maufernandezdev.github.io/portfolio/img/website.png" data-react-helmet="true">
+    <meta property="og:url" content="https://maufernandezdev.github.io/portfolio/" data-react-helmet="true">
+    <meta property="og:type" content="website" data-react-helmet="true">
+
 </head>
 
 <body>
-    <!-- header options -->
-    css
+    <!-- header -->
     <header id="header">
         <nav class="menu">
             <div class="logo">
@@ -58,7 +61,7 @@
                 <a href="index.html">Home</a>
                 <a href="#about">About</a>
                 <a href="#work">Work</a>
-                <a href="#gallery">Gallery</a>
+                <a href="#experience">Experience</a>
                 <a href="#contact">Contact</a>
                 <a class="button download" href="docs/cv-mauricio-fernandez-dev.pdf"
                     download="cv-mauricio-fernandez-dev.pdf">Download CV</a>
@@ -84,12 +87,10 @@
             </div>
         </nav>
     </header>
-    </div>
-
 
     <!-- Presentation -->
     <section class="presentation">
-        <div class="presentation__content" data-aos="zoom-in" data-aos-duration="1900">
+        <div class="presentation__content" data-aos="zoom-in" data-aos-duration="1200"  data-aos-once="true">
             <p class="hi">Hi there, I'm</p>
             <h1 class="big__heading"><span class="presentation__hi">
                     </span>Mauricio Fernandez<span class="presentation__hi">
@@ -102,7 +103,7 @@
                 <a class="button talk" href="#contact">Let's talk</a>
             </div>
         </div>
-        <div class="container-img">
+        <div class="container-img" data-aos="zoom-in" data-aos-duration="1200"  data-aos-once="true">
             <img src="img/mau2.png" alt="me">
         </div>
     </section>
@@ -126,66 +127,63 @@
                 <div class="container-gallery">
                     <!-- <h4>Here are a few technologies I've been working with recently</h4> -->
                     <h4>This is my <span>technology stack</span></h4>
-                    <div class="gallery" data-aos="zoom-in" data-aos-duration="900" data-aos-once="true">
-                        <div class="gallery__item" data-aos-duration="900" data-aos-once="true">
+                    <div class="gallery">
+                        <div class="gallery__item">
                             <div class="gallery__item-container">
                                 <i class='bx bxl-c-plus-plus c-plus'></i>
                                 <label>C++</label>
                             </div>
                         </div>
-                        <div class="gallery__item" data-aos-duration="900" data-aos-once="true">
+                        <div class="gallery__item">
                             <div class="gallery__item-container">
-                                <i class='bx bx-data'></i>
+                                <i class='bx bx-data sql'></i>
                                 <label>SQL</label>
                             </div>
                         </div>
 
-                        <div class="gallery__item" data-aos-duration="900" data-aos-once="true">
+                        <div class="gallery__item item-desktop">
                             <div class="gallery__item-container">
                                 <i class='bx bxl-html5 html'></i>
                                 <label>HTML5</label>
                             </div>
                         </div>
 
-                        <!-- <div class="gallery__item" data-aos-duration="900" data-aos-once="true">
-                            <i class='bx bxl-css3 css'></i>
-                            <label>CSS</label>
-                        </div> -->
-                        
-                        <!-- <div class="gallery__item" data-aos-duration="900" data-aos-once="true">
-                           <i class='bx bxl-javascript javascript'></i>
-                            <label>Js</label>
-                        </div> -->
+                        <div class="gallery__item">
+                            <div class="gallery__item-container">
+                                <i class='bx bxl-javascript javascript'></i>
+                                 <label>Js</label>
+                            </div>
+                        </div> 
 
-                        <div data-aos-duration="900" data-aos-once="true" class="gallery__item">
+                        <div class="gallery__item">
                             <div class="gallery__item-container">
                                 <i class='bx bxl-java java'></i>
                                 <label>Java</label>
                             </div>
                         </div>
 
-                        <div class="gallery__item" data-aos-duration="900" data-aos-once="true">
+                        <div class="gallery__item">
                             <div class="gallery__item-container">
                                 <i class='bx bxl-sass sass'></i>
                                 <label>Sass</label>
                             </div>
                         </div>
 
-                        <div class="gallery__item" data-aos-duration="900" data-aos-once="true">
+                        <div class="gallery__item">
                             <div class="gallery__item-container">
                                 <i class='bx bxl-git git'></i>
                                 <label>Git</label>
                             </div>
                         </div>
 
-                        <div class="gallery__item" data-aos-duration="900" data-aos-once="true">
+                        <div class="gallery__item">
                             <div class="gallery__item-container">
                                 <i class='bx bxl-nodejs node'></i>
                                 <label>Node Js</label>
                             </div>
                         </div>
 
-                        <div class="gallery__item" data-aos-duration="900" data-aos-once="true">
+                        <div class="gallery__item">
                             <div class="gallery__item-container">
                                 <i class='bx bxl-react react'></i>
                                 <label>React Js</label>
@@ -206,11 +204,11 @@
     <!----======== experience ======== -->
     <section class="experience" id="experience">
         <h2 data-aos="fade-down" data-aos-duration="900" data-aos-once="true">Experience</h2>
-        <p>These are some of the places where I have worked.</p>
+        <p  data-aos="fade-right" data-aos-duration="900" data-aos-once="true">These are some of the places where I have worked.</p>
         <ul>
-            <li><i class='bx bx-chevron-right'></i><p>Developer at <span>Request S.A</span> <br> January 2021 – January 2022</p></li>
-            <li><i class='bx bx-chevron-right'></i><p>Independent Developer <br> January 2022 - Present</p></li>
-            <li><i class='bx bx-chevron-right'></i><p>JavaScript Tutor at <span>CoderHouse</span> <br> April 2022 – Present</p></li>
+            <li data-aos="fade-right" data-aos-duration="900" data-aos-once="true"><i class='bx bx-chevron-right'></i><p>Developer at <span>Request S.A</span> <br> January 2021 – January 2022</p></li>
+            <li data-aos="fade-right" data-aos-duration="1100" data-aos-once="true"><i class='bx bx-chevron-right'></i><p>Independent Developer <br> January 2022 - Present</p></li>
+            <li data-aos="fade-right" data-aos-duration="1200" data-aos-once="true"><i class='bx bx-chevron-right'></i><p>JavaScript Tutor at <span>CoderHouse</span> <br> April 2022 – Present</p></li>
         </ul>
         <p>I am currently looking to work with a development team with which I can contribute my knowledge, experience and <span>good vibes.</span></p>
         <div class="button-container">
@@ -223,72 +221,74 @@
         <h2 data-aos="fade-down" data-aos-duration="900" data-aos-once="true"> My work </h2>
         <p data-aos="fade-right" data-aos-duration="900" data-aos-once="true">Every website should by built with two primary goals:
             Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
-        <div class="description">
-            <div class="description-header"><i class='bx bx-terminal'></i></div>
-            <h3>Featured project</h3>
-            <h4>Contact form using nodemailer</h4>
-            <p> A contact form enabled to send emails through gmail using OAuth2 token.
-                The form sends an email to the user and at the same time an email to oneself with the user's data.
-            </p>
+        <div class="container__cards">
+            <div class="description">
+                <div class="description-header"><i class='bx bx-terminal'></i></div>
+                <h3>Featured project</h3>
+                <h4>Contact form using nodemailer</h4>
+                <p> A contact form enabled to send emails through gmail using OAuth2 token.
+                    The form sends an email to the user and at the same time an email to oneself with the user's data.
+                </p>
 
-            <div class="technologies">
-                <p>Node js</p>
-                <p>Nodemailer</p>
-                <p>Express</p>
-                <p>Google APIs</p>
+                <div class="technologies">
+                    <p>Node js</p>
+                    <p>Nodemailer</p>
+                    <p>Express</p>
+                    <p>Google APIs</p>
+                </div>
+                <div class="carousel-footer">
+                    <a href="https://github.com/maufernandezdev/contact-form-node-js" target="_blank">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://contact-form-node-js.vercel.app/" target="_blank">
+                        <i class='bx bx-link-external'></i>
+                    </a>
+                    
+                    <!-- <p>Want to see the code on GitHub? <a href="https://github.com/maufernandezdev/contact-form-node-js"
+                            target="_blank">Click here</a></p> -->
+                </div>
             </div>
-            <div class="carousel-footer">
-                <a href="https://github.com/maufernandezdev/contact-form-node-js" target="_blank">
-                    <i class='bx bxl-github'></i>
-                </a>
-                <a href="https://contact-form-node-js.vercel.app/" target="_blank">
-                    <i class='bx bx-link-external'></i>
-                </a>
-                
-                <!-- <p>Want to see the code on GitHub? <a href="https://github.com/maufernandezdev/contact-form-node-js"
-                        target="_blank">Click here</a></p> -->
+
+            <!-- [MRF 2022-05-15] platform crypto https://github.com/black-panther-group/frontend-platform -->
+            <div class="description" >
+                <div class="description-header"><i class='bx bx-terminal'></i></div>
+                <h3>Featured project</h3>
+                <h4>Cave game</h4>
+                <p>Game made with javascript in which the objective is to find the key to get out of the cave, do you dare to play it?</p>
+                <div class="technologies">
+                    <p>Vanilla JS</p>
+                </div>
+                <div class="carousel-footer">
+                    <a href="https://github.com/maufernandezdev/cave-js-game" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://maufernandezdev.github.io/cave-js-game/" target="_blank"><i class='bx bx-link-external'></i></a>
+                    <!-- <p>Want to see the code on GitHub? <a href="https://github.com/black-panther-group/frontend-platform"
+                            target="_blank">Click
+                            here</a></p> -->
+                </div>
+            </div>
+
+            <!-- [MRF 2022-05-14] bank -->
+
+            <div class="description">
+                <div class="description-header"><i class='bx bx-terminal'></i></div>
+                <h3>Featured project</h3>
+                <h4>Connection to mercadopago</h4>
+                <p>Product platform with shopping cart and online payment through mercadopago API.</p>
+
+                <div class="technologies">
+                    <p>Node js</p>
+                    <p>Express</p>
+                    <p>Mercadopago API</p>
+                </div>
+                <div class="carousel-footer">
+                    <a href="https://github.com/maufernandezdev/mercadopago-node-express" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://tucomercio.ml/productos.html" target="_blank"><i class='bx bx-link-external'></i></a>
+                    <!-- <p>Want to see the code on GitHub? <a href="https://github.com/maufernandezdev/bank-project"
+                            target="_blank">Click here</a></p> -->
+                </div>
             </div>
         </div>
-
-        <!-- [MRF 2022-05-15] platform crypto https://github.com/black-panther-group/frontend-platform -->
-        <div class="description" >
-            <div class="description-header"><i class='bx bx-terminal'></i></div>
-            <h3>Featured project</h3>
-            <h4>Cave game</h4>
-            <p>Game made with javascript in which the objective is to find the key to get out of the cave, do you dare to play it?</p>
-            <div class="technologies">
-                <p>Vanilla JS</p>
-            </div>
-            <div class="carousel-footer">
-                <a href="https://github.com/maufernandezdev/cave-js-game" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://maufernandezdev.github.io/cave-js-game/" target="_blank"><i class='bx bx-link-external'></i></a>
-                <!-- <p>Want to see the code on GitHub? <a href="https://github.com/black-panther-group/frontend-platform"
-                        target="_blank">Click
-                        here</a></p> -->
-            </div>
-        </div>
-
-        <!-- [MRF 2022-05-14] bank -->
-
-        <div class="description">
-            <div class="description-header"><i class='bx bx-terminal'></i></div>
-            <h3>Featured project</h3>
-            <h4>E-commerce with mercadopago</h4>
-            <p>Product platform with shopping cart and online payment through mercadopago.</p>
-
-            <div class="technologies">
-                <p>Node js</p>
-                <p>Express</p>
-                <p>Mercadopago API</p>
-            </div>
-            <div class="carousel-footer">
-                <a href="https://github.com/maufernandezdev/mercadopago-node-express" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://tucomercio.ml/productos.html" target="_blank"><i class='bx bx-link-external'></i></a>
-                <!-- <p>Want to see the code on GitHub? <a href="https://github.com/maufernandezdev/bank-project"
-                        target="_blank">Click here</a></p> -->
-            </div>
-        </div>
-
+            
         <div class="button-container">
             <a href="https://github.com/maufernandezdev/" target="_blank">View all!</a>
         </div>
@@ -319,7 +319,7 @@
     </section> -->
 
     <section class="contact" id="contact">
-        <h2>What’s Next?</h2>
+        <h2 data-aos="fade-down" data-aos-duration="900" data-aos-once="true">What’s Next?</h2>
         <h3>Let's get In Touch</h3>
         <p>My inbox is always open. Whether you have a question or just want to say hi, I'll try my
             best to get back to you!</p>
@@ -343,22 +343,20 @@
             <a href="#about">About</a>
             <a href="#work">Work</a>
             <a href=""><h2>{ MF }</h2></a>
-            <a href="#gallery">Gallery</a>
+            <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
         </div>
         <hr>
 
-        <label><a href="https://github.com/maufernandezdev" target="_blank">Made with <span
-                    style='font-size:17px;'>&#128150;</span> by Mauricio
-                Fernandez</a></label>
+        <label>
+            <a href="https://github.com/maufernandezdev" target="_blank">Made with <span style='font-size:17px;'>&#128150;</span> by Mauricio Fernandez</a>
+        </label>
         <ul>
             <li>
-                <a class="github" href="https://github.com/maufernandezdev" target="_blank"><i
-                        class='bx bxl-github'></i></a>
+                <a class="github" href="https://github.com/maufernandezdev" target="_blank"><i class='bx bxl-github'></i></a>
             </li>
             <li>
-                <a target="_blank" href="https://www.linkedin.com/in/mauriciofernandezdev/"><i
-                        class='bx bxl-linkedin linkedin'></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/mauriciofernandezdev/"><i class='bx bxl-linkedin linkedin'></i></a>
             </li>
             <li>
                 <a href="mailto:maufernandezdev@gmail.com"><i class='bx bxl-gmail mail'></i></a>
@@ -372,26 +370,17 @@
                 </a>
             </li>
         </ul>
-
     </footer>
 
 
-
-
-
-
     <!-- jQuery , Popper.js, Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous ">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous ">
     </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous ">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous ">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous ">
-    </script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous ">
+    </script> -->
     <!-- Scripts -->
     <script src="js/main.js "></script>
     <!--typed js -->
@@ -448,22 +437,7 @@
 
             } );
         } );
-        // /* Start [MRF 2021-03-18] responsive header button */
-        // $( '.menu-icon' ).click( function() {
-        //     $( '.navigation ul' ).toggleClass( "show " );
-        // } );
-        // /* End   [MRF 2021-03-18] responsive header button */
-
-        /* Start [MRF 2021-03-18] Modal bootstrap */
-        // $( '#modalGetInTouch' ).on( 'show.bs.modal', function( event ) {
-        //     var button = $( event.relatedTarget ) // Button that triggered the modal
-        //     var recipient = button.data( 'whatever' ) // Extract info from data-* attributes
-        //     // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-        //     // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-        //     var modal = $( this )
-        //     modal.find( '.modal-title' ).text( 'Contact Form ' + recipient )
-        //     modal.find( '.modal-body input' ).val( recipient )
-        // } );
+        
         /* End   [MRF 2021-03-18] Modal bootstrap */
     </script>
     <!-- aos-->
