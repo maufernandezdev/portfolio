@@ -1,15 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    overflow-x: hidden;
-    background: #0d1126;
-    // background-color: #151519;
-}
-
 @import "color";
 
 :root {
@@ -23,6 +11,18 @@ body {
     --tran-04: all 0.3s ease;
     --tran-05: all 0.3s ease;
     --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background: #0d1126;
+    // background-color: #151519;
 }
 
 @keyframes anim-shadow-reg-primary {
@@ -53,6 +53,22 @@ body {
     to {
         text-shadow: 0 0 20px $aqua;
     }
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+//   border: 1px solid green;
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #0d1126 inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 h1 {
@@ -1342,7 +1358,7 @@ section {
         font-size: 1em;
     }
 
-    .contact-form-container input[type="button"] {
+    .contact-form-container input[type="submit"] {
 
         border: 1px solid $aqua;
         background-color: transparent;
@@ -1352,10 +1368,6 @@ section {
             background-color: rgba(100, 255, 218, 0.1);
         }
 
-    }
-
-    .contact-form-container input[type="button"]:hover {
-        cursor: pointer;
     }
 
     .contact-form-container input:focus,

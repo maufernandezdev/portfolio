@@ -1,14 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  overflow-x: hidden;
-  background: #0d1126;
-}
-
 /* Start [2021-03-24] Colors */
 /* End   [2021-03-24] Colors */
 :root {
@@ -20,6 +9,17 @@ body {
   --tran-04: all 0.3s ease;
   --tran-05: all 0.3s ease;
   --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: #0d1126;
 }
 
 @keyframes anim-shadow-reg-primary {
@@ -45,6 +45,21 @@ body {
     text-shadow: 0 0 20px #64ffda;
   }
 }
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #0d1126 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 h1 {
   font-family: "Roboto", sans-serif;
 }
@@ -1052,17 +1067,14 @@ section {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1em;
 }
-.contact .contact-form-container input[type=button] {
+.contact .contact-form-container input[type=submit] {
   border: 1px solid #64ffda;
   background-color: transparent;
   color: #64ffda;
   transition: var(--tran-04);
 }
-.contact .contact-form-container input[type=button]:hover {
+.contact .contact-form-container input[type=submit]:hover {
   background-color: rgba(100, 255, 218, 0.1);
-}
-.contact .contact-form-container input[type=button]:hover {
-  cursor: pointer;
 }
 .contact .contact-form-container input:focus,
 .contact .contact-form-container textarea:focus {

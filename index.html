@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----======== Toastify ======== -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!-- CSS Styles -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
@@ -26,11 +27,9 @@
     <title>Mauricio Fernandez</title>
 
     <!--Description-->
-    <meta name="description"
-        content="Mauricio Fernandez is a software developer specialized in building exceptional websites and tools for other developers">
+    <meta name="description" content="Mauricio Fernandez is a software developer specialized in building exceptional websites and tools for other developers">
     <!-- keywords-->
-    <meta name="keywords"
-        content="MAURICIO FERNANDEZ,MAURICIO FERNANDEZ SOFTWARE DEVELOPER,SOFTWARE DEVELOPER BUENOS AIRES,BUENOS AIRES PROGRAMMER,FULL STACK DEVELOPER,FRONT END DEVELOPER,DESARROLLADOR BUENOS AIRES,PROGRAMADOR BUENOS AIRES">
+    <meta name="keywords" content="MAURICIO FERNANDEZ,MAURICIO FERNANDEZ SOFTWARE DEVELOPER,SOFTWARE DEVELOPER BUENOS AIRES,BUENOS AIRES PROGRAMMER,FULL STACK DEVELOPER,FRONT END DEVELOPER,DESARROLLADOR BUENOS AIRES,PROGRAMADOR BUENOS AIRES">
     <meta name="author" content="Mauricio Fernandez, maufernandezdev@gmail.com">
     <meta name="theme-color" content="#0d1126">
 
@@ -220,6 +219,8 @@
         <p>Every website should by built with two primary goals:
             Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
         <div class="container__cards">
+
+            <!----======== Nodemailer ======== -->
             <div class="description">
                 <div class="description-header"><i class='bx bx-terminal'></i></div>
                 <h3>Featured project</h3>
@@ -238,16 +239,16 @@
                     <a href="https://github.com/maufernandezdev/contact-form-node-js" target="_blank">
                         <i class='bx bxl-github'></i>
                     </a>
-                    <a href="https://contact-form-node-js.vercel.app/" target="_blank">
+                    <!-- <a href="https://contact-form-node-js.vercel.app/" target="_blank">
                         <i class='bx bx-link-external'></i>
-                    </a>
-                    
+                    </a> -->
                     <!-- <p>Want to see the code on GitHub? <a href="https://github.com/maufernandezdev/contact-form-node-js"
                             target="_blank">Click here</a></p> -->
                 </div>
             </div>
 
             <!-- [MRF 2022-05-15] platform crypto https://github.com/black-panther-group/frontend-platform -->
+            <!----======== Cav game ======== -->
             <div class="description" >
                 <div class="description-header"><i class='bx bx-terminal'></i></div>
                 <h3>Featured project</h3>
@@ -265,9 +266,8 @@
                 </div>
             </div>
 
-            <!-- [MRF 2022-05-14] bank -->
-
-            <div class="description">
+            <!----======== Mercadopago ======== -->
+            <!-- <div class="description">
                 <div class="description-header"><i class='bx bx-terminal'></i></div>
                 <h3>Featured project</h3>
                 <h4>Connection to mercadopago</h4>
@@ -281,10 +281,29 @@
                 <div class="carousel-footer">
                     <a href="https://github.com/maufernandezdev/mercadopago-node-express" target="_blank"><i class='bx bxl-github'></i></a>
                     <a href="https://tucomercio.ml/productos.html" target="_blank"><i class='bx bx-link-external'></i></a>
-                    <!-- <p>Want to see the code on GitHub? <a href="https://github.com/maufernandezdev/bank-project"
-                            target="_blank">Click here</a></p> -->
+                    <p>Want to see the code on GitHub? <a href="https://github.com/maufernandezdev/bank-project"
+                            target="_blank">Click here</a></p> 
+                </div>
+            </div> -->
+
+            <!----======== Iru portfolio ======== -->
+            <div class="description">
+                <div class="description-header"><i class='bx bx-terminal'></i></div>
+                <h3>Featured project</h3>
+                <h4>Portfolio of Iru Arostegui</h4>
+                <p>Industrial designer and UI UX who loves systems that allow designers and developers to concentrate on their work without problems.</p>
+
+                <div class="technologies">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </div>
+                <div class="carousel-footer">
+                    <a href="https://github.com/maufernandezdev/iru-arostegui" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.iruarostegui.com/" target="_blank"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
+            
         </div>
             
         <div class="button-container">
@@ -301,12 +320,12 @@
             <img src="img/undraw_newsletter_re_wrob.svg" alt="message-img">
 
             <div class="contact-form">
-                <form action="http://localhost:5500/send-email" method="POST">
-                    <input type="text" name="name" id="name" placeholder="Enter your name">
-                    <input type="email" name="email" id="email" placeholder="Enter your email address">
-                    <textarea name="message" id="message" cols="30" rows="10"
-                        placeholder="Go ahead, i'm listening ..."></textarea>
-                    <input type="button" name="btn-send" id="btn-send" value="Send">
+                <form id="form" autocomplete="off">
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" autocomplete="off" required>
+                    <textarea name="comment" id="comment" cols="30" rows="10"
+                        placeholder="Go ahead, i'm listening ..." autocomplete="off" required></textarea>
+                    <input type="submit" name="btn-send" id="btn-send" value="Send">
                 </form>
             </div>
         </div>
@@ -353,18 +372,15 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous ">
     </script>
-
-    <!-- Scripts -->
-    <script src="js/main.js "></script>
     <!--typed js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11 "></script>
+    <!----======== Toastify ======== -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <!-- functional scripts -->
 
     <script>
         $( function() {
-
-            var header = document.getElementById( 'header' );
-
+            var header = document.getElementById('header');
             //menu responsive
             //calcular ancho
             var ancho = $( window ).width(),
@@ -416,13 +432,17 @@
     <!-- aos-->
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script>
-        AOS.init();
+        // AOS.init();
     </script>
     <script>
         $( '.menu-icon' ).click( function() {
             $( '.links' ).slideToggle();
         } );
     </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript"> emailjs.init('PJ1m68Nvi6hPddHWI') </script>
+    <!-- Scripts -->
+    <script src="js/main.js "></script>
 </body>
 
 </html>

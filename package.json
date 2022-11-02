@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "sass": "sass --watch scss/main.scss css/main.css"
+        "sass": "sass --watch scss/main.scss css/main.css",
+        "styles": "sass --watch scss/styles.scss css/styles.css"
     },
     "author": "",
     "license": "MRF",

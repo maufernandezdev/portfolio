@@ -1,3 +1,6 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "vscode_custom_css.imports": [
+        "file:///C:/users/mfern/OneDrive/Escritorio/Proyectos personales/config-css/synthwave84.css"
+    ],
 }
