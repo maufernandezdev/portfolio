@@ -478,7 +478,7 @@ section {
   margin-top: 1.5em;
 }
 .about .about__first-section .container-gallery .gallery .item-desktop {
-  display: none;
+  display: block;
 }
 .about .about__first-section .container-gallery .gallery .gallery__item {
   width: 100%;
@@ -522,6 +522,11 @@ section {
   padding: 0;
   margin: 0;
 }
+
+.about .about__first-section .container-gallery .gallery .gallery__item .gallery__item-container svg{
+  fill: #fff;
+}
+
 .about .about__first-section .container-gallery .gallery .gallery__item .gallery__item-container i {
   width: 100%;
   font-size: 3.3rem;
@@ -551,6 +556,12 @@ section {
 .about .about__first-section .container-gallery .gallery .gallery__item:hover .html {
   color: #E34E26;
 }
+
+.about .about__first-section .container-gallery .gallery .gallery__item:hover .mongo {
+  color: #13aa52;
+  fill: #13aa52;
+}
+
 .about .about__first-section .container-gallery .gallery .gallery__item:hover .css {
   color: #2162AF;
 }
@@ -643,7 +654,7 @@ section {
     margin-top: 0.5em;
   }
   .about .about__first-section .container-gallery .gallery .item-desktop {
-    display: block;
+    display: none;
   }
   .about .about__first-section .container-gallery h4 {
     font-size: 1.125em;
