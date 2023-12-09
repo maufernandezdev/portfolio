@@ -6,7 +6,11 @@
 /* End   [2021-03-24] imports */
 /* Start [2021-03-10] - ROOT */
 :root {
-  --body-background-color: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  --body-background-color: radial-gradient(
+    ellipse at bottom,
+    #1b2735 0%,
+    #090a0f 100%
+  );
   --transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   --white: #fff;
 }
@@ -28,6 +32,11 @@ body {
   background-repeat: no-repeat;
   overflow-x: hidden;
   min-height: 100%;
+}
+
+html,
+body {
+  scroll-behavior: smooth !important;
 }
 
 /* Start [2021-03-10] - Titles styles  */
@@ -110,15 +119,15 @@ textarea {
 /*pink*/
 @keyframes glow-title-pink {
   from {
-    text-shadow: 0 0 10px #d64cA8, 0 0 20px #d64cA8;
+    text-shadow: 0 0 10px #d64ca8, 0 0 20px #d64ca8;
   }
   to {
-    text-shadow: 0 0 20px #d64cA8;
+    text-shadow: 0 0 20px #d64ca8;
   }
 }
 @keyframes anim-shadow-reg-pink {
   100% {
-    box-shadow: 0px 0px 10px 1px #FF4FC7;
+    box-shadow: 0px 0px 10px 1px #ff4fc7;
   }
 }
 /*yellow*/
@@ -247,7 +256,7 @@ header .menu-icon {
   font-size: 30px;
   text-decoration: none;
   font-weight: normal;
-  -webkit-text-stroke: 1px #d64cA8;
+  -webkit-text-stroke: 1px #d64ca8;
   -webkit-text-fill-color: transparent;
   animation: glow-title-pink 2s ease-in-out infinite alternate;
   font-family: "Raleway", sans-serif;
@@ -255,7 +264,9 @@ header .menu-icon {
 
 /*End Header*/
 /*Presentation Section*/
-.item__span, .presentation__hi, .navigation__span {
+.item__span,
+.presentation__hi,
+.navigation__span {
   font-family: "Raleway", sans-serif;
   color: #64ffda;
 }
@@ -300,14 +311,21 @@ header .menu-icon {
   height: 300%;
   display: block;
   position: absolute;
-  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   z-index: -1;
 }
 
 .container__logo::before {
   background: #fff;
-  background: #d64cA8;
+  background: #d64ca8;
   transform: scale(1.1);
 }
 
@@ -632,14 +650,18 @@ section {
 
 /* End about me */
 /* Start list styles */
-.list__item, .experience__list-item, .skills__list-item {
+.list__item,
+.experience__list-item,
+.skills__list-item {
   color: #cdcdcd;
   list-style: none;
   border-radius: 5px;
   margin: 12px;
   text-align: left;
 }
-.list__item i, .experience__list-item i, .skills__list-item i {
+.list__item i,
+.experience__list-item i,
+.skills__list-item i {
   color: #64ffda;
 }
 
@@ -668,7 +690,8 @@ section {
 
 /*End proyects img*/
 /*start Button*/
-.button, .button--form {
+.button,
+.button--form {
   padding: 15px;
   border: solid 1px #64ffda;
   border-radius: 5px;
@@ -676,11 +699,13 @@ section {
   color: #64ffda !important;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.button:hover, .button--form:hover {
+.button:hover,
+.button--form:hover {
   background-color: rgba(100, 255, 218, 0.1);
 }
 @media screen and (min-width: 768px) {
-  .button, .button--form {
+  .button,
+  .button--form {
     padding: 20px;
   }
 }
@@ -949,7 +974,7 @@ footer ul li:last-child {
   width: 90%;
   margin: auto;
 }
-.contact .form input[type=submit] {
+.contact .form input[type="submit"] {
   background-color: #64ffda;
   border: solid 1px #64ffda;
   width: 100%;
@@ -958,7 +983,7 @@ footer ul li:last-child {
   padding: 12px;
   color: #fff;
 }
-.contact .form input[type=submit]:hover {
+.contact .form input[type="submit"]:hover {
   background-color: #00aae4;
   background: #64ffda;
   color: #fff;
@@ -1420,7 +1445,7 @@ footer ul li:last-child {
     width: 90%;
     margin: auto;
   }
-  .contact .form input[type=submit] {
+  .contact .form input[type="submit"] {
     background-color: #64ffda;
     border: solid 1px #64ffda;
     width: 100%;
@@ -1429,7 +1454,7 @@ footer ul li:last-child {
     padding: 12px;
     color: #fff;
   }
-  .contact .form input[type=submit]:hover {
+  .contact .form input[type="submit"]:hover {
     background-color: #00aae4;
     background: #64ffda;
     color: #fff;
@@ -1773,7 +1798,7 @@ footer ul li:last-child {
     width: 90%;
     margin: auto;
   }
-  .contact .form input[type=submit] {
+  .contact .form input[type="submit"] {
     background-color: #64ffda;
     border: solid 1px #64ffda;
     width: 100%;
@@ -1782,7 +1807,7 @@ footer ul li:last-child {
     padding: 12px;
     color: #fff;
   }
-  .contact .form input[type=submit]:hover {
+  .contact .form input[type="submit"]:hover {
     background-color: #00aae4;
     background: #64ffda;
     color: #fff;
@@ -2252,7 +2277,8 @@ footer ul li:last-child {
     font-size: clamp(60px, 9vw, 75px);
   }
 
-  .button, .button--form {
+  .button,
+  .button--form {
     padding: 10px;
   }
 
@@ -2790,7 +2816,7 @@ footer ul li:last-child {
     width: 90%;
     margin: auto;
   }
-  .contact .form input[type=submit] {
+  .contact .form input[type="submit"] {
     background-color: #64ffda;
     border: solid 1px #64ffda;
     width: 100%;
@@ -2799,7 +2825,7 @@ footer ul li:last-child {
     padding: 12px;
     color: #fff;
   }
-  .contact .form input[type=submit]:hover {
+  .contact .form input[type="submit"]:hover {
     background-color: #00aae4;
     background: #64ffda;
     color: #fff;

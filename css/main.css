@@ -8,13 +8,17 @@
   --tran-03: all 0.3s ease;
   --tran-04: all 0.3s ease;
   --tran-05: all 0.3s ease;
-  --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -135,13 +139,14 @@ a {
   font-size: 0.7em;
   align-self: center;
   margin-right: 10px;
-  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda, 0 0 80px #64ffda, 0 0 120px #64ffda;
+  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda,
+    0 0 80px #64ffda, 0 0 120px #64ffda;
 }
 #header .menu .logo .btn-menu i {
   font-size: 2rem;
 }
 #header .menu .logo img,
-#header .menu .logo label {
+#header .menu .logo label a {
   vertical-align: top;
   width: 70px;
   margin-top: 4px;
@@ -149,7 +154,10 @@ a {
   color: #64ffda;
   font-size: 17px;
   color: #fff;
-  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda, 0 0 80px #64ffda, 0 0 120px #64ffda;
+  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda,
+    0 0 80px #64ffda, 0 0 120px #64ffda;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .menu .enlaces {
@@ -200,11 +208,18 @@ a {
     padding: 0.7em 0em;
   }
   #header .menu {
-    padding: 0rem 1.5rem;
-    max-width: 1440px;
+    padding: 0;
+    max-width: 1024px;
     flex-wrap: nowrap;
   }
-  #header .menu .logo label {
+
+  #header .menu .logo {
+    display: inline-block;
+    margin: 10px 0 10px 0px;
+    padding: 0;
+  }
+
+  #header .menu .logo label a {
     display: flex;
   }
 
@@ -449,7 +464,8 @@ section {
   margin: 0;
   margin-bottom: 0.5em;
   color: #fff;
-  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda, 0 0 80px #64ffda, 0 0 120px #64ffda;
+  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda,
+    0 0 80px #64ffda, 0 0 120px #64ffda;
 }
 .about .about__first-section .container-description {
   font-size: 0.9em;
@@ -511,7 +527,12 @@ section {
   font-size: 0.9em;
   text-align: center;
 }
-.about .about__first-section .container-gallery .gallery .gallery__item .gallery__item-container {
+.about
+  .about__first-section
+  .container-gallery
+  .gallery
+  .gallery__item
+  .gallery__item-container {
   align-self: flex-start;
   height: 100%;
   display: flex;
@@ -523,65 +544,149 @@ section {
   margin: 0;
 }
 
-.about .about__first-section .container-gallery .gallery .gallery__item .gallery__item-container svg{
+.about
+  .about__first-section
+  .container-gallery
+  .gallery
+  .gallery__item
+  .gallery__item-container
+  svg {
   fill: #fff;
 }
 
-.about .about__first-section .container-gallery .gallery .gallery__item .gallery__item-container i {
+.about
+  .about__first-section
+  .container-gallery
+  .gallery
+  .gallery__item
+  .gallery__item-container
+  i {
   width: 100%;
   font-size: 3.3rem;
 }
-.about .about__first-section .container-gallery .gallery .gallery__item .gallery__item-container label {
+.about
+  .about__first-section
+  .container-gallery
+  .gallery
+  .gallery__item
+  .gallery__item-container
+  label {
   font-family: "Source Sans Pro", sans-serif;
   font-family: "Poppins", sans-serif;
   font-size: 0.8em;
   margin-top: 0.5em;
 }
-.about .about__first-section .container-gallery .gallery .gallery__item .body__item {
+.about
+  .about__first-section
+  .container-gallery
+  .gallery
+  .gallery__item
+  .body__item {
   font-family: "Source Sans Pro", sans-serif;
 }
-.about .about__first-section .container-gallery .gallery .gallery__item .body__item span {
+.about
+  .about__first-section
+  .container-gallery
+  .gallery
+  .gallery__item
+  .body__item
+  span {
   width: 100%;
 }
 .about .about__first-section .container-gallery .gallery .gallery__item:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
-.about .about__first-section .container-gallery .gallery .gallery__item:hover .c-plus {
-  color: #044F88;
+.about
+  .about__first-section
+  .container-gallery
+  .gallery
+  .gallery__item:hover
+  .c-plus {
+  color: #044f88;
 }
-.about .about__first-section .container-gallery .gallery .gallery__item:hover .sql {
+.about
+  .about__first-section
+  .container-gallery
+  .gallery
+  .gallery__item:hover
+  .sql {
   color: #ccc;
 }
-.about .about__first-section .container-gallery .gallery .gallery__item:hover .html {
-  color: #E34E26;
+.about
+  .about__first-section
+  .container-gallery
+  .gallery
+  .gallery__item:hover
+  .html {
+  color: #e34e26;
 }
 
-.about .about__first-section .container-gallery .gallery .gallery__item:hover .mongo {
+.about
+  .about__first-section
+  .container-gallery
+  .gallery
+  .gallery__item:hover
+  .mongo {
   color: #13aa52;
   fill: #13aa52;
 }
 
-.about .about__first-section .container-gallery .gallery .gallery__item:hover .css {
-  color: #2162AF;
+.about
+  .about__first-section
+  .container-gallery
+  .gallery
+  .gallery__item:hover
+  .css {
+  color: #2162af;
 }
-.about .about__first-section .container-gallery .gallery .gallery__item:hover .sass {
-  color: #CD6799;
+.about
+  .about__first-section
+  .container-gallery
+  .gallery
+  .gallery__item:hover
+  .sass {
+  color: #cd6799;
 }
-.about .about__first-section .container-gallery .gallery .gallery__item:hover .javascript {
-  color: #F7DF1E;
+.about
+  .about__first-section
+  .container-gallery
+  .gallery
+  .gallery__item:hover
+  .javascript {
+  color: #f7df1e;
 }
-.about .about__first-section .container-gallery .gallery .gallery__item:hover .java {
-  color: #EA2A30;
+.about
+  .about__first-section
+  .container-gallery
+  .gallery
+  .gallery__item:hover
+  .java {
+  color: #ea2a30;
 }
-.about .about__first-section .container-gallery .gallery .gallery__item:hover .git {
+.about
+  .about__first-section
+  .container-gallery
+  .gallery
+  .gallery__item:hover
+  .git {
   color: #bd2c00;
 }
-.about .about__first-section .container-gallery .gallery .gallery__item:hover .node {
-  color: #3E863D;
+.about
+  .about__first-section
+  .container-gallery
+  .gallery
+  .gallery__item:hover
+  .node {
+  color: #3e863d;
 }
-.about .about__first-section .container-gallery .gallery .gallery__item:hover .react {
-  color: #53C1DE;
+.about
+  .about__first-section
+  .container-gallery
+  .gallery
+  .gallery__item:hover
+  .react {
+  color: #53c1de;
 }
 .about .about__first-section .container-gallery h4 {
   font-size: 0.9em;
@@ -615,7 +720,8 @@ section {
 .about .about__first-section .button-container i {
   color: #64ffda;
   font-size: 2rem;
-  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda, 0 0 80px #64ffda, 0 0 120px #64ffda;
+  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda,
+    0 0 80px #64ffda, 0 0 120px #64ffda;
 }
 @media all and (min-width: 1024px) {
   .about {
@@ -645,11 +751,23 @@ section {
   .about .about__first-section .container-gallery .gallery .gallery__item {
     height: 150px;
   }
-  .about .about__first-section .container-gallery .gallery .gallery__item .gallery__item-container i {
+  .about
+    .about__first-section
+    .container-gallery
+    .gallery
+    .gallery__item
+    .gallery__item-container
+    i {
     width: 100%;
     font-size: 4.3rem;
   }
-  .about .about__first-section .container-gallery .gallery .gallery__item .gallery__item-container label {
+  .about
+    .about__first-section
+    .container-gallery
+    .gallery
+    .gallery__item
+    .gallery__item-container
+    label {
     font-size: 1em;
     margin-top: 0.5em;
   }
@@ -672,7 +790,8 @@ section {
   padding: 0;
   color: #fff;
   margin-bottom: 0.5em;
-  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda, 0 0 80px #64ffda, 0 0 120px #64ffda;
+  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda,
+    0 0 80px #64ffda, 0 0 120px #64ffda;
 }
 .experience h3 {
   font-size: 1.1rem;
@@ -684,6 +803,11 @@ section {
 }
 .experience p span {
   color: #64ffda;
+}
+.experience p a {
+  color: #64ffda;
+  text-decoration: none;
+  font-weight: 500;
 }
 .experience ul {
   padding: 0;
@@ -785,7 +909,8 @@ section {
 }
 .work h2 {
   padding: 0em;
-  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda, 0 0 80px #64ffda, 0 0 120px #64ffda;
+  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda,
+    0 0 80px #64ffda, 0 0 120px #64ffda;
   margin-bottom: 0.5em;
 }
 .work p {
@@ -1027,7 +1152,8 @@ section {
   color: #64ffda;
   text-align: center;
   font-size: 1.125rem;
-  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda, 0 0 80px #64ffda, 0 0 120px #64ffda;
+  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda,
+    0 0 80px #64ffda, 0 0 120px #64ffda;
 }
 .contact h2 span {
   font-size: 1.125rem;
@@ -1069,7 +1195,7 @@ section {
   margin: 0.5em 0em;
   padding: 1em;
   padding: 0.5em;
-  border: 1px solid #E4E9F7;
+  border: 1px solid #e4e9f7;
   width: 100%;
   resize: none;
   transition: all 0.3s ease;
@@ -1079,13 +1205,13 @@ section {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1em;
 }
-.contact .contact-form-container input[type=submit] {
+.contact .contact-form-container input[type="submit"] {
   border: 1px solid #64ffda;
   background-color: transparent;
   color: #64ffda;
   transition: var(--tran-04);
 }
-.contact .contact-form-container input[type=submit]:hover {
+.contact .contact-form-container input[type="submit"]:hover {
   background-color: rgba(100, 255, 218, 0.1);
 }
 .contact .contact-form-container input:focus,
@@ -1130,13 +1256,13 @@ section {
     align-items: center;
   }
   .contact .contact-form-container input,
-.contact .contact-form-container textarea {
+  .contact .contact-form-container textarea {
     border-radius: 5px;
     outline: none;
     border: none;
     margin: 0.5em 0em;
     padding: 1em;
-    border: 1px solid #E4E9F7;
+    border: 1px solid #e4e9f7;
     width: 100%;
     width: 100%;
     resize: none;
@@ -1165,7 +1291,8 @@ footer h2 {
   font-family: "Roboto", sans-serif;
   color: #64ffda;
   font-size: 17px;
-  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda, 0 0 80px #64ffda, 0 0 120px #64ffda;
+  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #64ffda,
+    0 0 80px #64ffda, 0 0 120px #64ffda;
 }
 footer .link-footer-section {
   display: flex;
